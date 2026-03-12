@@ -1,0 +1,15 @@
+services:
+  server:
+    build: C:\Users\joaov\OneDrive\Desktop\IoT-Industrial\server
+    ports:
+      - "5000:5000"
+
+  sensores:
+    build: C:\Users\joaov\OneDrive\Desktop\IoT-Industrial\sensores
+    depends_on:
+      - server
+
+  cliente:
+    build: C:\Users\joaov\OneDrive\Desktop\IoT-Industrial\interface
+    depends_on:
+      - server
