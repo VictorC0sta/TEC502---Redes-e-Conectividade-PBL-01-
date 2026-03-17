@@ -4,8 +4,23 @@ services:
     ports:
       - "5000:5000"
 
-  sensores:
+  gateway:
     build: C:\Users\joaov\OneDrive\Desktop\IoT-Industrial\sensores
+    command: python gateway.py
+    depends_on:
+      - server
+
+  sensor:
+    build: C:\Users\joaov\OneDrive\Desktop\IoT-Industrial\sensores
+    command: python sensor.py
+    depends_on:
+      - gateway
+
+  atuador:
+    build: C:\Users\joaov\OneDrive\Desktop\IoT-Industrial\sensores
+    command: python atuador.py
+    ports:
+      - "6000:6000"
     depends_on:
       - server
 
@@ -13,3 +28,4 @@ services:
     build: C:\Users\joaov\OneDrive\Desktop\IoT-Industrial\interface
     depends_on:
       - server
+      - atuador
