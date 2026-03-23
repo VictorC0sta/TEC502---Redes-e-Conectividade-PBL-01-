@@ -7,6 +7,8 @@ from datetime import datetime
 HISTORICO_FILE = "historico.json"
 ATUADOR_IP = "127.0.0.1"
 ATUADOR_PORT = 6000
+SENSOR_IP = "127.0.0.1"
+SENSOR_PORT = 7000
 
 LIMITES = {
     "temperatura": {"max": 33, "min": 20},
@@ -56,6 +58,17 @@ def enviar_comando_atuador(sensor, valor, acao, nome_sensor):
     except ConnectionRefusedError:
         print("[ERRO] Atuador não está rodando!")
 
+def avisar_sensor_resfriamento():
+    try:
+        comando = json.dumps({"acao": "RESFRIAMENTO"}).encode("utf-8")
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            s.connect((SENSOR_IP, SENSOR_PORT))
+            s.sendall(comando)
+            s.recv(1024)
+            print("[SERVER] Sensor avisado para resfriar!")
+    except ConnectionRefusedError:
+        print("[ERRO] Sensor TCP não está rodando!")
+
 def verificar_risco(sensor, valor, nome_sensor):
     limites = LIMITES.get(sensor)
     if not limites:
@@ -66,6 +79,7 @@ def verificar_risco(sensor, valor, nome_sensor):
         enviar_comando_atuador(sensor, valor, "ALARME", nome_sensor)
         if valor > limites["max"] * 1.1:
             enviar_comando_atuador(sensor, valor, "RESFRIAMENTO", nome_sensor)
+            avisar_sensor_resfriamento()
 
     elif valor < limites["min"]:
         print(f"[SERVER] ⚠️  {sensor} baixa: {valor}")
