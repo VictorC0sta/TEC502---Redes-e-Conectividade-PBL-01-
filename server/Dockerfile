@@ -1,6 +1,11 @@
-FROM python:3.12
+FROM python:3.12-slim
+
 WORKDIR /app
-COPY . .
-RUN pip install requests
+
+COPY server.py .
+
+RUN mkdir -p dados
+
 EXPOSE 5000
+
 CMD ["python", "server.py"]

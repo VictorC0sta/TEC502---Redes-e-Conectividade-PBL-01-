@@ -2,13 +2,18 @@ from http.server import HTTPServer, BaseHTTPRequestHandler
 import json
 import random
 import socket
+import os
 from datetime import datetime
 
-HISTORICO_FILE = "historico.json"
-ATUADOR_IP = "127.0.0.1"
-ATUADOR_PORT = 6000
-SENSOR_IP = "127.0.0.1"
-SENSOR_PORT = 7000
+os.makedirs("dados", exist_ok=True)
+
+HISTORICO_FILE = "dados/historico.json"
+
+ALARME_IP = "alarme"
+ALARME_PORT = 6000
+
+RESFRIAMENTO_IP = "resfriamento"
+RESFRIAMENTO_PORT = 6001
 
 LIMITES = {
     "temperatura": {"max": 33, "min": 20},
@@ -28,7 +33,7 @@ estado = {
 
 def carregar_historico():
     try:
-        with open(HISTORICO_FILE, "r") as f:
+        with open(HISTORICO_FILE, "r", encoding="utf-8") as f:
             return json.load(f)
     except (FileNotFoundError, json.JSONDecodeError):
         return []
@@ -39,35 +44,40 @@ def salvar_historico(atualizado):
         **atualizado,
         "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     })
-    with open(HISTORICO_FILE, "w") as f:
+    with open(HISTORICO_FILE, "w", encoding="utf-8") as f:
         json.dump(historico, f, indent=2)
 
-def enviar_comando_atuador(sensor, valor, acao, nome_sensor):
+def enviar_alarme(sensor, valor, nome_sensor):
     try:
         comando = json.dumps({
             "sensor": sensor,
             "nome_sensor": nome_sensor,
             "valor": valor,
-            "acao": acao
+            "acao": "ALARME"
         }).encode("utf-8")
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-            s.connect((ATUADOR_IP, ATUADOR_PORT))
+            s.connect((ALARME_IP, ALARME_PORT))
             s.sendall(comando)
             resposta = s.recv(1024)
-            print(f"[SERVER] Atuador respondeu: {resposta.decode()}")
+            print(f"[SERVER] Alarme respondeu: {resposta.decode()}")
     except ConnectionRefusedError:
-        print("[ERRO] Atuador não está rodando!")
+        print("[ERRO] Serviço de alarme não está rodando!")
 
-def avisar_sensor_resfriamento():
+def enviar_resfriamento(sensor, valor, nome_sensor):
     try:
-        comando = json.dumps({"acao": "RESFRIAMENTO"}).encode("utf-8")
+        comando = json.dumps({
+            "sensor": sensor,
+            "nome_sensor": nome_sensor,
+            "valor": valor,
+            "acao": "RESFRIAMENTO"
+        }).encode("utf-8")
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-            s.connect((SENSOR_IP, SENSOR_PORT))
+            s.connect((RESFRIAMENTO_IP, RESFRIAMENTO_PORT))
             s.sendall(comando)
-            s.recv(1024)
-            print("[SERVER] Sensor avisado para resfriar!")
+            resposta = s.recv(1024)
+            print(f"[SERVER] Resfriamento respondeu: {resposta.decode()}")
     except ConnectionRefusedError:
-        print("[ERRO] Sensor TCP não está rodando!")
+        print("[ERRO] Serviço de resfriamento não está rodando!")
 
 def verificar_risco(sensor, valor, nome_sensor):
     limites = LIMITES.get(sensor)
@@ -76,14 +86,13 @@ def verificar_risco(sensor, valor, nome_sensor):
 
     if valor > limites["max"]:
         print(f"[SERVER] ⚠️  {sensor} alta: {valor}")
-        enviar_comando_atuador(sensor, valor, "ALARME", nome_sensor)
+        enviar_alarme(sensor, valor, nome_sensor)
         if valor > limites["max"] * 1.1:
-            enviar_comando_atuador(sensor, valor, "RESFRIAMENTO", nome_sensor)
-            avisar_sensor_resfriamento()
+            enviar_resfriamento(sensor, valor, nome_sensor)
 
     elif valor < limites["min"]:
         print(f"[SERVER] ⚠️  {sensor} baixa: {valor}")
-        enviar_comando_atuador(sensor, valor, "ALARME", nome_sensor)
+        enviar_alarme(sensor, valor, nome_sensor)
 
 class Handler(BaseHTTPRequestHandler):
 
@@ -98,7 +107,7 @@ class Handler(BaseHTTPRequestHandler):
             self.wfile.write(body)
             self.wfile.flush()
             print(f"[DEBUG] Enviado com sucesso: {json_str.strip()}")
-        except Exception as e:
+        except (BrokenPipeError, ConnectionResetError) as e:
             print(f"[ERRO ao enviar] {e}")
 
     def do_GET(self):
@@ -138,9 +147,12 @@ class Handler(BaseHTTPRequestHandler):
 
         except json.JSONDecodeError:
             self.responder({"erro": "JSON invalido"}, 400)
-        except Exception as e:
+        except ValueError as e:
             print(f"[ERRO] {e}")
-            self.responder({"erro": str(e)}, 500)
+            self.responder({"erro": str(e)}, 400)
+        except Exception as e:
+            print(f"[ERRO inesperado] {e}")
+            self.responder({"erro": "Erro interno do servidor"}, 500)
 
 if __name__ == "__main__":
     server_address = ("0.0.0.0", 5000)
