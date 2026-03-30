@@ -1,13 +1,21 @@
 import socket
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 
 TCP_IP = "0.0.0.0"
-TCP_PORT = 6001                      
+TCP_PORT = 6001
 ATUADORES_FILE = "dados/atuadores.json"
+FUSO_BRASIL = timezone(timedelta(hours=-3))
 
 os.makedirs("dados", exist_ok=True)
+
+SENSORES_TEMP = os.environ.get("SENSORES_TEMP", "sensor_temp_1,sensor_temp_2,sensor_temp_3")
+SENSORES_LIST = [s.strip() for s in SENSORES_TEMP.split(",")]
+TCP_SENSOR_PORT = int(os.environ.get("TCP_SENSOR_PORT", 7000))
+
+def timestamp_br():
+    return datetime.now(FUSO_BRASIL).strftime("%Y-%m-%d %H:%M:%S")
 
 def carregar_atuadores():
     try:
@@ -22,10 +30,22 @@ def salvar_atuacao(evento):
     with open(ATUADORES_FILE, "w", encoding="utf-8") as f:
         json.dump(historico, f, indent=2)
 
-def executar_resfriamento(cmd): 
-    valor = cmd.get("valor")
+def notificar_sensores():
+    for sensor_id in SENSORES_LIST:
+        try:
+            with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+                s.settimeout(3)
+                s.connect((sensor_id, TCP_SENSOR_PORT))
+                s.sendall(json.dumps({"acao": "RESFRIAMENTO"}).encode("utf-8"))
+                s.recv(1024)
+                print(f"[RESFRIAMENTO] ✅ {sensor_id} notificado!")
+        except (socket.error, OSError) as e:
+            print(f"[RESFRIAMENTO] ⚠️  Não foi possível notificar {sensor_id}: {e}")
+
+def executar_resfriamento(cmd):
+    valor       = cmd.get("valor")
     nome_sensor = cmd.get("nome_sensor")
-    sensor = cmd.get("sensor")
+    sensor      = cmd.get("sensor")
 
     print(f"\n{'='*40}")
     print(f"🌀 [RESFRIAMENTO] Temperatura crítica: {valor}°C")
@@ -33,23 +53,17 @@ def executar_resfriamento(cmd):
     print("   → Ventiladores industriais ativados")
     print("   → Válvula de água gelada aberta")
     print("   → Redução de carga na máquina iniciada")
-    print("{'='*40}\n")
+    print(f"{'='*40}\n")
     print("\a\a")
 
-    # Notifica o sensor_temp para simular queda de temperatura
-    try:
-        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-            s.connect(("sensor_temp", 7000))          # hostname do container
-            s.sendall(json.dumps({"acao": "RESFRIAMENTO"}).encode("utf-8"))
-    except (socket.error, OSError) as e:
-        print(f"[RESFRIAMENTO] ⚠️  Não foi possível notificar sensor_temp: {e}")
+    notificar_sensores()
 
     evento = {
         "nome_sensor": nome_sensor,
-        "sensor": sensor,
-        "valor": valor,
-        "acao": "RESFRIAMENTO",
-        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        "sensor":      sensor,
+        "valor":       valor,
+        "acao":        "RESFRIAMENTO",
+        "timestamp":   timestamp_br(),
     }
     salvar_atuacao(evento)
 
@@ -59,6 +73,7 @@ sock.bind((TCP_IP, TCP_PORT))
 sock.listen(5)
 
 print(f"[RESFRIAMENTO] Escutando TCP na porta {TCP_PORT}...")
+print(f"[RESFRIAMENTO] Sensores a notificar: {SENSORES_LIST}")
 
 try:
     while True:
@@ -70,7 +85,7 @@ try:
                     comando = json.loads(data.decode("utf-8"))
                     executar_resfriamento(cmd=comando)
                     conn.sendall(b'{"status": "ok"}')
-                except json.JSONDecodeError:
+                except (json.JSONDecodeError, UnicodeDecodeError):
                     conn.sendall(b'{"status": "erro"}')
 
 except KeyboardInterrupt:
