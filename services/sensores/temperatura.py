@@ -44,12 +44,22 @@ def enviar_temperatura():
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     print(f"[{SENSOR_ID}] Enviando UDP para {SERVER_IP}:{UDP_PORT}")
 
+    # Valor inicial realista
+    valor = random.uniform(22.0, 28.0)
+
     try:
         while True:
-            valor = round(
-                random.uniform(18.0, 25.0) if resfriando.is_set()
-                else random.uniform(20.0, 38.0), 2
-            )
+            if resfriando.is_set():
+                alvo = 21.0   # puxa em direção ao alvo de resfriamento
+                limite_min, limite_max = 18.0, 25.0
+            else:
+                alvo = 27.0   # temperatura ambiente "normal"
+                limite_min, limite_max = 20.0, 38.0
+
+            # Pequeno passo aleatório + leve atração ao alvo (mean reversion)
+            delta = random.uniform(-0.3, 0.3) + (alvo - valor) * 0.05
+            valor = round(max(limite_min, min(limite_max, valor + delta)), 2)
+
             payload = json.dumps({
                 "id":    SENSOR_ID,
                 "tipo":  "temperatura",

@@ -24,13 +24,13 @@ print(f"[{SENSOR_ID}] Limites: {UMIDADE_MIN}% – {UMIDADE_MAX}% | Cooldown: {CO
 
 em_cooldown        = False
 cooldown_restante  = 0  # segundos restantes no cooldown
-
+valor = round(random.uniform(55.0, 70.0), 2)
 try:
     while True:
         if em_cooldown:
-            # Durante o cooldown envia apenas valores normais
-            valor = round(random.uniform(UMIDADE_MIN + 2, UMIDADE_MAX - 2), 2)
-            cooldown_restante -= INTERVALO_ENVIO
+            alvo = 65.0  # puxa de volta ao centro da faixa normal
+            delta = random.uniform(-0.5, 0.5) + (alvo - valor) * 0.05
+            valor = round(max(UMIDADE_MIN + 2, min(UMIDADE_MAX - 2, valor + delta)), 2)
 
             if cooldown_restante <= 0:
                 em_cooldown = False
@@ -38,8 +38,8 @@ try:
             else:
                 print(f"[{SENSOR_ID}] [COOLDOWN {cooldown_restante:.0f}s] Enviado: {valor}%")
         else:
-            # Operação normal — pode gerar valor fora do limite
-            valor = round(random.uniform(40.0, 90.0), 2)
+            delta = random.uniform(-0.8, 0.8)
+            valor = round(max(40.0, min(90.0, valor + delta)), 2)
 
             fora_do_limite = valor > UMIDADE_MAX or valor < UMIDADE_MIN
             if fora_do_limite:

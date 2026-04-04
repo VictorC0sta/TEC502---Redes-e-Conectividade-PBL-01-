@@ -3,19 +3,21 @@ import json
 import os
 from datetime import datetime, timezone, timedelta
 
-TCP_IP = "0.0.0.0"
-TCP_PORT = 6001
-ATUADORES_FILE = "dados/atuadores.json"
-FUSO_BRASIL = timezone(timedelta(hours=-3))
+TCP_IP         = "0.0.0.0"
+TCP_PORT       = 6001
+ATUADORES_FILE = "data/atuadores.json"
+FUSO_BRASIL    = timezone(timedelta(hours=-3))
 
-os.makedirs("dados", exist_ok=True)
+os.makedirs("data", exist_ok=True)
 
-SENSORES_TEMP = os.environ.get("SENSORES_TEMP", "sensor_temp_1,sensor_temp_2,sensor_temp_3")
-SENSORES_LIST = [s.strip() for s in SENSORES_TEMP.split(",")]
+SENSORES_TEMP   = os.environ.get("SENSORES_TEMP", "sensor_temp_1,sensor_temp_2,sensor_temp_3")
+SENSORES_LIST   = [s.strip() for s in SENSORES_TEMP.split(",")]
 TCP_SENSOR_PORT = int(os.environ.get("TCP_SENSOR_PORT", 7000))
 
+
 def timestamp_br():
-    return datetime.now(FUSO_BRASIL).strftime("%Y-%m-%d %H:%M:%S")
+    return datetime.now(FUSO_BRASIL).strftime("%Y-%m-%d %H:%M:%S.%f")
+
 
 def carregar_atuadores():
     try:
@@ -24,11 +26,13 @@ def carregar_atuadores():
     except (FileNotFoundError, json.JSONDecodeError):
         return []
 
+
 def salvar_atuacao(evento):
     historico = carregar_atuadores()
     historico.append(evento)
     with open(ATUADORES_FILE, "w", encoding="utf-8") as f:
         json.dump(historico, f, indent=2)
+
 
 def notificar_sensores():
     for sensor_id in SENSORES_LIST:
@@ -41,6 +45,7 @@ def notificar_sensores():
                 print(f"[RESFRIAMENTO] ✅ {sensor_id} notificado!")
         except (socket.error, OSError) as e:
             print(f"[RESFRIAMENTO] ⚠️  Não foi possível notificar {sensor_id}: {e}")
+
 
 def executar_resfriamento(cmd):
     valor       = cmd.get("valor")
@@ -58,14 +63,14 @@ def executar_resfriamento(cmd):
 
     notificar_sensores()
 
-    evento = {
+    salvar_atuacao({
         "nome_sensor": nome_sensor,
         "sensor":      sensor,
         "valor":       valor,
         "acao":        "RESFRIAMENTO",
-        "timestamp":   timestamp_br(),
-    }
-    salvar_atuacao(evento)
+        "horario":   timestamp_br(),
+    })
+
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)

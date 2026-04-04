@@ -5,27 +5,22 @@ from datetime import datetime, timezone, timedelta
 
 TCP_IP         = "0.0.0.0"
 TCP_PORT       = 6000
-ATUADORES_FILE = "dados/atuadores.json"
+ATUADORES_FILE = "data/atuadores.json"
 FUSO_BRASIL    = timezone(timedelta(hours=-3))
 
-# ── Cooldown por sensor ───────────────────────────────────────────────────────
-# Se o mesmo sensor disparar alarme de novo antes desse tempo (segundos),
-# o alarme é ignorado (simulando que o evento já foi tratado).
 COOLDOWN_SEGUNDOS = int(os.environ.get("ALARME_COOLDOWN", 30))
 
-# Guarda o timestamp do último alarme por sensor: { "sensor_temp_1": datetime }
 _ultimo_alarme: dict[str, datetime] = {}
+
+os.makedirs("data", exist_ok=True)
 
 
 def timestamp_br():
-    return datetime.now(FUSO_BRASIL).strftime("%Y-%m-%d %H:%M:%S")
+    return datetime.now(FUSO_BRASIL).strftime("%Y-%m-%d %H:%M:%S.%f")
 
 
 def agora():
     return datetime.now(FUSO_BRASIL)
-
-
-os.makedirs("dados", exist_ok=True)
 
 
 def carregar_atuadores():
@@ -44,7 +39,6 @@ def salvar_atuacao(evento):
 
 
 def em_cooldown(nome_sensor: str) -> tuple[bool, float]:
-    """Retorna (está_em_cooldown, segundos_restantes)."""
     ultimo = _ultimo_alarme.get(nome_sensor)
     if ultimo is None:
         return False, 0.0
@@ -54,7 +48,6 @@ def em_cooldown(nome_sensor: str) -> tuple[bool, float]:
 
 
 def executar_alarme(cmd: dict) -> str:
-    """Processa o alarme. Retorna 'ok', 'cooldown' ou 'erro'."""
     valor       = cmd.get("valor")
     sensor      = cmd.get("sensor")
     nome_sensor = cmd.get("nome_sensor", "desconhecido")
@@ -71,7 +64,6 @@ def executar_alarme(cmd: dict) -> str:
         )
         return "cooldown"
 
-    # Registra o momento deste alarme
     _ultimo_alarme[nome_sensor] = agora()
 
     print(f"\n{'='*42}")
@@ -80,19 +72,18 @@ def executar_alarme(cmd: dict) -> str:
     print(f"   Horário : {timestamp_br()}")
     print(f"   Cooldown: próximo alarme deste sensor em {COOLDOWN_SEGUNDOS}s")
     print(f"{'='*42}\n")
-    print("\a")  # beep no terminal
+    print("\a")
 
     salvar_atuacao({
         "nome_sensor": nome_sensor,
         "sensor":      sensor,
         "valor":       valor,
         "acao":        "ALARME",
-        "timestamp":   timestamp_br(),
+        "horario":   timestamp_br(),
     })
     return "ok"
 
 
-# ── Servidor TCP ──────────────────────────────────────────────────────────────
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 sock.bind((TCP_IP, TCP_PORT))
@@ -109,7 +100,7 @@ try:
             if not data:
                 continue
             try:
-                comando  = json.loads(data.decode("utf-8"))
+                comando   = json.loads(data.decode("utf-8"))
                 resultado = executar_alarme(comando)
                 conn.sendall(json.dumps({"status": resultado}).encode("utf-8"))
             except (json.JSONDecodeError, UnicodeDecodeError) as e:
