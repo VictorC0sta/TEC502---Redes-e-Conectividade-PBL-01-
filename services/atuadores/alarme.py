@@ -3,8 +3,10 @@ import json
 import os
 from datetime import datetime, timezone, timedelta
 
-TCP_IP         = "0.0.0.0"
-TCP_PORT       = 6000
+TCP_IP  = "0.0.0.0"
+TCP_PORT = 6000
+
+# Bug 6 corrigido: era "data/", mantido correto
 ATUADORES_FILE = "data/atuadores.json"
 FUSO_BRASIL    = timezone(timedelta(hours=-3))
 
@@ -58,10 +60,7 @@ def executar_alarme(cmd: dict) -> str:
 
     cooldown, restante = em_cooldown(nome_sensor)
     if cooldown:
-        print(
-            f"[ALARME] ⏳ Ignorado — {nome_sensor} em cooldown "
-            f"({restante:.0f}s restantes)"
-        )
+        print(f"[ALARME] ⏳ Ignorado — {nome_sensor} em cooldown ({restante:.0f}s restantes)")
         return "cooldown"
 
     _ultimo_alarme[nome_sensor] = agora()
@@ -74,12 +73,13 @@ def executar_alarme(cmd: dict) -> str:
     print(f"{'='*42}\n")
     print("\a")
 
+    # Bug 4 corrigido: campo "timestamp" — consistente com o servidor
     salvar_atuacao({
         "nome_sensor": nome_sensor,
         "sensor":      sensor,
         "valor":       valor,
         "acao":        "ALARME",
-        "horario":   timestamp_br(),
+        "timestamp":   timestamp_br(),
     })
     return "ok"
 

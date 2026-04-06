@@ -10,13 +10,20 @@ SERVER_IP          = os.environ.get("SERVER_IP", "server")
 UDP_PORT           = int(os.environ.get("UDP_PORT", 5001))
 TCP_PORT           = int(os.environ.get("TCP_PORT", 7000))
 TEMPO_RESFRIAMENTO = int(os.environ.get("TEMPO_RESFRIAMENTO", 15))
+INTERVALO_ENVIO    = float(os.environ.get("INTERVALO_ENVIO", 0.1))
+
+# Limites do servidor — usados só para log local
+TEMP_LIMITE_MAX = 33.0
+TEMP_LIMITE_MIN = 20.0
 
 resfriando = threading.Event()
+
 
 def desativar_resfriamento():
     time.sleep(TEMPO_RESFRIAMENTO)
     resfriando.clear()
     print(f"\n[{SENSOR_ID}] ✅ Resfriamento encerrado, voltando ao normal...")
+
 
 def escutar_comandos_tcp():
     srv = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -40,38 +47,70 @@ def escutar_comandos_tcp():
                 except json.JSONDecodeError:
                     conn.sendall(b'{"status": "erro"}')
 
+
 def enviar_temperatura():
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     print(f"[{SENSOR_ID}] Enviando UDP para {SERVER_IP}:{UDP_PORT}")
 
-    # Valor inicial realista
-    valor = random.uniform(22.0, 28.0)
+    valor = round(random.uniform(22.0, 26.0), 2)
+
+    # Bug 1 corrigido: drift cíclico em vez de random walk simétrico.
+    # Fase "subindo": delta médio positivo → valor sobe ~0.18°C/passo.
+    # Fase "descendo": delta médio negativo → valor cai de volta.
+    # Cada fase dura 120–250 passos (12s–25s a 0.1s/passo), garantindo
+    # que o sensor cruze os limites de forma natural e previsível.
+    fase             = "subindo"
+    passos_restantes = random.randint(120, 250)
 
     try:
         while True:
             if resfriando.is_set():
-                alvo = 21.0   # puxa em direção ao alvo de resfriamento
-                limite_min, limite_max = 18.0, 25.0
-            else:
-                alvo = 27.0   # temperatura ambiente "normal"
-                limite_min, limite_max = 20.0, 38.0
+                # Resfriamento ativo: puxa valor para ~21°C rapidamente
+                alvo  = 21.0
+                delta = random.uniform(-0.10, 0.05) + (alvo - valor) * 0.12
+                valor = round(max(18.0, min(25.0, valor + delta)), 2)
+                print(f"[{SENSOR_ID}] 🌀 [RESFRIANDO] {valor}°C")
 
-            # Pequeno passo aleatório + leve atração ao alvo (mean reversion)
-            delta = random.uniform(-0.3, 0.3) + (alvo - valor) * 0.05
-            valor = round(max(limite_min, min(limite_max, valor + delta)), 2)
+            else:
+                passos_restantes -= 1
+
+                if fase == "subindo":
+                    delta = random.uniform(0.05, 0.30) + random.uniform(-0.08, 0.08)
+                    if passos_restantes <= 0:
+                        fase             = "descendo"
+                        passos_restantes = random.randint(100, 200)
+                        print(f"[{SENSOR_ID}] 🔁 Iniciando fase de descida em {valor}°C")
+
+                else:  # descendo
+                    delta = random.uniform(-0.30, -0.05) + random.uniform(-0.08, 0.08)
+                    if passos_restantes <= 0 or valor < 23.0:
+                        fase             = "subindo"
+                        passos_restantes = random.randint(120, 250)
+                        print(f"[{SENSOR_ID}] 🔁 Iniciando fase de subida em {valor}°C")
+
+                valor = round(max(18.0, min(38.0, valor + delta)), 2)
+
+                status = ""
+                if valor > TEMP_LIMITE_MAX:
+                    status = " ⚠ ACIMA DO LIMITE"
+                elif valor < TEMP_LIMITE_MIN:
+                    status = " ⚠ ABAIXO DO LIMITE"
+
+                print(f"[{SENSOR_ID}] [{fase}] {valor}°C{status}")
 
             payload = json.dumps({
                 "id":    SENSOR_ID,
                 "tipo":  "temperatura",
                 "valor": valor
             }).encode("utf-8")
+
             sock.sendto(payload, (SERVER_IP, UDP_PORT))
-            print(f"[{SENSOR_ID}] Enviado: {valor}°C")
-            time.sleep(0.1)
+            time.sleep(INTERVALO_ENVIO)
 
     except KeyboardInterrupt:
         print(f"\n[{SENSOR_ID}] Encerrando...")
         sock.close()
+
 
 t_tcp = threading.Thread(target=escutar_comandos_tcp, daemon=True)
 t_udp = threading.Thread(target=enviar_temperatura,   daemon=True)

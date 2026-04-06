@@ -8,15 +8,11 @@ import matplotlib.ticker as ticker
 import matplotlib.dates as mdates
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from collections import defaultdict, deque
-import json
-import os
 import queue
 import time
 
 # ── Configuração ──────────────────────────────────────────────────────────────
-SERVER_URL     = "http://localhost:5000"
-ATUADORES_FILE = "../data/atuadores.json"
-HISTORICO_FILE = "../data/historico.json"
+SERVER_URL = "http://localhost:5000"
 
 PERIODOS = {
     "5s":   5,
@@ -70,7 +66,10 @@ class SensorBuffer:
             sid  = entry.get("id", "?")
             tipo = entry.get("tipo", "")
             val  = entry.get("valor")
-            ts_s = entry.get("timestamp", "")
+
+            # Bug 1 corrigido: o servidor salva com "horario", não "timestamp"
+            ts_s = entry.get("horario", entry.get("timestamp", ""))
+
             if val is None or tipo not in ("temperatura", "umidade"):
                 continue
             ts  = _parse_ts(ts_s).timestamp()
@@ -95,7 +94,7 @@ class SensorBuffer:
 
 
 def _parse_ts(ts_str: str) -> datetime:
-    """Aceita com e sem milissegundos — o servidor grava com .%f."""
+    """Aceita com e sem milissegundos."""
     for fmt in ("%Y-%m-%d %H:%M:%S.%f", "%Y-%m-%d %H:%M:%S"):
         try:
             return datetime.strptime(ts_str, fmt)
@@ -104,7 +103,7 @@ def _parse_ts(ts_str: str) -> datetime:
     return datetime.now()
 
 
-# ── I/O ───────────────────────────────────────────────────────────────────────
+# ── I/O — tudo via servidor, sem leitura de arquivo local ────────────────────
 def get_estado():
     try:
         r = requests.get(f"{SERVER_URL}/estado", timeout=2)
@@ -126,38 +125,40 @@ def get_historico(segundos=30):
         return []
 
 
+# Bug 3 corrigido: usa rota HTTP em vez de arquivo local ../data/atuadores.json
+# O arquivo só existe dentro do container do servidor — o cliente não tem acesso.
 def get_atuadores():
     try:
-        if not os.path.exists(ATUADORES_FILE):
-            return []
-        with open(ATUADORES_FILE, "r", encoding="utf-8") as f:
-            d = json.load(f)
-            return [e for e in d if isinstance(e, dict)] if isinstance(d, list) else []
+        r = requests.get(f"{SERVER_URL}/atuadores", timeout=2)
+        d = r.json()
+        return [e for e in d if isinstance(e, dict)] if isinstance(d, list) else []
     except Exception:
         return []
 
 
+# Bug 4 corrigido: usa rota HTTP em vez de arquivo local ../data/historico.json
 def get_historico_completo():
     try:
-        if not os.path.exists(HISTORICO_FILE):
-            return []
-        with open(HISTORICO_FILE, "r", encoding="utf-8") as f:
-            d = json.load(f)
-            return [e for e in d if isinstance(e, dict)] if isinstance(d, list) else []
+        r = requests.get(f"{SERVER_URL}/historico", timeout=4)
+        d = r.json()
+        return [e for e in d if isinstance(e, dict)] if isinstance(d, list) else []
     except Exception:
         return []
 
 
-def ativar_manual(acao):
+# Bug 6 corrigido: messagebox não pode ser chamado de thread daemon.
+# A função agora retorna (sucesso, mensagem) e o resultado é exibido
+# na thread principal via after().
+def _requisitar_ativar(acao: str) -> tuple[bool, str]:
     try:
         r = requests.post(
             f"{SERVER_URL}/ativar/{acao}",
             json={"sensor": "manual", "valor": 0},
             timeout=3
         )
-        messagebox.showinfo("Atuador", r.json().get("acao", acao))
+        return True, r.json().get("acao", acao)
     except Exception as e:
-        messagebox.showerror("Erro", f"Falha ao contatar servidor:\n{e}")
+        return False, str(e)
 
 
 def limpar_dados_servidor():
@@ -182,7 +183,6 @@ def _estilo_ax(ax, ylabel="", show_grid=True):
 
 
 def _formatar_eixo_x(ax, janela_s: int):
-    """Configura DateFormatter — obrigatório ao plotar objetos datetime."""
     if janela_s <= 30:
         fmt = mdates.DateFormatter("%H:%M:%S")
         loc = mdates.SecondLocator(interval=max(1, janela_s // 5))
@@ -215,9 +215,13 @@ class App(tk.Tk):
         self._sensores_status     = {}
         self._periodo_var         = tk.StringVar(value="30s")
 
-        self._worker_rodando = False
-        self._contador_poll  = 0
-        self._ultimo_draw    = 0.0
+        self._worker_rodando  = False
+        self._contador_poll   = 0
+        self._ultimo_draw     = 0.0
+
+        # Bug 5 corrigido: cache de atuadores mantido entre polls para que
+        # _atualizar_atuadores sempre receba dados, mesmo nos polls sem fetch.
+        self._cache_atuadores: list = []
 
         self._ui_queue: queue.Queue = queue.Queue()
         self._buffer = SensorBuffer()
@@ -231,6 +235,12 @@ class App(tk.Tk):
     def _ao_fechar(self):
         threading.Thread(target=limpar_dados_servidor, daemon=True).start()
         self.after(400, self.destroy)
+
+    # ── Acionamento manual thread-safe ────────────────────────────────────────
+    def _ativar_manual(self, acao: str):
+        """Roda em thread daemon; posta resultado na fila para exibir na UI."""
+        ok, msg = _requisitar_ativar(acao)
+        self._ui_queue.put({"tipo": "msg_ativar", "ok": ok, "msg": msg, "acao": acao})
 
     # ═════════════════════════════════════════════════════════════════════════
     # BUILD UI
@@ -337,8 +347,10 @@ class App(tk.Tk):
             font=("Courier New", 9, "bold"), bg=COR_DANGER, fg="#ffffff",
             relief="flat", padx=10, pady=8, cursor="hand2",
             activebackground="#c0414b", activeforeground="#ffffff",
+            # Bug 6 corrigido: usa _ativar_manual (thread-safe) em vez de
+            # ativar_manual que chamava messagebox de dentro de thread daemon
             command=lambda: threading.Thread(
-                target=ativar_manual, args=("alarme",), daemon=True).start()
+                target=self._ativar_manual, args=("alarme",), daemon=True).start()
         ).pack(fill="x", pady=(0, 6))
         tk.Button(
             af, text="❄  RESFRIAMENTO",
@@ -347,7 +359,7 @@ class App(tk.Tk):
             activebackground=BG_HOVER, activeforeground=COR_COLD,
             highlightthickness=1, highlightbackground=COR_COLD,
             command=lambda: threading.Thread(
-                target=ativar_manual, args=("resfriamento",), daemon=True).start()
+                target=self._ativar_manual, args=("resfriamento",), daemon=True).start()
         ).pack(fill="x")
 
     def _build_center(self, parent):
@@ -470,7 +482,9 @@ class App(tk.Tk):
             filtrados = []
             for e in dados:
                 try:
-                    if _parse_ts(e["timestamp"]) >= corte:
+                    # Bug 2 corrigido: histórico usa "horario", não "timestamp"
+                    ts_campo = e.get("horario", e.get("timestamp", ""))
+                    if _parse_ts(ts_campo) >= corte:
                         filtrados.append(e)
                 except Exception:
                     pass
@@ -480,7 +494,9 @@ class App(tk.Tk):
         for e in dados:
             if e.get("tipo") == tipo:
                 try:
-                    ts  = _parse_ts(e["timestamp"])
+                    # Bug 2 corrigido: mesma correção de campo
+                    ts_campo = e.get("horario", e.get("timestamp", ""))
+                    ts  = _parse_ts(ts_campo)
                     val = float(e["valor"])
                     por_sensor[e["id"]].append((ts, val))
                 except Exception:
@@ -645,7 +661,8 @@ class App(tk.Tk):
         resfrs  = [(a, a.get("valor", 0)) for a in atuadores if a.get("acao") == "RESFRIAMENTO"]
 
         def parse_ts(a):
-            return _parse_ts(a[0].get("timestamp", ""))
+            ts_campo = a[0].get("timestamp", a[0].get("horario", ""))
+            return _parse_ts(ts_campo)
 
         if alarmes:
             self.ax_atu_line.scatter(
@@ -676,7 +693,7 @@ class App(tk.Tk):
             acao  = a.get("acao", "?")
             nome  = a.get("nome_sensor", "?").replace("sensor_", "")
             valor = a.get("valor", "?")
-            ts    = a.get("timestamp", "")
+            ts    = a.get("timestamp", a.get("horario", ""))
             icone = "⚠" if acao == "ALARME" else "❄"
             self.listbox_atu.insert(0, f"{icone} {ts[-15:]}  {nome:<14} {valor}")
         for i in range(self.listbox_atu.size()):
@@ -749,7 +766,7 @@ class App(tk.Tk):
             w["valor"].config(text=f"{valor}{unidade}", fg=cor)
 
     # ═════════════════════════════════════════════════════════════════════════
-    # ATUADORES — coluna direita
+    # ATUADORES — coluna direita (tempo real)
     # ═════════════════════════════════════════════════════════════════════════
     def _atualizar_atuadores(self, atuadores):
         if not isinstance(atuadores, list):
@@ -764,7 +781,7 @@ class App(tk.Tk):
             if isinstance(ult, dict):
                 acao = ult.get("acao", "?")
                 nome = ult.get("nome_sensor", "?").replace("sensor_", "")
-                ts   = ult.get("timestamp", "")
+                ts   = ult.get("timestamp", ult.get("horario", ""))
                 self.lbl_ultimo.config(text=f"{acao}\n{nome}\n{ts}",
                                        fg=COR_DANGER if acao == "ALARME" else COR_COLD)
 
@@ -854,7 +871,6 @@ class App(tk.Tk):
                     color=TX_MUTED, fontsize=9)
             return
 
-        # Janela deslizante fixa — garante que o gráfico role no tempo
         janela_s = PERIODOS.get(self._periodo_var.get(), 30)
         agora    = datetime.now()
         ax.set_xlim(agora - timedelta(seconds=janela_s),
@@ -904,7 +920,6 @@ class App(tk.Tk):
             ax.set_ylim(min(min(all_vals), lim_min) - 2,
                         max(max(all_vals), lim_max) + 4)
 
-        # Formata eixo X — DEVE vir após set_xlim e plot()
         _formatar_eixo_x(ax, janela_s)
 
         ax.legend(facecolor=BG_PANEL, labelcolor=TX_SECONDARY, fontsize=7, loc="upper left",
@@ -934,29 +949,42 @@ class App(tk.Tk):
             estado    = get_estado()
             historico = get_historico(segundos)
 
-            atuadores = []
+            # Busca atuadores a cada 4 polls e atualiza o cache
             if self._contador_poll % 4 == 0:
-                atuadores = get_atuadores()
+                novos = get_atuadores()
+                if novos:
+                    self._cache_atuadores = novos
 
             self._buffer.ingest(historico)
             self._ui_queue.put({
-                "estado":   estado,
-                "atuadores": atuadores,
-                "n_reg":    len(historico),
-                "tem_dado": len(historico) > 0,
+                "tipo":      "dados",
+                "estado":    estado,
+                # Bug 5 corrigido: sempre envia o cache (nunca lista vazia
+                # apenas porque não era o poll de busca de atuadores)
+                "atuadores": self._cache_atuadores,
+                "n_reg":     len(historico),
+                "tem_dado":  len(historico) > 0,
             })
         finally:
             self._worker_rodando = False
 
     def _processar_fila(self):
-        item = None
         while not self._ui_queue.empty():
             try:
                 item = self._ui_queue.get_nowait()
             except queue.Empty:
                 break
 
-        if item:
+            # Bug 6 corrigido: mensagens de ativar_manual chegam aqui e são
+            # exibidas na thread principal — sem risco de crash do Tkinter
+            if item.get("tipo") == "msg_ativar":
+                if item["ok"]:
+                    messagebox.showinfo("Atuador", item["msg"])
+                else:
+                    messagebox.showerror("Erro", f"Falha ao contatar servidor:\n{item['msg']}")
+                continue
+
+            # Mensagem de dados normal
             self._registrar_sensores(item["estado"])
             self._atualizar_status(item["estado"])
 
@@ -965,8 +993,8 @@ class App(tk.Tk):
                 self._redesenhar()
                 self._ultimo_draw = agora
 
-            if item["atuadores"]:
-                self._atualizar_atuadores(item["atuadores"])
+            # Sempre atualiza painel de atuadores (cache nunca é vazio após 1° fetch)
+            self._atualizar_atuadores(item["atuadores"])
 
             self.status_bar.config(text=(
                 f"  atualizado {datetime.now().strftime('%H:%M:%S')} · "
