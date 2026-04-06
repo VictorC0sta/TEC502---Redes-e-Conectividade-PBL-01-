@@ -46,6 +46,23 @@ LIMITES = {
     "umidade":     {"max": 85, "min": 45, "unidade": "%"},
 }
 
+# ── Estilo de radiobutton discreto ────────────────────────────────────────────
+# Selecionado: fundo BG_CARD (levemente mais claro que o painel), texto branco
+# Não selecionado: fundo idêntico ao painel — praticamente invisível
+# relief="flat" + bd=0 eliminam toda borda/relevo, inclusive o azul do sistema
+_RB_KWARGS = dict(
+    bg=BG_PANEL, fg=TX_SECONDARY,
+    selectcolor=BG_CARD,
+    activebackground=BG_HOVER,
+    activeforeground=TX_PRIMARY,
+    font=("Courier New", 9),
+    indicatoron=0,
+    relief="flat",
+    bd=0,
+    padx=8, pady=4,
+    cursor="hand2",
+)
+
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Buffer circular por sensor
@@ -66,10 +83,7 @@ class SensorBuffer:
             sid  = entry.get("id", "?")
             tipo = entry.get("tipo", "")
             val  = entry.get("valor")
-
-            # Bug 1 corrigido: o servidor salva com "horario", não "timestamp"
             ts_s = entry.get("horario", entry.get("timestamp", ""))
-
             if val is None or tipo not in ("temperatura", "umidade"):
                 continue
             ts  = _parse_ts(ts_s).timestamp()
@@ -94,7 +108,6 @@ class SensorBuffer:
 
 
 def _parse_ts(ts_str: str) -> datetime:
-    """Aceita com e sem milissegundos."""
     for fmt in ("%Y-%m-%d %H:%M:%S.%f", "%Y-%m-%d %H:%M:%S"):
         try:
             return datetime.strptime(ts_str, fmt)
@@ -103,7 +116,7 @@ def _parse_ts(ts_str: str) -> datetime:
     return datetime.now()
 
 
-# ── I/O — tudo via servidor, sem leitura de arquivo local ────────────────────
+# ── I/O ───────────────────────────────────────────────────────────────────────
 def get_estado():
     try:
         r = requests.get(f"{SERVER_URL}/estado", timeout=2)
@@ -125,8 +138,6 @@ def get_historico(segundos=30):
         return []
 
 
-# Bug 3 corrigido: usa rota HTTP em vez de arquivo local ../data/atuadores.json
-# O arquivo só existe dentro do container do servidor — o cliente não tem acesso.
 def get_atuadores():
     try:
         r = requests.get(f"{SERVER_URL}/atuadores", timeout=2)
@@ -136,7 +147,6 @@ def get_atuadores():
         return []
 
 
-# Bug 4 corrigido: usa rota HTTP em vez de arquivo local ../data/historico.json
 def get_historico_completo():
     try:
         r = requests.get(f"{SERVER_URL}/historico", timeout=4)
@@ -146,9 +156,6 @@ def get_historico_completo():
         return []
 
 
-# Bug 6 corrigido: messagebox não pode ser chamado de thread daemon.
-# A função agora retorna (sucesso, mensagem) e o resultado é exibido
-# na thread principal via after().
 def _requisitar_ativar(acao: str) -> tuple[bool, str]:
     try:
         r = requests.post(
@@ -218,9 +225,6 @@ class App(tk.Tk):
         self._worker_rodando  = False
         self._contador_poll   = 0
         self._ultimo_draw     = 0.0
-
-        # Bug 5 corrigido: cache de atuadores mantido entre polls para que
-        # _atualizar_atuadores sempre receba dados, mesmo nos polls sem fetch.
         self._cache_atuadores: list = []
 
         self._ui_queue: queue.Queue = queue.Queue()
@@ -236,9 +240,7 @@ class App(tk.Tk):
         threading.Thread(target=limpar_dados_servidor, daemon=True).start()
         self.after(400, self.destroy)
 
-    # ── Acionamento manual thread-safe ────────────────────────────────────────
     def _ativar_manual(self, acao: str):
-        """Roda em thread daemon; posta resultado na fila para exibir na UI."""
         ok, msg = _requisitar_ativar(acao)
         self._ui_queue.put({"tipo": "msg_ativar", "ok": ok, "msg": msg, "acao": acao})
 
@@ -327,10 +329,8 @@ class App(tk.Tk):
                             ("30 seg", "30s"), ("1 min", "1min")]:
             tk.Radiobutton(
                 pf, text=label, variable=self._periodo_var, value=val,
-                bg=BG_PANEL, fg=TX_SECONDARY, selectcolor=BG_CARD,
-                activebackground=BG_PANEL, activeforeground=TX_PRIMARY,
-                font=("Courier New", 9), indicatoron=0, relief="flat",
-                padx=8, pady=4, cursor="hand2", command=self._redesenhar
+                command=self._redesenhar,
+                **_RB_KWARGS
             ).pack(fill="x", pady=1)
 
         self._divider(left)
@@ -347,8 +347,6 @@ class App(tk.Tk):
             font=("Courier New", 9, "bold"), bg=COR_DANGER, fg="#ffffff",
             relief="flat", padx=10, pady=8, cursor="hand2",
             activebackground="#c0414b", activeforeground="#ffffff",
-            # Bug 6 corrigido: usa _ativar_manual (thread-safe) em vez de
-            # ativar_manual que chamava messagebox de dentro de thread daemon
             command=lambda: threading.Thread(
                 target=self._ativar_manual, args=("alarme",), daemon=True).start()
         ).pack(fill="x", pady=(0, 6))
@@ -434,22 +432,21 @@ class App(tk.Tk):
         for txt, val in [("Temperatura", "temperatura"), ("Umidade", "umidade")]:
             tk.Radiobutton(
                 toolbar, text=txt, variable=self._hist_tipo_var, value=val,
-                bg=BG_PANEL, fg=TX_SECONDARY, selectcolor=BG_CARD,
-                activebackground=BG_PANEL, activeforeground=TX_PRIMARY,
-                font=("Courier New", 9), indicatoron=0, relief="flat",
-                padx=10, pady=4, cursor="hand2", command=self._atualizar_historico
+                command=self._atualizar_historico,
+                **_RB_KWARGS
             ).pack(side="left", padx=2, pady=8)
 
         tk.Label(toolbar, text="PERÍODO:", font=("Courier New", 8),
                  bg=BG_PANEL, fg=TX_SECONDARY).pack(side="left", padx=(20, 4))
-        self._hist_periodo_var = tk.StringVar(value="1h")
-        for txt, val in [("15min", "15min"), ("1h", "1h"), ("6h", "6h"), ("Tudo", "tudo")]:
+
+        # Períodos reduzidos: 1min, 3min, 5min, 10min, tudo
+        self._hist_periodo_var = tk.StringVar(value="3min")
+        for txt, val in [("1 min", "1min"), ("3 min", "3min"),
+                          ("5 min", "5min"), ("10 min", "10min"), ("Tudo", "tudo")]:
             tk.Radiobutton(
                 toolbar, text=txt, variable=self._hist_periodo_var, value=val,
-                bg=BG_PANEL, fg=TX_SECONDARY, selectcolor=BG_CARD,
-                activebackground=BG_PANEL, activeforeground=TX_PRIMARY,
-                font=("Courier New", 9), indicatoron=0, relief="flat",
-                padx=10, pady=4, cursor="hand2", command=self._atualizar_historico
+                command=self._atualizar_historico,
+                **_RB_KWARGS
             ).pack(side="left", padx=2, pady=8)
 
         tk.Button(toolbar, text="↺ ATUALIZAR", font=("Courier New", 8, "bold"),
@@ -477,12 +474,11 @@ class App(tk.Tk):
         dados   = get_historico_completo()
 
         if periodo != "tudo":
-            minutos = {"15min": 15, "1h": 60, "6h": 360}.get(periodo, 60)
+            minutos = {"1min": 1, "3min": 3, "5min": 5, "10min": 10}.get(periodo, 3)
             corte   = datetime.now() - timedelta(minutes=minutos)
             filtrados = []
             for e in dados:
                 try:
-                    # Bug 2 corrigido: histórico usa "horario", não "timestamp"
                     ts_campo = e.get("horario", e.get("timestamp", ""))
                     if _parse_ts(ts_campo) >= corte:
                         filtrados.append(e)
@@ -494,7 +490,6 @@ class App(tk.Tk):
         for e in dados:
             if e.get("tipo") == tipo:
                 try:
-                    # Bug 2 corrigido: mesma correção de campo
                     ts_campo = e.get("horario", e.get("timestamp", ""))
                     ts  = _parse_ts(ts_campo)
                     val = float(e["valor"])
@@ -530,7 +525,7 @@ class App(tk.Tk):
                               transform=self.ax_hist.transAxes,
                               ha="center", va="center", color=TX_MUTED, fontsize=11)
             self.fig_hist.tight_layout(pad=1.2)
-            self.canvas_hist.draw()
+            self.canvas_hist.draw_idle()
             return
 
         all_vals = []
@@ -568,10 +563,10 @@ class App(tk.Tk):
                 tk.Label(info, text=val, font=("Courier New", 8, "bold"),
                          bg=BG_CARD, fg=cor_val).grid(row=2, column=col, padx=5)
 
-        if periodo in ("15min", "1h"):
+        if periodo in ("1min", "3min", "5min"):
             self.ax_hist.xaxis.set_major_formatter(mdates.DateFormatter("%H:%M:%S"))
         else:
-            self.ax_hist.xaxis.set_major_formatter(mdates.DateFormatter("%d/%m %H:%M"))
+            self.ax_hist.xaxis.set_major_formatter(mdates.DateFormatter("%H:%M"))
         self.ax_hist.xaxis.set_major_locator(mdates.AutoDateLocator())
         plt.setp(self.ax_hist.get_xticklabels(),
                  rotation=0, ha="center", fontsize=7.5, color=TX_SECONDARY)
@@ -586,7 +581,7 @@ class App(tk.Tk):
             handlelength=1.2, handletextpad=0.5, borderpad=0.5, columnspacing=0.8
         )
         self.fig_hist.tight_layout(pad=1.2)
-        self.canvas_hist.draw()
+        self.canvas_hist.draw_idle()
 
     # ═════════════════════════════════════════════════════════════════════════
     # ABA 3 — ACIONAMENTOS
@@ -607,10 +602,8 @@ class App(tk.Tk):
         for txt, val in [("Todos", "TODOS"), ("Alarme", "ALARME"), ("Resfr.", "RESFRIAMENTO")]:
             tk.Radiobutton(
                 toolbar, text=txt, variable=self._atu_filtro_var, value=val,
-                bg=BG_PANEL, fg=TX_SECONDARY, selectcolor=BG_CARD,
-                activebackground=BG_PANEL, activeforeground=TX_PRIMARY,
-                font=("Courier New", 9), indicatoron=0, relief="flat",
-                padx=10, pady=4, cursor="hand2", command=self._atualizar_aba_atuadores
+                command=self._atualizar_aba_atuadores,
+                **_RB_KWARGS
             ).pack(side="left", padx=2, pady=8)
 
         body = tk.Frame(parent, bg=BG_ROOT)
@@ -686,7 +679,7 @@ class App(tk.Tk):
                                   ha="center", va="center", color=TX_MUTED, fontsize=10)
 
         self.fig_atu_line.tight_layout(pad=1.0)
-        self.canvas_atu_line.draw()
+        self.canvas_atu_line.draw_idle()
 
         self.listbox_atu.delete(0, tk.END)
         for a in reversed(atuadores[-200:]):
@@ -766,7 +759,7 @@ class App(tk.Tk):
             w["valor"].config(text=f"{valor}{unidade}", fg=cor)
 
     # ═════════════════════════════════════════════════════════════════════════
-    # ATUADORES — coluna direita (tempo real)
+    # ATUADORES — coluna direita
     # ═════════════════════════════════════════════════════════════════════════
     def _atualizar_atuadores(self, atuadores):
         if not isinstance(atuadores, list):
@@ -780,9 +773,9 @@ class App(tk.Tk):
             ult = atuadores[-1]
             if isinstance(ult, dict):
                 acao = ult.get("acao", "?")
-                nome = ult.get("nome_sensor", "?").replace("sensor_", "")
+                nome = ult.get("nome_sensor", "?").replace("sensor_", "")[:16]
                 ts   = ult.get("timestamp", ult.get("horario", ""))
-                self.lbl_ultimo.config(text=f"{acao}\n{nome}\n{ts}",
+                self.lbl_ultimo.config(text=f"{acao}\n{nome}\n{ts[-19:]}",
                                        fg=COR_DANGER if acao == "ALARME" else COR_COLD)
 
         contagem = defaultdict(lambda: {"ALARME": 0, "RESFRIAMENTO": 0})
@@ -825,7 +818,7 @@ class App(tk.Tk):
             self.ax_atu.text(0.5, 0.5, "sem acionamentos", transform=self.ax_atu.transAxes,
                              ha="center", color=TX_MUTED, fontsize=8)
         self.fig2.tight_layout(pad=0.8)
-        self.canvas2.draw()
+        self.canvas2.draw_idle()
 
     # ═════════════════════════════════════════════════════════════════════════
     # FILTRAGEM / PLOTAGEM
@@ -910,9 +903,10 @@ class App(tk.Tk):
                             markersize=5, zorder=5, markeredgewidth=0, alpha=0.8)
 
             if pontos:
+                offset_y = (i % 4) * 8 - 12
                 ax.annotate(f"{valores[-1]:.1f}{unidade}",
                             xy=(dts[-1], valores[-1]),
-                            xytext=(5, 0), textcoords="offset points",
+                            xytext=(5, offset_y), textcoords="offset points",
                             color=cor, fontsize=7, va="center",
                             fontweight="bold", alpha=0.95, zorder=6)
 
@@ -931,7 +925,7 @@ class App(tk.Tk):
         self._plotar_eixo(self.ax_temp, temp, "temperatura")
         self._plotar_eixo(self.ax_umid, umid, "umidade")
         self.fig.tight_layout(pad=1.2)
-        self.canvas.draw()
+        self.canvas.draw_idle()
 
     # ═════════════════════════════════════════════════════════════════════════
     # LOOP PRINCIPAL
@@ -949,7 +943,6 @@ class App(tk.Tk):
             estado    = get_estado()
             historico = get_historico(segundos)
 
-            # Busca atuadores a cada 4 polls e atualiza o cache
             if self._contador_poll % 4 == 0:
                 novos = get_atuadores()
                 if novos:
@@ -959,8 +952,6 @@ class App(tk.Tk):
             self._ui_queue.put({
                 "tipo":      "dados",
                 "estado":    estado,
-                # Bug 5 corrigido: sempre envia o cache (nunca lista vazia
-                # apenas porque não era o poll de busca de atuadores)
                 "atuadores": self._cache_atuadores,
                 "n_reg":     len(historico),
                 "tem_dado":  len(historico) > 0,
@@ -975,8 +966,6 @@ class App(tk.Tk):
             except queue.Empty:
                 break
 
-            # Bug 6 corrigido: mensagens de ativar_manual chegam aqui e são
-            # exibidas na thread principal — sem risco de crash do Tkinter
             if item.get("tipo") == "msg_ativar":
                 if item["ok"]:
                     messagebox.showinfo("Atuador", item["msg"])
@@ -984,7 +973,6 @@ class App(tk.Tk):
                     messagebox.showerror("Erro", f"Falha ao contatar servidor:\n{item['msg']}")
                 continue
 
-            # Mensagem de dados normal
             self._registrar_sensores(item["estado"])
             self._atualizar_status(item["estado"])
 
@@ -993,7 +981,6 @@ class App(tk.Tk):
                 self._redesenhar()
                 self._ultimo_draw = agora
 
-            # Sempre atualiza painel de atuadores (cache nunca é vazio após 1° fetch)
             self._atualizar_atuadores(item["atuadores"])
 
             self.status_bar.config(text=(
@@ -1011,9 +998,9 @@ class App(tk.Tk):
     def _on_tab_change(self, event):
         tab = self.notebook.index(self.notebook.select())
         if tab == 1:
-            threading.Thread(target=self._atualizar_historico, daemon=True).start()
+            self.after(0, self._atualizar_historico)
         elif tab == 2:
-            threading.Thread(target=self._atualizar_aba_atuadores, daemon=True).start()
+            self.after(0, self._atualizar_aba_atuadores)
 
 
 if __name__ == "__main__":

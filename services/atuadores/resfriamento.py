@@ -6,7 +6,6 @@ from datetime import datetime, timezone, timedelta
 TCP_IP         = "0.0.0.0"
 TCP_PORT       = 6001
 
-# Bug 6 corrigido: era "data/", mantido correto
 ATUADORES_FILE = "data/atuadores.json"
 FUSO_BRASIL    = timezone(timedelta(hours=-3))
 
@@ -64,14 +63,6 @@ def executar_resfriamento(cmd):
     print("\a\a")
 
     notificar_sensores()
-
-    salvar_atuacao({
-        "nome_sensor": nome_sensor,
-        "sensor":      sensor,
-        "valor":       valor,
-        "acao":        "RESFRIAMENTO",
-        "timestamp":   timestamp_br(),
-    })
 
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

@@ -71,17 +71,7 @@ def executar_alarme(cmd: dict) -> str:
     print(f"   Horário : {timestamp_br()}")
     print(f"   Cooldown: próximo alarme deste sensor em {COOLDOWN_SEGUNDOS}s")
     print(f"{'='*42}\n")
-    print("\a")
-
-    # Bug 4 corrigido: campo "timestamp" — consistente com o servidor
-    salvar_atuacao({
-        "nome_sensor": nome_sensor,
-        "sensor":      sensor,
-        "valor":       valor,
-        "acao":        "ALARME",
-        "timestamp":   timestamp_br(),
-    })
-    return "ok"
+    print("\a")  # Alerta sonoro (pode não funcionar em alguns ambientes, mas é um toque simples)
 
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

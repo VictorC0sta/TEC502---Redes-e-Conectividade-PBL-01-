@@ -283,10 +283,10 @@ class Handler(BaseHTTPRequestHandler):
                 # atuadores.json e registra no histórico como evento manual.
                 threading.Thread(
                     target=enviar_alarme,
-                    args=("manual", 0, "acionamento_manual"),
+                    args=("manual", 0, "A.M"),
                     daemon=True
                 ).start()
-                salvar_historico("acionamento_manual", "alarme_manual", 0)
+                salvar_historico("A.M", "alarme_manual", 0)
                 self.responder({"acao": "ALARME", "status": "ok"})
 
             elif self.path == "/ativar/resfriamento":
@@ -295,10 +295,10 @@ class Handler(BaseHTTPRequestHandler):
                 # (Event resfriando fica ativo por TEMPO_RESFRIAMENTO segundos).
                 threading.Thread(
                     target=enviar_resfriamento,
-                    args=("manual", 0, "acionamento_manual"),
+                    args=("manual", 0, "A.M"),
                     daemon=True
                 ).start()
-                salvar_historico("acionamento_manual", "resfriamento_manual", 0)
+                salvar_historico("A.M", "resfriamento_manual", 0)
                 self.responder({"acao": "RESFRIAMENTO", "status": "ok"})
 
             else:
@@ -309,6 +309,11 @@ class Handler(BaseHTTPRequestHandler):
 
 
 if __name__ == "__main__":
+    # Limpa histórico e atuadores ao iniciar — evita persistência entre sessões Docker
+    for path in (HISTORICO_FILE, ATUADORES_FILE):
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump([], f)
+
     threading.Thread(target=escutar_sensores,  daemon=True).start()
     threading.Thread(target=worker_historico,  daemon=True).start()
     threading.Thread(target=worker_atuadores,  daemon=True).start()

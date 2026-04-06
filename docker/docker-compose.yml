@@ -10,7 +10,7 @@ services:
     ports:
       - "5000:5000"
     volumes:
-      - ../data:/app/dados
+      - ../data:/app/data
     networks:
       - rede
 
@@ -30,21 +30,18 @@ services:
     container_name: alarme
     command: python -u alarme.py
     volumes:
-      - ../data:/app/dados
+      - ../data:/app/data
     environment:
       - ALARME_COOLDOWN=30
     networks:
       - rede
-      volumes:
-        atuadores_data:
-          driver: local
 
   resfriamento:
     build: ../services/atuadores
     container_name: resfriamento
     command: python -u resfriamento.py
     volumes:
-      - ../data:/app/dados
+      - ../data:/app/data
     environment:
       - SENSORES_TEMP=sensor_temp_1,sensor_temp_2,sensor_temp_3
       - TCP_SENSOR_PORT=7000
@@ -102,6 +99,7 @@ services:
       - SERVER_IP=gateway
       - UDP_PORT=5001
       - COOLDOWN_SEGUNDOS=30
+      - INTERVALO_ENVIO=0.1
     depends_on:
       - gateway
     networks:
@@ -116,6 +114,7 @@ services:
       - SERVER_IP=gateway
       - UDP_PORT=5001
       - COOLDOWN_SEGUNDOS=30
+      - INTERVALO_ENVIO=0.1
     depends_on:
       - gateway
     networks:
