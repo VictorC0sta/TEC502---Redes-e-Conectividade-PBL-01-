@@ -35,6 +35,9 @@ services:
       - ALARME_COOLDOWN=30
     networks:
       - rede
+      volumes:
+        atuadores_data:
+          driver: local
 
   resfriamento:
     build: ../services/atuadores
