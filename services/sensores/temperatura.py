@@ -53,22 +53,16 @@ def enviar_temperatura():
     print(f"[{SENSOR_ID}] Enviando UDP para {SERVER_IP}:{UDP_PORT}")
 
     valor = round(random.uniform(22.0, 26.0), 2)
-
-    # Bug 1 corrigido: drift cíclico em vez de random walk simétrico.
-    # Fase "subindo": delta médio positivo → valor sobe ~0.18°C/passo.
-    # Fase "descendo": delta médio negativo → valor cai de volta.
-    # Cada fase dura 120–250 passos (12s–25s a 0.1s/passo), garantindo
-    # que o sensor cruze os limites de forma natural e previsível.
     fase             = "subindo"
     passos_restantes = random.randint(120, 250)
 
     try:
         while True:
             if resfriando.is_set():
-                # Resfriamento ativo: puxa valor para ~21°C rapidamente
-                alvo  = 21.0
-                delta = random.uniform(-0.10, 0.05) + (alvo - valor) * 0.12
-                valor = round(max(18.0, min(25.0, valor + delta)), 2)
+
+                alvo  = 26.0
+                delta = random.uniform(-0.15, 0.02) + (alvo - valor) * 0.02
+                valor = round(max(20.0, min(38.0, valor + delta)), 2)
                 print(f"[{SENSOR_ID}] 🌀 [RESFRIANDO] {valor}°C")
 
             else:

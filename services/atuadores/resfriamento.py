@@ -65,7 +65,6 @@ def executar_resfriamento(cmd):
 
     notificar_sensores()
 
-    # Bug 4 corrigido: campo "timestamp" — consistente com o servidor
     salvar_atuacao({
         "nome_sensor": nome_sensor,
         "sensor":      sensor,

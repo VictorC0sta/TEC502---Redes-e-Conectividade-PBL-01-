@@ -24,7 +24,8 @@ LIMITES = {
     "temperatura": {"max": 33, "min": 20},
     "umidade":     {"max": 85, "min": 45}
 }
-
+estado_resfriamento: dict[str, bool] = {} 
+estado_limite: dict[str, bool] = {} 
 estado = {}
 lock   = threading.Lock()
 
@@ -162,16 +163,23 @@ def verificar_risco(sensor, valor, nome_sensor):
     if not limites:
         return
 
-    if valor > limites["max"]:
-        print(f"[SERVER] {sensor} alta ({nome_sensor}): {valor}")
-        enviar_alarme(sensor, valor, nome_sensor)
+    chave = f"{nome_sensor}_{sensor}"
 
-        if valor > limites["max"] + 2:
-            enviar_resfriamento(sensor, valor, nome_sensor)
-
-    elif valor < limites["min"]:
-        print(f"[SERVER] {sensor} baixa ({nome_sensor}): {valor}")
+    # borda de alarme: cruza max ou min
+    fora_agora = valor > limites["max"] or valor < limites["min"]
+    estava_fora = estado_limite.get(chave, False)
+    if fora_agora and not estava_fora:
         enviar_alarme(sensor, valor, nome_sensor)
+    if not fora_agora and estava_fora:
+        pass  # voltou ao normal, pode logar aqui
+    estado_limite[chave] = fora_agora
+
+    # borda de resfriamento: cruza max+2 (independente)
+    precisa_resf = valor > limites["max"] + 2
+    estava_resfriando = estado_resfriamento.get(chave, False)
+    if precisa_resf and not estava_resfriando:
+        enviar_resfriamento(sensor, valor, nome_sensor)
+    estado_resfriamento[chave] = precisa_resf
 
 
 def escutar_sensores():
