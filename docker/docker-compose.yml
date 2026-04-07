@@ -98,7 +98,6 @@ services:
       - SENSOR_ID=sensor_umidade_1
       - SERVER_IP=gateway
       - UDP_PORT=5001
-      - COOLDOWN_SEGUNDOS=30
       - INTERVALO_ENVIO=0.1
     depends_on:
       - gateway
@@ -113,7 +112,6 @@ services:
       - SENSOR_ID=sensor_umidade_2
       - SERVER_IP=gateway
       - UDP_PORT=5001
-      - COOLDOWN_SEGUNDOS=30
       - INTERVALO_ENVIO=0.1
     depends_on:
       - gateway
