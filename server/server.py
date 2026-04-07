@@ -1,3 +1,13 @@
+# =============================================================================
+# SERVER.PY — Servidor Central de Monitoramento de Sensores IoT
+# =============================================================================
+# Responsabilidades:
+#   - Recebe dados de sensores via UDP (porta 5001) e HTTP POST (/sensor)
+#   - Verifica limites de temperatura e umidade; aciona alarme e resfriamento
+#   - Persiste histórico e ações dos atuadores em arquivos JSON (pasta data/)
+#   - Expõe API REST para consulta de estado, histórico e atuadores
+# =============================================================================
+
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import json
 import socket
@@ -7,40 +17,93 @@ from datetime import datetime, timezone, timedelta
 from urllib.parse import urlparse
 import queue
 
-# Bug 6 corrigido: era "dados/", agora "data/" — consistente com o projeto
+# Garante que o diretório de dados existe antes de qualquer leitura/escrita
 os.makedirs("data", exist_ok=True)
 
-ATUADORES_FILE = "data/atuadores.json"
-HISTORICO_FILE = "data/historico.json"
+# ── Arquivos de persistência ──────────────────────────────────────────────────
+ATUADORES_FILE = "data/atuadores.json"   # Registro de todas as ações dos atuadores
+HISTORICO_FILE = "data/historico.json"   # Histórico de leituras dos sensores
 
+# Fuso horário UTC-3 (Brasília)
 FUSO_BRASIL = timezone(timedelta(hours=-3))
 
-ALARME_IP         = "alarme"
+# ── Endereços dos serviços externos (resolvidos via DNS no Docker) ────────────
+ALARME_IP         = "alarme"        # Hostname do container do serviço de alarme
 ALARME_PORT       = 6000
-RESFRIAMENTO_IP   = "resfriamento"
+RESFRIAMENTO_IP   = "resfriamento"  # Hostname do container do serviço de resfriamento
 RESFRIAMENTO_PORT = 6001
 
+# ── Limites aceitáveis para cada grandeza monitorada ─────────────────────────
+# Valores fora dessa faixa acionam o alarme.
+# Valores acima de max+2 acionam também o resfriamento.
 LIMITES = {
-    "temperatura": {"max": 33, "min": 20},
-    "umidade":     {"max": 85, "min": 45}
+    "temperatura": {"max": 33, "min": 20},  # graus Celsius
+    "umidade":     {"max": 85, "min": 45}   # percentual
 }
-estado_resfriamento: dict[str, bool] = {} 
-estado_limite: dict[str, bool] = {} 
+
+# ── Estado global em memória ──────────────────────────────────────────────────
+# Guarda o último valor recebido de cada sensor, indexado por sensor_id.
 estado = {}
-lock   = threading.Lock()
 
-# Fila única para histórico E atuadores — sem race condition (Bug 5)
-fila_disco         = queue.Queue()
-fila_atuadores     = queue.Queue()
+# Rastreamento de borda para alarme: evita disparar repetidamente enquanto
+# o sensor permanece fora dos limites (só aciona na transição False→True).
+estado_limite: dict[str, bool] = {}
 
+# Rastreamento de borda para resfriamento (mesmo princípio, threshold diferente).
+estado_resfriamento: dict[str, bool] = {}
+
+# Lock para proteger leituras/escritas no dicionário `estado` e nos arquivos JSON
+lock = threading.Lock()
+
+# ── Filas de escrita assíncrona (Bug 5 corrigido) ─────────────────────────────
+# Em vez de escrever no disco a cada leitura,
+# enfileiramos as entradas e deixamos threads dedicadas fazerem a escrita em lote
+fila_disco     = queue.Queue()   # Entradas para historico.json
+fila_atuadores = queue.Queue()   # Entradas para atuadores.json
+
+
+# =============================================================================
+# FUNÇÕES UTILITÁRIAS
+# =============================================================================
 
 def timestamp_br():
+    # Retorna o instante atual formatado no fuso horário de Brasília
     return datetime.now(FUSO_BRASIL).strftime("%Y-%m-%d %H:%M:%S.%f")
 
 
-# Bug 4 corrigido: usa "timestamp" (igual aos serviços de alarme/resfriamento)
-# Bug 5 corrigido: enfileira em vez de escrever direto no disco
+def carregar_json(path):
+    
+    # Lê um arquivo JSON e retorna seu conteúdo como lista.
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            dados = json.load(f)
+            return dados if isinstance(dados, list) else []
+    except (FileNotFoundError, json.JSONDecodeError):
+        return []
+
+
+# =============================================================================
+# ENFILEIRAMENTO PARA DISCO
+# =============================================================================
+
+def salvar_historico(sensor_id, tipo, valor):
+    
+    # Enfileira uma leitura de sensor para ser persistida em historico.json.
+    # A escrita é feita pelo worker_historico.
+    
+    fila_disco.put({
+        "id":      sensor_id,
+        "tipo":    tipo,
+        "valor":   valor,
+        "horario": timestamp_br()
+    })
+
+
 def salvar_atuador(sensor, valor, acao, nome_sensor):
+    
+    # Enfileira um evento de atuação (alarme ou resfriamento) para ser
+    # persistido em atuadores.json.
+
     fila_atuadores.put({
         "nome_sensor": nome_sensor,
         "sensor":      sensor,
@@ -50,25 +113,13 @@ def salvar_atuador(sensor, valor, acao, nome_sensor):
     })
 
 
-def carregar_json(path):
-    try:
-        with open(path, "r", encoding="utf-8") as f:
-            dados = json.load(f)
-            return dados if isinstance(dados, list) else []
-    except (FileNotFoundError, json.JSONDecodeError):
-        return []
-
-
-def salvar_historico(sensor_id, tipo, valor):
-    fila_disco.put({
-        "id":      sensor_id,
-        "tipo":    tipo,
-        "valor":   valor,
-        "horario": timestamp_br()
-    })
-
+# =============================================================================
+# WORKERS DE ESCRITA EM DISCO (threads dedicadas)
+# =============================================================================
 
 def worker_historico():
+    
+    # Consome a fila_disco em lotes de até 20 entradas e as grava em historico.json
     BATCH = 20
     while True:
         entradas = []
@@ -77,14 +128,15 @@ def worker_historico():
             while len(entradas) < BATCH:
                 entradas.append(fila_disco.get_nowait())
         except queue.Empty:
-            pass
+            pass  
 
         if not entradas:
-            continue
+            continue  
 
         with lock:
             historico = carregar_json(HISTORICO_FILE)
             historico.extend(entradas)
+            # Janela deslizante: descarta registros mais antigos se ultrapassar 10k
             if len(historico) > 10000:
                 historico = historico[-10000:]
             with open(HISTORICO_FILE, "w", encoding="utf-8") as f:
@@ -92,6 +144,8 @@ def worker_historico():
 
 
 def worker_atuadores():
+    
+    #Consome a fila_atuadores em lotes de até 20 entradas e as grava em atuadores.json
     BATCH = 20
     while True:
         entradas = []
@@ -114,7 +168,15 @@ def worker_atuadores():
                 json.dump(atuadores, f, indent=2)
 
 
+# =============================================================================
+# COMUNICAÇÃO COM SERVIÇOS EXTERNOS (TCP)
+# =============================================================================
+
 def enviar_alarme(sensor, valor, nome_sensor):
+    
+    # Envia um comando de ALARME ao serviço externo via TCP.
+    # Após o envio (ou falha), registra a ação em atuadores.json
+    
     try:
         comando = json.dumps({
             "sensor":      sensor,
@@ -132,10 +194,15 @@ def enviar_alarme(sensor, valor, nome_sensor):
     except ConnectionRefusedError:
         print("[ERRO] Servico de alarme nao esta rodando!")
 
+    # Registra independentemente de sucesso ou falha na conexão TCP
     salvar_atuador(sensor, valor, "ALARME", nome_sensor)
 
 
 def enviar_resfriamento(sensor, valor, nome_sensor):
+    
+    # Envia um comando de RESFRIAMENTO ao serviço externo via TCP.
+    # Após o envio (ou falha), registra a ação em atuadores.json.
+    
     try:
         comando = json.dumps({
             "sensor":      sensor,
@@ -156,39 +223,65 @@ def enviar_resfriamento(sensor, valor, nome_sensor):
     salvar_atuador(sensor, valor, "RESFRIAMENTO", nome_sensor)
 
 
-# Bug 3 corrigido: threshold de resfriamento era max*1.1 (36.3°C),
-# agora é max+2 (35°C) — janela muito mais atingível pelo sensor
+# =============================================================================
+# LÓGICA DE DETECÇÃO DE RISCO E ACIONAMENTO DE ATUADORES
+# =============================================================================
+
 def verificar_risco(sensor, valor, nome_sensor):
+    
+    # Avalia se o valor recebido de um sensor configura risco, usando
+    # detecção de borda para evitar acionamentos repetidos.
+
+    # Dois thresholds independentes:
+    # 1. ALARME      → acionado quando valor cruza max ou min (transição False→True)
+    # 2. RESFRIAMENTO → acionado quando valor cruza max+2 (transição False→True)
+
+    # Args:
+    #    sensor     : grandeza medida, ex: "temperatura" ou "umidade"
+    #    valor      : valor numérico lido pelo sensor ou seja seu ID
+    #    nome_sensor: identificador do sensor (ex: "sensor_01")
+
     limites = LIMITES.get(sensor)
     if not limites:
-        return
+        return  
 
     chave = f"{nome_sensor}_{sensor}"
 
-    # borda de alarme: cruza max ou min
-    fora_agora = valor > limites["max"] or valor < limites["min"]
+    # ── Alarme: fora da faixa [min, max] ──────────────────────────────────────
+    fora_agora  = valor > limites["max"] or valor < limites["min"]
     estava_fora = estado_limite.get(chave, False)
+
     if fora_agora and not estava_fora:
+        # Borda de subida: acabou de sair da faixa segura → aciona alarme
         enviar_alarme(sensor, valor, nome_sensor)
-    if not fora_agora and estava_fora:
-        pass  # voltou ao normal, pode logar aqui
+    # Borda de descida (voltou ao normal): apenas atualiza o estado;
+    # poderia logar aqui se necessário.
     estado_limite[chave] = fora_agora
 
-    # borda de resfriamento: cruza max+2 (independente)
-    precisa_resf = valor > limites["max"] + 2
-    estava_resfriando = estado_resfriamento.get(chave, False)
-    if precisa_resf and not estava_resfriando:
+    # ── Resfriamento: acima de max+2 ──────────────────────────────────────────
+    precisa_resf    = valor > limites["max"] + 2
+    estava_resfr    = estado_resfriamento.get(chave, False)
+
+    if precisa_resf and not estava_resfr:
+        # Borda de subida: temperatura excedeu o threshold de resfriamento
         enviar_resfriamento(sensor, valor, nome_sensor)
     estado_resfriamento[chave] = precisa_resf
 
 
+# =============================================================================
+# RECEPTOR UDP — escuta leituras dos sensores
+# =============================================================================
+
 def escutar_sensores():
+    
+    # Abre um socket UDP na porta 5001 e aguarda datagramas dos sensores.
+
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     sock.bind(("0.0.0.0", 5001))
     print("[SERVER] Escutando sensores UDP na porta 5001...")
 
     while True:
-        data, _ = sock.recvfrom(1024)
+        data, _ = sock.recvfrom(1024)  # Bloqueia até receber um datagrama
 
         try:
             dados     = json.loads(data.decode("utf-8"))
@@ -204,6 +297,7 @@ def escutar_sensores():
                 verificar_risco("temperatura", valor, sensor_id)
 
             elif tipo == "umidade":
+                # Nota: sensores de umidade usam a chave "umidade" (não "valor")
                 valor = dados["umidade"]
                 print(f"[SERVER] {sensor_id}: {valor}%")
                 with lock:
@@ -215,7 +309,16 @@ def escutar_sensores():
             print(f"[SERVER] Erro UDP: {e}")
 
 
+# =============================================================================
+# PROCESSADOR COMPARTILHADO
+# =============================================================================
+
 def processar_sensor(dados, responder_fn):
+
+    # Processa uma leitura de sensor recebida via HTTP POST /sensor.
+    # Essa função é chamada pelo Handler HTTP e compartilha a mesma lógica de processamento dos dados recebidos via UDP.
+
+    
     sensor_id = dados.get("id", "desconhecido")
     tipo      = dados.get("tipo")
 
@@ -228,6 +331,7 @@ def processar_sensor(dados, responder_fn):
         responder_fn({"status": "ok"})
 
     elif tipo == "umidade":
+        # Aceita tanto "umidade" quanto "valor" como chave do campo
         valor = dados.get("umidade", dados.get("valor"))
         with lock:
             estado[sensor_id] = {"tipo": "umidade", "valor": valor}
@@ -239,12 +343,27 @@ def processar_sensor(dados, responder_fn):
         responder_fn({"erro": "invalido"}, 400)
 
 
+# =============================================================================
+# SERVIDOR HTTP — API REST
+# =============================================================================
+
 class Handler(BaseHTTPRequestHandler):
+    
+    # Handler HTTP com suporte a múltiplas threads simultâneas.
+    # Rotas disponíveis:
+    #  GET  /estado              → último valor de cada sensor (em memória)
+    #  GET  /historico           → todas as leituras persistidas
+    #  GET  /atuadores           → todas as ações de atuadores persistidas
+    #  POST /sensor              → ingesta manual de leitura de sensor
+    #  POST /ativar/alarme       → aciona o alarme manualmente
+    #  POST /ativar/resfriamento → aciona o resfriamento manualmente
+    
 
     def log_message(self, format, *args):
         pass
 
     def responder(self, dados, status=200):
+        # Serializa `dados` para JSON e envia a resposta HTTP.
         body = (json.dumps(dados) + "\n").encode("utf-8")
         self.send_response(status)
         self.send_header("Content-Type", "application/json")
@@ -252,21 +371,28 @@ class Handler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(body)
 
+    # ── Rotas GET ─────────────────────────────────────────────────────────────
+
     def do_GET(self):
         parsed = urlparse(self.path)
 
         if parsed.path == "/historico":
+            # Retorna o arquivo completo de histórico 
             self.responder(carregar_json(HISTORICO_FILE))
 
         elif parsed.path == "/estado":
+            # Retorna o último valor conhecido de cada sensor (estado em memória)
             with lock:
                 self.responder(estado)
 
         elif parsed.path == "/atuadores":
+            # Retorna o log de ações dos atuadores
             self.responder(carregar_json(ATUADORES_FILE))
 
         else:
             self.responder({"erro": "rota"}, 404)
+
+    # ── Rotas POST ────────────────────────────────────────────────────────────
 
     def do_POST(self):
         length = int(self.headers.get("Content-Length", 0))
@@ -279,20 +405,20 @@ class Handler(BaseHTTPRequestHandler):
                 processar_sensor(dados, self.responder)
 
             elif self.path == "/ativar/alarme":
-                # Acionamento manual: dispara o serviço de alarme, salva em
-                # atuadores.json e registra no histórico como evento manual.
+                # Acionamento manual do alarme (ex: botão no painel de controle).
+                # Dispara em thread separada para não bloquear a resposta HTTP.
                 threading.Thread(
                     target=enviar_alarme,
-                    args=("manual", 0, "A.M"),
+                    args=("manual", 0, "A.M"),  # "A.M" = Acionamento Manual
                     daemon=True
                 ).start()
                 salvar_historico("A.M", "alarme_manual", 0)
                 self.responder({"acao": "ALARME", "status": "ok"})
 
             elif self.path == "/ativar/resfriamento":
-                # Acionamento manual: dispara o serviço de resfriamento, que
-                # por sua vez notifica todos os sensores de temperatura via TCP
-                # (Event resfriando fica ativo por TEMPO_RESFRIAMENTO segundos).
+                # Acionamento manual do resfriamento.
+                # O serviço de resfriamento mantém o estado ativo por
+                # alguns segundos.
                 threading.Thread(
                     target=enviar_resfriamento,
                     args=("manual", 0, "A.M"),
@@ -305,19 +431,27 @@ class Handler(BaseHTTPRequestHandler):
                 self.responder({"erro": "rota"}, 404)
 
         except Exception:
+            # Captura qualquer falha de parsing JSON ou campo ausente
             self.responder({"erro": "json"}, 400)
 
 
+# =============================================================================
+# PONTO DE ENTRADA
+# =============================================================================
+
 if __name__ == "__main__":
-    # Limpa histórico e atuadores ao iniciar — evita persistência entre sessões Docker
+    # Zera os arquivos de persistência a cada inicialização do container,
+    # evitando que dados de sessões anteriores poluam os dashboards.
     for path in (HISTORICO_FILE, ATUADORES_FILE):
         with open(path, "w", encoding="utf-8") as f:
             json.dump([], f)
 
-    threading.Thread(target=escutar_sensores,  daemon=True).start()
-    threading.Thread(target=worker_historico,  daemon=True).start()
-    threading.Thread(target=worker_atuadores,  daemon=True).start()
+    # ── Threads daemon — encerram automaticamente quando o processo principal sai
+    threading.Thread(target=escutar_sensores, daemon=True).start()  # UDP 5001
+    threading.Thread(target=worker_historico, daemon=True).start()  # Escrita histórico
+    threading.Thread(target=worker_atuadores, daemon=True).start()  # Escrita atuadores
 
+    # ── Servidor HTTP multi-thread na porta 5000
     httpd = ThreadingHTTPServer(("0.0.0.0", 5000), Handler)
     print("[SERVER] Rodando em http://localhost:5000")
     httpd.serve_forever()
