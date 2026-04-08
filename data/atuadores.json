@@ -873,5 +873,33 @@
     "valor": 35.1,
     "acao": "RESFRIAMENTO",
     "timestamp": "2026-04-08 14:59:58.491375"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.15,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 15:00:39.011843"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.06,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 15:00:41.951160"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.02,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 15:00:42.679695"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 35.02,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 15:00:47.308316"
   }
 ]
