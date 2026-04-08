@@ -1,0 +1,43 @@
+version: "3.9"
+
+services:
+
+  alarme:
+    build: .
+    container_name: alarme
+    command: python -u alarme.py
+    ports:
+      - "6000:6000"
+
+  resfriamento:
+    build: .
+    container_name: resfriamento
+    command: python -u resfriamento.py
+    ports:
+      - "6001:6001"
+
+  sensor_temp_1:
+    build: .
+    command: python -u temperatura.py
+    environment:
+      - SENSOR_ID=sensor_temp_1
+      - SERVER_IP=${CORE_HOST_IP}
+      - UDP_PORT=5001
+      - TCP_PORT=7000
+
+  sensor_temp_2:
+    build: .
+    command: python -u temperatura.py
+    environment:
+      - SENSOR_ID=sensor_temp_2
+      - SERVER_IP=${CORE_HOST_IP}
+      - UDP_PORT=5001
+      - TCP_PORT=7000
+
+  sensor_umidade_1:
+    build: .
+    command: python -u umidade.py
+    environment:
+      - SENSOR_ID=sensor_umidade_1
+      - SERVER_IP=${CORE_HOST_IP}
+      - UDP_PORT=5001
