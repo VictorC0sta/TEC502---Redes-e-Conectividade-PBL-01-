@@ -1,0 +1,86 @@
+[
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.01,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 20:12:58.293492"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.04,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 20:13:02.202191"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 35.17,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 20:13:03.703194"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.02,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 20:13:07.011881"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.13,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 20:14:14.048005"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.01,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 20:14:18.555966"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.08,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 20:14:36.282531"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 35.1,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 20:14:41.691048"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.09,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 20:15:58.044560"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 35.11,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 20:16:03.145987"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.14,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 20:16:06.454103"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.09,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 20:16:11.563677"
+  }
+]

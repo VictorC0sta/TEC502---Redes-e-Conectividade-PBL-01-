@@ -1,0 +1,7800 @@
+[
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.59,
+    "horario": "2026-04-08 20:12:37.184695"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 23.02,
+    "horario": "2026-04-08 20:12:37.251615"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 23.48,
+    "horario": "2026-04-08 20:12:37.256184"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.55,
+    "horario": "2026-04-08 20:12:37.277257"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.53,
+    "horario": "2026-04-08 20:12:37.378270"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.5,
+    "horario": "2026-04-08 20:12:37.478895"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 22.98,
+    "horario": "2026-04-08 20:12:37.551705"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 23.64,
+    "horario": "2026-04-08 20:12:37.556235"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.44,
+    "horario": "2026-04-08 20:12:37.578433"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.38,
+    "horario": "2026-04-08 20:12:37.679868"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.31,
+    "horario": "2026-04-08 20:12:37.780523"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 22.93,
+    "horario": "2026-04-08 20:12:37.853184"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 23.79,
+    "horario": "2026-04-08 20:12:37.856136"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.26,
+    "horario": "2026-04-08 20:12:37.880227"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.21,
+    "horario": "2026-04-08 20:12:37.981025"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.14,
+    "horario": "2026-04-08 20:12:38.081791"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 23.07,
+    "horario": "2026-04-08 20:12:38.152855"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 23.87,
+    "horario": "2026-04-08 20:12:38.156796"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.05,
+    "horario": "2026-04-08 20:12:38.182068"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.97,
+    "horario": "2026-04-08 20:12:38.282960"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.89,
+    "horario": "2026-04-08 20:12:38.384085"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 23.15,
+    "horario": "2026-04-08 20:12:38.453120"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 23.93,
+    "horario": "2026-04-08 20:12:38.457071"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.81,
+    "horario": "2026-04-08 20:12:38.483682"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.74,
+    "horario": "2026-04-08 20:12:38.585519"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.67,
+    "horario": "2026-04-08 20:12:38.685234"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 23.31,
+    "horario": "2026-04-08 20:12:38.753840"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 23.99,
+    "horario": "2026-04-08 20:12:38.757119"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.62,
+    "horario": "2026-04-08 20:12:38.785096"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.54,
+    "horario": "2026-04-08 20:12:38.886839"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.49,
+    "horario": "2026-04-08 20:12:38.987513"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 23.42,
+    "horario": "2026-04-08 20:12:39.054581"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 24.15,
+    "horario": "2026-04-08 20:12:39.057234"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.43,
+    "horario": "2026-04-08 20:12:39.086370"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.37,
+    "horario": "2026-04-08 20:12:39.187667"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.3,
+    "horario": "2026-04-08 20:12:39.289207"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 23.62,
+    "horario": "2026-04-08 20:12:39.355618"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 24.29,
+    "horario": "2026-04-08 20:12:39.357362"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.24,
+    "horario": "2026-04-08 20:12:39.388484"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.15,
+    "horario": "2026-04-08 20:12:39.490103"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.08,
+    "horario": "2026-04-08 20:12:39.589972"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 23.72,
+    "horario": "2026-04-08 20:12:39.655325"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 24.5,
+    "horario": "2026-04-08 20:12:39.657599"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.01,
+    "horario": "2026-04-08 20:12:39.689986"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.96,
+    "horario": "2026-04-08 20:12:39.791050"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.88,
+    "horario": "2026-04-08 20:12:39.891852"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 23.82,
+    "horario": "2026-04-08 20:12:39.956271"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 24.64,
+    "horario": "2026-04-08 20:12:39.957820"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.81,
+    "horario": "2026-04-08 20:12:39.990874"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.74,
+    "horario": "2026-04-08 20:12:40.092719"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.7,
+    "horario": "2026-04-08 20:12:40.192485"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 24.02,
+    "horario": "2026-04-08 20:12:40.256774"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 24.85,
+    "horario": "2026-04-08 20:12:40.258348"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.64,
+    "horario": "2026-04-08 20:12:40.293175"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.56,
+    "horario": "2026-04-08 20:12:40.393487"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.48,
+    "horario": "2026-04-08 20:12:40.494215"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 24.07,
+    "horario": "2026-04-08 20:12:40.557985"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 24.89,
+    "horario": "2026-04-08 20:12:40.559072"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.42,
+    "horario": "2026-04-08 20:12:40.594528"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.36,
+    "horario": "2026-04-08 20:12:40.695878"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.29,
+    "horario": "2026-04-08 20:12:40.796656"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 24.16,
+    "horario": "2026-04-08 20:12:40.859037"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 25.01,
+    "horario": "2026-04-08 20:12:40.860360"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.23,
+    "horario": "2026-04-08 20:12:40.897515"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.16,
+    "horario": "2026-04-08 20:12:40.997615"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.11,
+    "horario": "2026-04-08 20:12:41.097569"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 24.22,
+    "horario": "2026-04-08 20:12:41.158796"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 25.12,
+    "horario": "2026-04-08 20:12:41.159889"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.03,
+    "horario": "2026-04-08 20:12:41.197985"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.96,
+    "horario": "2026-04-08 20:12:41.299955"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.88,
+    "horario": "2026-04-08 20:12:41.400548"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 24.32,
+    "horario": "2026-04-08 20:12:41.459202"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 25.34,
+    "horario": "2026-04-08 20:12:41.460472"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.79,
+    "horario": "2026-04-08 20:12:41.500093"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.71,
+    "horario": "2026-04-08 20:12:41.601424"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.65,
+    "horario": "2026-04-08 20:12:41.701824"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 25.39,
+    "horario": "2026-04-08 20:12:41.759957"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 24.48,
+    "horario": "2026-04-08 20:12:41.761344"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.57,
+    "horario": "2026-04-08 20:12:41.802286"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.5,
+    "horario": "2026-04-08 20:12:41.902921"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.42,
+    "horario": "2026-04-08 20:12:42.003579"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 24.49,
+    "horario": "2026-04-08 20:12:42.060473"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 25.49,
+    "horario": "2026-04-08 20:12:42.061637"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.35,
+    "horario": "2026-04-08 20:12:42.104262"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.28,
+    "horario": "2026-04-08 20:12:42.205291"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.21,
+    "horario": "2026-04-08 20:12:42.306605"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 25.66,
+    "horario": "2026-04-08 20:12:42.360764"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 24.68,
+    "horario": "2026-04-08 20:12:42.362058"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.12,
+    "horario": "2026-04-08 20:12:42.406785"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.03,
+    "horario": "2026-04-08 20:12:42.507029"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.94,
+    "horario": "2026-04-08 20:12:42.608561"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 25.75,
+    "horario": "2026-04-08 20:12:42.661455"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 24.79,
+    "horario": "2026-04-08 20:12:42.662650"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.87,
+    "horario": "2026-04-08 20:12:42.708254"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.81,
+    "horario": "2026-04-08 20:12:42.809930"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.74,
+    "horario": "2026-04-08 20:12:42.910636"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 25.85,
+    "horario": "2026-04-08 20:12:42.962010"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 24.86,
+    "horario": "2026-04-08 20:12:42.963139"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.67,
+    "horario": "2026-04-08 20:12:43.010509"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.59,
+    "horario": "2026-04-08 20:12:43.112153"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.52,
+    "horario": "2026-04-08 20:12:43.212681"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 24.98,
+    "horario": "2026-04-08 20:12:43.263360"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 26.01,
+    "horario": "2026-04-08 20:12:43.263690"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.46,
+    "horario": "2026-04-08 20:12:43.312993"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.38,
+    "horario": "2026-04-08 20:12:43.413715"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.32,
+    "horario": "2026-04-08 20:12:43.514891"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 26.17,
+    "horario": "2026-04-08 20:12:43.563032"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 25.22,
+    "horario": "2026-04-08 20:12:43.564373"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.25,
+    "horario": "2026-04-08 20:12:43.614867"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.18,
+    "horario": "2026-04-08 20:12:43.715848"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.12,
+    "horario": "2026-04-08 20:12:43.816414"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 26.31,
+    "horario": "2026-04-08 20:12:43.863701"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 25.24,
+    "horario": "2026-04-08 20:12:43.865154"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.07,
+    "horario": "2026-04-08 20:12:43.916832"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.01,
+    "horario": "2026-04-08 20:12:44.017025"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.94,
+    "horario": "2026-04-08 20:12:44.117650"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 25.35,
+    "horario": "2026-04-08 20:12:44.164424"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 26.53,
+    "horario": "2026-04-08 20:12:44.165802"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.86,
+    "horario": "2026-04-08 20:12:44.218856"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.8,
+    "horario": "2026-04-08 20:12:44.319357"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.74,
+    "horario": "2026-04-08 20:12:44.419803"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 26.62,
+    "horario": "2026-04-08 20:12:44.465192"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 25.47,
+    "horario": "2026-04-08 20:12:44.465787"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.68,
+    "horario": "2026-04-08 20:12:44.520241"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.61,
+    "horario": "2026-04-08 20:12:44.621175"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.55,
+    "horario": "2026-04-08 20:12:44.721992"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 26.77,
+    "horario": "2026-04-08 20:12:44.766463"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 25.55,
+    "horario": "2026-04-08 20:12:44.767872"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.48,
+    "horario": "2026-04-08 20:12:44.822770"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.41,
+    "horario": "2026-04-08 20:12:44.923456"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.32,
+    "horario": "2026-04-08 20:12:45.023935"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 26.91,
+    "horario": "2026-04-08 20:12:45.066367"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 25.74,
+    "horario": "2026-04-08 20:12:45.067794"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.24,
+    "horario": "2026-04-08 20:12:45.124026"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.15,
+    "horario": "2026-04-08 20:12:45.224953"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.07,
+    "horario": "2026-04-08 20:12:45.325674"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 25.87,
+    "horario": "2026-04-08 20:12:45.367155"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 27.03,
+    "horario": "2026-04-08 20:12:45.369012"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.01,
+    "horario": "2026-04-08 20:12:45.426866"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.93,
+    "horario": "2026-04-08 20:12:45.527675"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.87,
+    "horario": "2026-04-08 20:12:45.627410"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 27.16,
+    "horario": "2026-04-08 20:12:45.667272"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 25.94,
+    "horario": "2026-04-08 20:12:45.667627"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.81,
+    "horario": "2026-04-08 20:12:45.728613"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.75,
+    "horario": "2026-04-08 20:12:45.829111"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.69,
+    "horario": "2026-04-08 20:12:45.929795"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 26.09,
+    "horario": "2026-04-08 20:12:45.968399"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 27.32,
+    "horario": "2026-04-08 20:12:45.970100"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.64,
+    "horario": "2026-04-08 20:12:46.030018"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.58,
+    "horario": "2026-04-08 20:12:46.130543"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.51,
+    "horario": "2026-04-08 20:12:46.231095"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 26.3,
+    "horario": "2026-04-08 20:12:46.268875"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 27.49,
+    "horario": "2026-04-08 20:12:46.270430"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.44,
+    "horario": "2026-04-08 20:12:46.331694"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.4,
+    "horario": "2026-04-08 20:12:46.432507"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.33,
+    "horario": "2026-04-08 20:12:46.533516"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 26.46,
+    "horario": "2026-04-08 20:12:46.569545"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 27.58,
+    "horario": "2026-04-08 20:12:46.571021"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.27,
+    "horario": "2026-04-08 20:12:46.634134"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.21,
+    "horario": "2026-04-08 20:12:46.735367"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.13,
+    "horario": "2026-04-08 20:12:46.834833"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 27.72,
+    "horario": "2026-04-08 20:12:46.869637"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 26.68,
+    "horario": "2026-04-08 20:12:46.871163"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.06,
+    "horario": "2026-04-08 20:12:46.936234"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.01,
+    "horario": "2026-04-08 20:12:47.036614"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.96,
+    "horario": "2026-04-08 20:12:47.137310"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 27.88,
+    "horario": "2026-04-08 20:12:47.170293"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 26.79,
+    "horario": "2026-04-08 20:12:47.171775"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.9,
+    "horario": "2026-04-08 20:12:47.237266"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.84,
+    "horario": "2026-04-08 20:12:47.338589"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.77,
+    "horario": "2026-04-08 20:12:47.439397"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 26.99,
+    "horario": "2026-04-08 20:12:47.471076"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 28.05,
+    "horario": "2026-04-08 20:12:47.472785"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.7,
+    "horario": "2026-04-08 20:12:47.540042"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.63,
+    "horario": "2026-04-08 20:12:47.640088"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.56,
+    "horario": "2026-04-08 20:12:47.740945"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 27.08,
+    "horario": "2026-04-08 20:12:47.771720"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 28.1,
+    "horario": "2026-04-08 20:12:47.773322"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.49,
+    "horario": "2026-04-08 20:12:47.841244"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.41,
+    "horario": "2026-04-08 20:12:47.942893"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.33,
+    "horario": "2026-04-08 20:12:48.043530"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 27.29,
+    "horario": "2026-04-08 20:12:48.072237"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 28.22,
+    "horario": "2026-04-08 20:12:48.073999"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.25,
+    "horario": "2026-04-08 20:12:48.143464"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.18,
+    "horario": "2026-04-08 20:12:48.245143"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.11,
+    "horario": "2026-04-08 20:12:48.345652"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 27.48,
+    "horario": "2026-04-08 20:12:48.372782"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 28.36,
+    "horario": "2026-04-08 20:12:48.374334"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.05,
+    "horario": "2026-04-08 20:12:48.446426"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.98,
+    "horario": "2026-04-08 20:12:48.546685"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.91,
+    "horario": "2026-04-08 20:12:48.647178"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 28.48,
+    "horario": "2026-04-08 20:12:48.673613"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 27.64,
+    "horario": "2026-04-08 20:12:48.675415"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.84,
+    "horario": "2026-04-08 20:12:48.747159"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.78,
+    "horario": "2026-04-08 20:12:48.848541"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.73,
+    "horario": "2026-04-08 20:12:48.949394"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 27.8,
+    "horario": "2026-04-08 20:12:48.974287"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 28.63,
+    "horario": "2026-04-08 20:12:48.975991"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.67,
+    "horario": "2026-04-08 20:12:49.049924"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.6,
+    "horario": "2026-04-08 20:12:49.150622"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.52,
+    "horario": "2026-04-08 20:12:49.250719"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 27.94,
+    "horario": "2026-04-08 20:12:49.274640"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 28.76,
+    "horario": "2026-04-08 20:12:49.276458"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.44,
+    "horario": "2026-04-08 20:12:49.351782"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.38,
+    "horario": "2026-04-08 20:12:49.452467"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.31,
+    "horario": "2026-04-08 20:12:49.552711"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 28.06,
+    "horario": "2026-04-08 20:12:49.575543"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 28.91,
+    "horario": "2026-04-08 20:12:49.575852"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.23,
+    "horario": "2026-04-08 20:12:49.652564"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.16,
+    "horario": "2026-04-08 20:12:49.754263"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.1,
+    "horario": "2026-04-08 20:12:49.854594"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 29.1,
+    "horario": "2026-04-08 20:12:49.876110"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 28.15,
+    "horario": "2026-04-08 20:12:49.877697"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.05,
+    "horario": "2026-04-08 20:12:49.955439"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.0,
+    "horario": "2026-04-08 20:12:50.056044"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 51.95,
+    "horario": "2026-04-08 20:12:50.156793"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 28.25,
+    "horario": "2026-04-08 20:12:50.176247"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 29.17,
+    "horario": "2026-04-08 20:12:50.178098"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 51.9,
+    "horario": "2026-04-08 20:12:50.256941"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 51.87,
+    "horario": "2026-04-08 20:12:50.358139"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 51.87,
+    "horario": "2026-04-08 20:12:50.457740"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 29.35,
+    "horario": "2026-04-08 20:12:50.477152"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 28.37,
+    "horario": "2026-04-08 20:12:50.478957"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 51.88,
+    "horario": "2026-04-08 20:12:50.559084"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 51.91,
+    "horario": "2026-04-08 20:12:50.659011"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 51.94,
+    "horario": "2026-04-08 20:12:50.760384"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 28.49,
+    "horario": "2026-04-08 20:12:50.778019"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 29.44,
+    "horario": "2026-04-08 20:12:50.779851"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 51.99,
+    "horario": "2026-04-08 20:12:50.860422"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.05,
+    "horario": "2026-04-08 20:12:50.961511"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.12,
+    "horario": "2026-04-08 20:12:51.062399"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 29.6,
+    "horario": "2026-04-08 20:12:51.078243"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 28.54,
+    "horario": "2026-04-08 20:12:51.080018"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.18,
+    "horario": "2026-04-08 20:12:51.162285"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.26,
+    "horario": "2026-04-08 20:12:51.263458"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.31,
+    "horario": "2026-04-08 20:12:51.363477"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 29.73,
+    "horario": "2026-04-08 20:12:51.378852"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 28.68,
+    "horario": "2026-04-08 20:12:51.380667"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.36,
+    "horario": "2026-04-08 20:12:51.464771"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.41,
+    "horario": "2026-04-08 20:12:51.565249"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.46,
+    "horario": "2026-04-08 20:12:51.664911"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 29.97,
+    "horario": "2026-04-08 20:12:51.679462"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 28.78,
+    "horario": "2026-04-08 20:12:51.681211"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.53,
+    "horario": "2026-04-08 20:12:51.766200"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.57,
+    "horario": "2026-04-08 20:12:51.866802"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.61,
+    "horario": "2026-04-08 20:12:51.967340"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 28.97,
+    "horario": "2026-04-08 20:12:51.979611"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 30.15,
+    "horario": "2026-04-08 20:12:51.981449"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.67,
+    "horario": "2026-04-08 20:12:52.067583"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.73,
+    "horario": "2026-04-08 20:12:52.167761"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.78,
+    "horario": "2026-04-08 20:12:52.269076"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 29.11,
+    "horario": "2026-04-08 20:12:52.279794"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 30.3,
+    "horario": "2026-04-08 20:12:52.281601"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.83,
+    "horario": "2026-04-08 20:12:52.368995"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.87,
+    "horario": "2026-04-08 20:12:52.470541"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.94,
+    "horario": "2026-04-08 20:12:52.571330"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 29.3,
+    "horario": "2026-04-08 20:12:52.580158"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 30.49,
+    "horario": "2026-04-08 20:12:52.580501"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.01,
+    "horario": "2026-04-08 20:12:52.671080"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.07,
+    "horario": "2026-04-08 20:12:52.772660"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.13,
+    "horario": "2026-04-08 20:12:52.873172"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 30.64,
+    "horario": "2026-04-08 20:12:52.880779"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 29.36,
+    "horario": "2026-04-08 20:12:52.882524"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.21,
+    "horario": "2026-04-08 20:12:52.974077"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.28,
+    "horario": "2026-04-08 20:12:53.074619"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.35,
+    "horario": "2026-04-08 20:12:53.174334"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 30.87,
+    "horario": "2026-04-08 20:12:53.181066"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 29.46,
+    "horario": "2026-04-08 20:12:53.183090"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.41,
+    "horario": "2026-04-08 20:12:53.275543"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.49,
+    "horario": "2026-04-08 20:12:53.376352"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.57,
+    "horario": "2026-04-08 20:12:53.476467"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 31.07,
+    "horario": "2026-04-08 20:12:53.481140"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 29.57,
+    "horario": "2026-04-08 20:12:53.483053"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.64,
+    "horario": "2026-04-08 20:12:53.577161"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.72,
+    "horario": "2026-04-08 20:12:53.676993"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.79,
+    "horario": "2026-04-08 20:12:53.778250"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 31.14,
+    "horario": "2026-04-08 20:12:53.781434"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 29.75,
+    "horario": "2026-04-08 20:12:53.783426"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.84,
+    "horario": "2026-04-08 20:12:53.879093"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.92,
+    "horario": "2026-04-08 20:12:53.979841"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.0,
+    "horario": "2026-04-08 20:12:54.080530"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 31.19,
+    "horario": "2026-04-08 20:12:54.083692"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 29.84,
+    "horario": "2026-04-08 20:12:54.083778"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.07,
+    "horario": "2026-04-08 20:12:54.180071"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.15,
+    "horario": "2026-04-08 20:12:54.281926"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.22,
+    "horario": "2026-04-08 20:12:54.381980"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 31.42,
+    "horario": "2026-04-08 20:12:54.382385"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 29.91,
+    "horario": "2026-04-08 20:12:54.384725"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.29,
+    "horario": "2026-04-08 20:12:54.482576"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.33,
+    "horario": "2026-04-08 20:12:54.583313"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.38,
+    "horario": "2026-04-08 20:12:54.683670"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 31.49,
+    "horario": "2026-04-08 20:12:54.686453"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 29.97,
+    "horario": "2026-04-08 20:12:54.686519"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.43,
+    "horario": "2026-04-08 20:12:54.783937"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.49,
+    "horario": "2026-04-08 20:12:54.885047"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 30.07,
+    "horario": "2026-04-08 20:12:54.984421"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 31.54,
+    "horario": "2026-04-08 20:12:54.987327"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.55,
+    "horario": "2026-04-08 20:12:54.987417"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.61,
+    "horario": "2026-04-08 20:12:55.085226"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.65,
+    "horario": "2026-04-08 20:12:55.185665"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 30.18,
+    "horario": "2026-04-08 20:12:55.284830"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 31.73,
+    "horario": "2026-04-08 20:12:55.287358"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.71,
+    "horario": "2026-04-08 20:12:55.287437"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.76,
+    "horario": "2026-04-08 20:12:55.386654"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.83,
+    "horario": "2026-04-08 20:12:55.487109"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 31.91,
+    "horario": "2026-04-08 20:12:55.585535"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 30.31,
+    "horario": "2026-04-08 20:12:55.585903"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.87,
+    "horario": "2026-04-08 20:12:55.588804"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.93,
+    "horario": "2026-04-08 20:12:55.688004"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.99,
+    "horario": "2026-04-08 20:12:55.789165"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 30.41,
+    "horario": "2026-04-08 20:12:55.886202"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 32.09,
+    "horario": "2026-04-08 20:12:55.889672"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.06,
+    "horario": "2026-04-08 20:12:55.889761"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.11,
+    "horario": "2026-04-08 20:12:55.989765"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.16,
+    "horario": "2026-04-08 20:12:56.090031"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 30.58,
+    "horario": "2026-04-08 20:12:56.185911"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 32.19,
+    "horario": "2026-04-08 20:12:56.188199"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.2,
+    "horario": "2026-04-08 20:12:56.190439"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.25,
+    "horario": "2026-04-08 20:12:56.291185"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.31,
+    "horario": "2026-04-08 20:12:56.391512"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 32.24,
+    "horario": "2026-04-08 20:12:56.487396"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 30.67,
+    "horario": "2026-04-08 20:12:56.487813"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.37,
+    "horario": "2026-04-08 20:12:56.490697"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.42,
+    "horario": "2026-04-08 20:12:56.592196"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.46,
+    "horario": "2026-04-08 20:12:56.692437"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 32.43,
+    "horario": "2026-04-08 20:12:56.788367"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 30.86,
+    "horario": "2026-04-08 20:12:56.788866"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.51,
+    "horario": "2026-04-08 20:12:56.792139"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.57,
+    "horario": "2026-04-08 20:12:56.893742"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.62,
+    "horario": "2026-04-08 20:12:56.994311"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 30.96,
+    "horario": "2026-04-08 20:12:57.088880"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 32.67,
+    "horario": "2026-04-08 20:12:57.091659"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.69,
+    "horario": "2026-04-08 20:12:57.093913"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.75,
+    "horario": "2026-04-08 20:12:57.194387"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.82,
+    "horario": "2026-04-08 20:12:57.295730"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 32.79,
+    "horario": "2026-04-08 20:12:57.389466"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 31.1,
+    "horario": "2026-04-08 20:12:57.392284"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.89,
+    "horario": "2026-04-08 20:12:57.394561"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.94,
+    "horario": "2026-04-08 20:12:57.496694"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.99,
+    "horario": "2026-04-08 20:12:57.597454"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 31.2,
+    "horario": "2026-04-08 20:12:57.689535"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 32.86,
+    "horario": "2026-04-08 20:12:57.692080"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.05,
+    "horario": "2026-04-08 20:12:57.696139"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.13,
+    "horario": "2026-04-08 20:12:57.798228"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.2,
+    "horario": "2026-04-08 20:12:57.898162"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 31.34,
+    "horario": "2026-04-08 20:12:57.990001"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 32.96,
+    "horario": "2026-04-08 20:12:57.990342"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.26,
+    "horario": "2026-04-08 20:12:57.997822"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.33,
+    "horario": "2026-04-08 20:12:58.099443"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.4,
+    "horario": "2026-04-08 20:12:58.200470"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 31.48,
+    "horario": "2026-04-08 20:12:58.290784"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 33.01,
+    "horario": "2026-04-08 20:12:58.293339"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.48,
+    "horario": "2026-04-08 20:12:58.299331"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.55,
+    "horario": "2026-04-08 20:12:58.401193"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.64,
+    "horario": "2026-04-08 20:12:58.501877"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 31.58,
+    "horario": "2026-04-08 20:12:58.591909"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 33.1,
+    "horario": "2026-04-08 20:12:58.595181"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.72,
+    "horario": "2026-04-08 20:12:58.600590"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.81,
+    "horario": "2026-04-08 20:12:58.702616"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.91,
+    "horario": "2026-04-08 20:12:58.803402"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 31.71,
+    "horario": "2026-04-08 20:12:58.892685"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 33.26,
+    "horario": "2026-04-08 20:12:58.893019"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.99,
+    "horario": "2026-04-08 20:12:58.902606"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.08,
+    "horario": "2026-04-08 20:12:59.004787"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.16,
+    "horario": "2026-04-08 20:12:59.105321"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 31.81,
+    "horario": "2026-04-08 20:12:59.193266"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 33.41,
+    "horario": "2026-04-08 20:12:59.196118"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.23,
+    "horario": "2026-04-08 20:12:59.204151"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.29,
+    "horario": "2026-04-08 20:12:59.305676"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.35,
+    "horario": "2026-04-08 20:12:59.406982"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 31.87,
+    "horario": "2026-04-08 20:12:59.493840"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 33.45,
+    "horario": "2026-04-08 20:12:59.496549"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.42,
+    "horario": "2026-04-08 20:12:59.505654"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.49,
+    "horario": "2026-04-08 20:12:59.607859"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.55,
+    "horario": "2026-04-08 20:12:59.708589"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 31.95,
+    "horario": "2026-04-08 20:12:59.793575"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 33.56,
+    "horario": "2026-04-08 20:12:59.796334"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.61,
+    "horario": "2026-04-08 20:12:59.807220"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.69,
+    "horario": "2026-04-08 20:12:59.911187"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.76,
+    "horario": "2026-04-08 20:13:00.009708"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 33.64,
+    "horario": "2026-04-08 20:13:00.094193"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 32.05,
+    "horario": "2026-04-08 20:13:00.096671"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.84,
+    "horario": "2026-04-08 20:13:00.109443"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.92,
+    "horario": "2026-04-08 20:13:00.210426"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.0,
+    "horario": "2026-04-08 20:13:00.310826"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 32.2,
+    "horario": "2026-04-08 20:13:00.395180"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 33.69,
+    "horario": "2026-04-08 20:13:00.398078"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.08,
+    "horario": "2026-04-08 20:13:00.411068"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.15,
+    "horario": "2026-04-08 20:13:00.511068"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.21,
+    "horario": "2026-04-08 20:13:00.612177"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 32.29,
+    "horario": "2026-04-08 20:13:00.695121"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 33.75,
+    "horario": "2026-04-08 20:13:00.697549"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.28,
+    "horario": "2026-04-08 20:13:00.712217"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.34,
+    "horario": "2026-04-08 20:13:00.814381"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.4,
+    "horario": "2026-04-08 20:13:00.913901"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 33.87,
+    "horario": "2026-04-08 20:13:00.996849"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 32.46,
+    "horario": "2026-04-08 20:13:00.997151"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.47,
+    "horario": "2026-04-08 20:13:01.014333"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.55,
+    "horario": "2026-04-08 20:13:01.116378"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.62,
+    "horario": "2026-04-08 20:13:01.217034"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 32.53,
+    "horario": "2026-04-08 20:13:01.297276"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 34.05,
+    "horario": "2026-04-08 20:13:01.297590"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.7,
+    "horario": "2026-04-08 20:13:01.316130"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.77,
+    "horario": "2026-04-08 20:13:01.416975"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.83,
+    "horario": "2026-04-08 20:13:01.517894"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 34.11,
+    "horario": "2026-04-08 20:13:01.597812"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 32.65,
+    "horario": "2026-04-08 20:13:01.598123"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.88,
+    "horario": "2026-04-08 20:13:01.618246"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.95,
+    "horario": "2026-04-08 20:13:01.719632"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.01,
+    "horario": "2026-04-08 20:13:01.820963"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 32.8,
+    "horario": "2026-04-08 20:13:01.897554"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 34.24,
+    "horario": "2026-04-08 20:13:01.900328"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.06,
+    "horario": "2026-04-08 20:13:01.920468"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.14,
+    "horario": "2026-04-08 20:13:02.022216"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.21,
+    "horario": "2026-04-08 20:13:02.122834"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 34.33,
+    "horario": "2026-04-08 20:13:02.198947"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 33.04,
+    "horario": "2026-04-08 20:13:02.201739"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.29,
+    "horario": "2026-04-08 20:13:02.222340"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.36,
+    "horario": "2026-04-08 20:13:02.324286"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.44,
+    "horario": "2026-04-08 20:13:02.424090"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 33.13,
+    "horario": "2026-04-08 20:13:02.499053"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 34.42,
+    "horario": "2026-04-08 20:13:02.501658"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.5,
+    "horario": "2026-04-08 20:13:02.524276"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.55,
+    "horario": "2026-04-08 20:13:02.625737"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.62,
+    "horario": "2026-04-08 20:13:02.726984"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 34.63,
+    "horario": "2026-04-08 20:13:02.800828"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 33.22,
+    "horario": "2026-04-08 20:13:02.803915"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.7,
+    "horario": "2026-04-08 20:13:02.826141"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.77,
+    "horario": "2026-04-08 20:13:02.927162"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.85,
+    "horario": "2026-04-08 20:13:03.028541"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 34.84,
+    "horario": "2026-04-08 20:13:03.101109"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 33.39,
+    "horario": "2026-04-08 20:13:03.104917"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.93,
+    "horario": "2026-04-08 20:13:03.128227"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.99,
+    "horario": "2026-04-08 20:13:03.230113"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.06,
+    "horario": "2026-04-08 20:13:03.331039"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 34.97,
+    "horario": "2026-04-08 20:13:03.400703"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 33.44,
+    "horario": "2026-04-08 20:13:03.404013"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.12,
+    "horario": "2026-04-08 20:13:03.430549"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.18,
+    "horario": "2026-04-08 20:13:03.531455"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.23,
+    "horario": "2026-04-08 20:13:03.632917"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 33.61,
+    "horario": "2026-04-08 20:13:03.702120"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 35.17,
+    "horario": "2026-04-08 20:13:03.702436"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.3,
+    "horario": "2026-04-08 20:13:03.732583"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.38,
+    "horario": "2026-04-08 20:13:03.834161"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.46,
+    "horario": "2026-04-08 20:13:03.933662"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 33.8,
+    "horario": "2026-04-08 20:13:04.002759"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 35.27,
+    "horario": "2026-04-08 20:13:04.005703"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.52,
+    "horario": "2026-04-08 20:13:04.034579"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.6,
+    "horario": "2026-04-08 20:13:04.135742"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.66,
+    "horario": "2026-04-08 20:13:04.236117"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 35.38,
+    "horario": "2026-04-08 20:13:04.303180"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 33.89,
+    "horario": "2026-04-08 20:13:04.306182"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.72,
+    "horario": "2026-04-08 20:13:04.335868"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.78,
+    "horario": "2026-04-08 20:13:04.437164"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.84,
+    "horario": "2026-04-08 20:13:04.537375"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 35.51,
+    "horario": "2026-04-08 20:13:04.604102"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 34.1,
+    "horario": "2026-04-08 20:13:04.607156"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.91,
+    "horario": "2026-04-08 20:13:04.637740"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.99,
+    "horario": "2026-04-08 20:13:04.739370"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 61.08,
+    "horario": "2026-04-08 20:13:04.840281"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 34.24,
+    "horario": "2026-04-08 20:13:04.904041"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 35.54,
+    "horario": "2026-04-08 20:13:04.907196"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 61.14,
+    "horario": "2026-04-08 20:13:04.939851"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 61.22,
+    "horario": "2026-04-08 20:13:05.041521"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 61.27,
+    "horario": "2026-04-08 20:13:05.141844"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 34.4,
+    "horario": "2026-04-08 20:13:05.205456"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 35.7,
+    "horario": "2026-04-08 20:13:05.208907"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 61.32,
+    "horario": "2026-04-08 20:13:05.241301"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 61.39,
+    "horario": "2026-04-08 20:13:05.342886"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 61.46,
+    "horario": "2026-04-08 20:13:05.443039"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 35.88,
+    "horario": "2026-04-08 20:13:05.505564"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 34.6,
+    "horario": "2026-04-08 20:13:05.508456"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 61.52,
+    "horario": "2026-04-08 20:13:05.543432"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 61.57,
+    "horario": "2026-04-08 20:13:05.645458"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 61.63,
+    "horario": "2026-04-08 20:13:05.745681"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 34.71,
+    "horario": "2026-04-08 20:13:05.806421"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 36.03,
+    "horario": "2026-04-08 20:13:05.809717"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 61.68,
+    "horario": "2026-04-08 20:13:05.845641"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 61.75,
+    "horario": "2026-04-08 20:13:05.946329"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 61.81,
+    "horario": "2026-04-08 20:13:06.047270"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 36.18,
+    "horario": "2026-04-08 20:13:06.107251"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 34.81,
+    "horario": "2026-04-08 20:13:06.110464"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 61.87,
+    "horario": "2026-04-08 20:13:06.148368"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 61.94,
+    "horario": "2026-04-08 20:13:06.249251"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.0,
+    "horario": "2026-04-08 20:13:06.349955"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 36.3,
+    "horario": "2026-04-08 20:13:06.407391"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 34.91,
+    "horario": "2026-04-08 20:13:06.410647"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.05,
+    "horario": "2026-04-08 20:13:06.449417"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.11,
+    "horario": "2026-04-08 20:13:06.551362"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.16,
+    "horario": "2026-04-08 20:13:06.652024"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 34.95,
+    "horario": "2026-04-08 20:13:06.708145"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 36.4,
+    "horario": "2026-04-08 20:13:06.711615"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.23,
+    "horario": "2026-04-08 20:13:06.751855"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.29,
+    "horario": "2026-04-08 20:13:06.852384"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.35,
+    "horario": "2026-04-08 20:13:06.953018"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 36.49,
+    "horario": "2026-04-08 20:13:07.008442"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 35.02,
+    "horario": "2026-04-08 20:13:07.011419"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.4,
+    "horario": "2026-04-08 20:13:07.053802"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.46,
+    "horario": "2026-04-08 20:13:07.155274"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.52,
+    "horario": "2026-04-08 20:13:07.255582"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 35.12,
+    "horario": "2026-04-08 20:13:07.309681"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 36.66,
+    "horario": "2026-04-08 20:13:07.313061"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.59,
+    "horario": "2026-04-08 20:13:07.355462"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.67,
+    "horario": "2026-04-08 20:13:07.456337"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.73,
+    "horario": "2026-04-08 20:13:07.557862"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 36.74,
+    "horario": "2026-04-08 20:13:07.610653"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 35.29,
+    "horario": "2026-04-08 20:13:07.611087"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.78,
+    "horario": "2026-04-08 20:13:07.657495"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.85,
+    "horario": "2026-04-08 20:13:07.759190"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.91,
+    "horario": "2026-04-08 20:13:07.859921"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 35.46,
+    "horario": "2026-04-08 20:13:07.910084"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 36.9,
+    "horario": "2026-04-08 20:13:07.913875"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.97,
+    "horario": "2026-04-08 20:13:07.959651"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 63.01,
+    "horario": "2026-04-08 20:13:08.060323"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 63.05,
+    "horario": "2026-04-08 20:13:08.162059"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 37.1,
+    "horario": "2026-04-08 20:13:08.210942"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 35.65,
+    "horario": "2026-04-08 20:13:08.211264"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 63.12,
+    "horario": "2026-04-08 20:13:08.262311"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 63.17,
+    "horario": "2026-04-08 20:13:08.362604"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 63.22,
+    "horario": "2026-04-08 20:13:08.462978"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 35.73,
+    "horario": "2026-04-08 20:13:08.511676"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 37.14,
+    "horario": "2026-04-08 20:13:08.515257"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 63.29,
+    "horario": "2026-04-08 20:13:08.564656"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 63.35,
+    "horario": "2026-04-08 20:13:08.665376"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 63.39,
+    "horario": "2026-04-08 20:13:08.765994"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 37.2,
+    "horario": "2026-04-08 20:13:08.812502"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 35.8,
+    "horario": "2026-04-08 20:13:08.816182"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 63.44,
+    "horario": "2026-04-08 20:13:08.866814"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 63.5,
+    "horario": "2026-04-08 20:13:08.966523"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 63.57,
+    "horario": "2026-04-08 20:13:09.067107"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 37.26,
+    "horario": "2026-04-08 20:13:09.112362"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 35.88,
+    "horario": "2026-04-08 20:13:09.115776"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 63.64,
+    "horario": "2026-04-08 20:13:09.168241"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 63.7,
+    "horario": "2026-04-08 20:13:09.269711"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 63.78,
+    "horario": "2026-04-08 20:13:09.369629"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 35.97,
+    "horario": "2026-04-08 20:13:09.412998"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 37.33,
+    "horario": "2026-04-08 20:13:09.416438"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 63.86,
+    "horario": "2026-04-08 20:13:09.470057"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 63.92,
+    "horario": "2026-04-08 20:13:09.570596"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.0,
+    "horario": "2026-04-08 20:13:09.672250"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 37.39,
+    "horario": "2026-04-08 20:13:09.714214"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 36.13,
+    "horario": "2026-04-08 20:13:09.717715"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.07,
+    "horario": "2026-04-08 20:13:09.772314"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.14,
+    "horario": "2026-04-08 20:13:09.873114"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.2,
+    "horario": "2026-04-08 20:13:09.972925"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 36.2,
+    "horario": "2026-04-08 20:13:10.014166"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 37.47,
+    "horario": "2026-04-08 20:13:10.017430"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.26,
+    "horario": "2026-04-08 20:13:10.073995"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.33,
+    "horario": "2026-04-08 20:13:10.175382"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.4,
+    "horario": "2026-04-08 20:13:10.276141"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 37.48,
+    "horario": "2026-04-08 20:13:10.314633"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 36.32,
+    "horario": "2026-04-08 20:13:10.314962"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.47,
+    "horario": "2026-04-08 20:13:10.376117"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.53,
+    "horario": "2026-04-08 20:13:10.476581"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.6,
+    "horario": "2026-04-08 20:13:10.577159"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 36.42,
+    "horario": "2026-04-08 20:13:10.615269"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 37.5,
+    "horario": "2026-04-08 20:13:10.618625"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.67,
+    "horario": "2026-04-08 20:13:10.678550"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.74,
+    "horario": "2026-04-08 20:13:10.779082"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.79,
+    "horario": "2026-04-08 20:13:10.879516"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 37.59,
+    "horario": "2026-04-08 20:13:10.915822"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 36.48,
+    "horario": "2026-04-08 20:13:10.919890"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.84,
+    "horario": "2026-04-08 20:13:10.979940"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.91,
+    "horario": "2026-04-08 20:13:11.080262"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.96,
+    "horario": "2026-04-08 20:13:11.181807"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 36.66,
+    "horario": "2026-04-08 20:13:11.216908"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 37.62,
+    "horario": "2026-04-08 20:13:11.220551"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.0,
+    "horario": "2026-04-08 20:13:11.281868"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.05,
+    "horario": "2026-04-08 20:13:11.383331"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.1,
+    "horario": "2026-04-08 20:13:11.483229"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 36.72,
+    "horario": "2026-04-08 20:13:11.517377"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 37.64,
+    "horario": "2026-04-08 20:13:11.520801"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.14,
+    "horario": "2026-04-08 20:13:11.583946"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.21,
+    "horario": "2026-04-08 20:13:11.685550"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.29,
+    "horario": "2026-04-08 20:13:11.785734"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 36.93,
+    "horario": "2026-04-08 20:13:11.817688"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 37.68,
+    "horario": "2026-04-08 20:13:11.821144"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.38,
+    "horario": "2026-04-08 20:13:11.886192"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.45,
+    "horario": "2026-04-08 20:13:11.986561"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.51,
+    "horario": "2026-04-08 20:13:12.087610"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 37.72,
+    "horario": "2026-04-08 20:13:12.118306"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 37.01,
+    "horario": "2026-04-08 20:13:12.121705"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.57,
+    "horario": "2026-04-08 20:13:12.188130"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.63,
+    "horario": "2026-04-08 20:13:12.288278"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.68,
+    "horario": "2026-04-08 20:13:12.389118"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 37.05,
+    "horario": "2026-04-08 20:13:12.418965"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 37.79,
+    "horario": "2026-04-08 20:13:12.422812"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.73,
+    "horario": "2026-04-08 20:13:12.489508"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.79,
+    "horario": "2026-04-08 20:13:12.590095"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.86,
+    "horario": "2026-04-08 20:13:12.690988"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 37.08,
+    "horario": "2026-04-08 20:13:12.719598"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 37.85,
+    "horario": "2026-04-08 20:13:12.723390"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.94,
+    "horario": "2026-04-08 20:13:12.792101"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.0,
+    "horario": "2026-04-08 20:13:12.892625"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.06,
+    "horario": "2026-04-08 20:13:12.992642"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 37.12,
+    "horario": "2026-04-08 20:13:13.019786"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 37.92,
+    "horario": "2026-04-08 20:13:13.022840"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.13,
+    "horario": "2026-04-08 20:13:13.093243"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.2,
+    "horario": "2026-04-08 20:13:13.194085"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.25,
+    "horario": "2026-04-08 20:13:13.295381"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 37.96,
+    "horario": "2026-04-08 20:13:13.320346"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 37.18,
+    "horario": "2026-04-08 20:13:13.323945"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.31,
+    "horario": "2026-04-08 20:13:13.395210"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.34,
+    "horario": "2026-04-08 20:13:13.496065"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.4,
+    "horario": "2026-04-08 20:13:13.596703"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 37.25,
+    "horario": "2026-04-08 20:13:13.621170"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 37.99,
+    "horario": "2026-04-08 20:13:13.624291"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.45,
+    "horario": "2026-04-08 20:13:13.697352"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.51,
+    "horario": "2026-04-08 20:13:13.798991"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.57,
+    "horario": "2026-04-08 20:13:13.898629"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 37.27,
+    "horario": "2026-04-08 20:13:13.921865"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:13.925641"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.63,
+    "horario": "2026-04-08 20:13:13.999807"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.68,
+    "horario": "2026-04-08 20:13:14.100536"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.73,
+    "horario": "2026-04-08 20:13:14.200325"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 37.31,
+    "horario": "2026-04-08 20:13:14.222284"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:14.225764"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.78,
+    "horario": "2026-04-08 20:13:14.301078"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.83,
+    "horario": "2026-04-08 20:13:14.401972"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.89,
+    "horario": "2026-04-08 20:13:14.502378"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:14.522784"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 37.31,
+    "horario": "2026-04-08 20:13:14.523072"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.94,
+    "horario": "2026-04-08 20:13:14.602895"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 67.01,
+    "horario": "2026-04-08 20:13:14.703607"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 67.09,
+    "horario": "2026-04-08 20:13:14.804552"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 37.27,
+    "horario": "2026-04-08 20:13:14.823410"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:14.827081"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 67.17,
+    "horario": "2026-04-08 20:13:14.904323"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 67.24,
+    "horario": "2026-04-08 20:13:15.004997"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 67.32,
+    "horario": "2026-04-08 20:13:15.105643"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:15.124189"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 37.23,
+    "horario": "2026-04-08 20:13:15.127419"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 67.39,
+    "horario": "2026-04-08 20:13:15.206576"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 67.47,
+    "horario": "2026-04-08 20:13:15.307941"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 67.54,
+    "horario": "2026-04-08 20:13:15.407286"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:15.424389"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 37.2,
+    "horario": "2026-04-08 20:13:15.427542"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 67.6,
+    "horario": "2026-04-08 20:13:15.508958"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 67.65,
+    "horario": "2026-04-08 20:13:15.609804"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 67.71,
+    "horario": "2026-04-08 20:13:15.709991"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 37.17,
+    "horario": "2026-04-08 20:13:15.724969"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:15.728465"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 67.78,
+    "horario": "2026-04-08 20:13:15.810869"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 67.84,
+    "horario": "2026-04-08 20:13:15.910733"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 67.91,
+    "horario": "2026-04-08 20:13:16.011800"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:16.025625"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 37.11,
+    "horario": "2026-04-08 20:13:16.028922"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 67.97,
+    "horario": "2026-04-08 20:13:16.112486"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 68.04,
+    "horario": "2026-04-08 20:13:16.213293"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 68.1,
+    "horario": "2026-04-08 20:13:16.314169"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 37.06,
+    "horario": "2026-04-08 20:13:16.326206"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:16.329900"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 68.17,
+    "horario": "2026-04-08 20:13:16.414030"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 68.23,
+    "horario": "2026-04-08 20:13:16.514929"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 68.3,
+    "horario": "2026-04-08 20:13:16.615560"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:16.626685"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 36.99,
+    "horario": "2026-04-08 20:13:16.630035"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 68.35,
+    "horario": "2026-04-08 20:13:16.716336"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 68.43,
+    "horario": "2026-04-08 20:13:16.817225"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 68.5,
+    "horario": "2026-04-08 20:13:16.917603"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:16.926554"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 36.88,
+    "horario": "2026-04-08 20:13:16.930357"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 68.58,
+    "horario": "2026-04-08 20:13:17.018256"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 68.64,
+    "horario": "2026-04-08 20:13:17.119530"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 68.7,
+    "horario": "2026-04-08 20:13:17.219794"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:17.226586"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 36.83,
+    "horario": "2026-04-08 20:13:17.232384"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 68.76,
+    "horario": "2026-04-08 20:13:17.320399"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 68.84,
+    "horario": "2026-04-08 20:13:17.421085"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 68.91,
+    "horario": "2026-04-08 20:13:17.522665"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:17.527382"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 36.72,
+    "horario": "2026-04-08 20:13:17.527560"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 69.0,
+    "horario": "2026-04-08 20:13:17.622497"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 69.07,
+    "horario": "2026-04-08 20:13:17.723077"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 69.14,
+    "horario": "2026-04-08 20:13:17.824229"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:17.828781"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 36.67,
+    "horario": "2026-04-08 20:13:17.828843"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 69.22,
+    "horario": "2026-04-08 20:13:17.924398"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 69.29,
+    "horario": "2026-04-08 20:13:18.025125"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 69.36,
+    "horario": "2026-04-08 20:13:18.125813"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:18.130982"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 36.57,
+    "horario": "2026-04-08 20:13:18.131083"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 69.43,
+    "horario": "2026-04-08 20:13:18.226484"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 69.46,
+    "horario": "2026-04-08 20:13:18.327081"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 69.45,
+    "horario": "2026-04-08 20:13:18.427476"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:18.431478"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 36.48,
+    "horario": "2026-04-08 20:13:18.431552"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 69.44,
+    "horario": "2026-04-08 20:13:18.528034"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 69.41,
+    "horario": "2026-04-08 20:13:18.628560"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 36.43,
+    "horario": "2026-04-08 20:13:18.728667"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:18.729008"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 69.36,
+    "horario": "2026-04-08 20:13:18.733442"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 69.32,
+    "horario": "2026-04-08 20:13:18.829722"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 69.28,
+    "horario": "2026-04-08 20:13:18.930004"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:19.029501"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 36.38,
+    "horario": "2026-04-08 20:13:19.033842"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 69.22,
+    "horario": "2026-04-08 20:13:19.033912"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 69.15,
+    "horario": "2026-04-08 20:13:19.131138"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 69.09,
+    "horario": "2026-04-08 20:13:19.231836"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:19.330045"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 36.34,
+    "horario": "2026-04-08 20:13:19.330375"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 69.02,
+    "horario": "2026-04-08 20:13:19.334504"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 68.95,
+    "horario": "2026-04-08 20:13:19.432604"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 68.88,
+    "horario": "2026-04-08 20:13:19.533114"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:19.630529"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 36.31,
+    "horario": "2026-04-08 20:13:19.634574"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 68.81,
+    "horario": "2026-04-08 20:13:19.634645"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 68.74,
+    "horario": "2026-04-08 20:13:19.733998"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 68.68,
+    "horario": "2026-04-08 20:13:19.834522"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 36.21,
+    "horario": "2026-04-08 20:13:19.931075"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:19.935486"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 68.62,
+    "horario": "2026-04-08 20:13:19.935564"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 68.55,
+    "horario": "2026-04-08 20:13:20.035324"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 68.48,
+    "horario": "2026-04-08 20:13:20.135946"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:20.233148"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 36.12,
+    "horario": "2026-04-08 20:13:20.237932"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 68.42,
+    "horario": "2026-04-08 20:13:20.237995"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 68.37,
+    "horario": "2026-04-08 20:13:20.337072"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 68.3,
+    "horario": "2026-04-08 20:13:20.437032"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:20.532436"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 36.08,
+    "horario": "2026-04-08 20:13:20.537295"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 68.23,
+    "horario": "2026-04-08 20:13:20.537366"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 68.16,
+    "horario": "2026-04-08 20:13:20.638258"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 68.1,
+    "horario": "2026-04-08 20:13:20.738615"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 36.01,
+    "horario": "2026-04-08 20:13:20.833587"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:20.837885"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 68.06,
+    "horario": "2026-04-08 20:13:20.842162"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 68.0,
+    "horario": "2026-04-08 20:13:20.939673"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 67.97,
+    "horario": "2026-04-08 20:13:21.040220"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 35.99,
+    "horario": "2026-04-08 20:13:21.134073"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:21.138449"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 67.91,
+    "horario": "2026-04-08 20:13:21.142652"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 67.87,
+    "horario": "2026-04-08 20:13:21.240974"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 67.82,
+    "horario": "2026-04-08 20:13:21.341593"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 35.95,
+    "horario": "2026-04-08 20:13:21.434374"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:21.438346"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 67.77,
+    "horario": "2026-04-08 20:13:21.442315"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 67.73,
+    "horario": "2026-04-08 20:13:21.542327"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 67.68,
+    "horario": "2026-04-08 20:13:21.643018"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:21.735215"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 35.92,
+    "horario": "2026-04-08 20:13:21.735520"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 67.62,
+    "horario": "2026-04-08 20:13:21.742717"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 67.56,
+    "horario": "2026-04-08 20:13:21.843722"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 67.48,
+    "horario": "2026-04-08 20:13:21.944313"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:22.035562"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 35.88,
+    "horario": "2026-04-08 20:13:22.039966"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 67.42,
+    "horario": "2026-04-08 20:13:22.044144"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 67.37,
+    "horario": "2026-04-08 20:13:22.145181"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 67.31,
+    "horario": "2026-04-08 20:13:22.245546"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:22.336456"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 35.79,
+    "horario": "2026-04-08 20:13:22.342641"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 67.23,
+    "horario": "2026-04-08 20:13:22.346898"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 67.16,
+    "horario": "2026-04-08 20:13:22.446443"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 67.11,
+    "horario": "2026-04-08 20:13:22.546596"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 35.67,
+    "horario": "2026-04-08 20:13:22.636947"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:22.640807"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 67.03,
+    "horario": "2026-04-08 20:13:22.646569"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.95,
+    "horario": "2026-04-08 20:13:22.747449"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.88,
+    "horario": "2026-04-08 20:13:22.848014"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:22.937483"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 35.61,
+    "horario": "2026-04-08 20:13:22.942037"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.82,
+    "horario": "2026-04-08 20:13:22.948037"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.75,
+    "horario": "2026-04-08 20:13:23.048821"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.69,
+    "horario": "2026-04-08 20:13:23.149984"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:23.238401"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 35.52,
+    "horario": "2026-04-08 20:13:23.242976"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.63,
+    "horario": "2026-04-08 20:13:23.248980"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.55,
+    "horario": "2026-04-08 20:13:23.350175"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.48,
+    "horario": "2026-04-08 20:13:23.450641"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:23.538736"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 35.52,
+    "horario": "2026-04-08 20:13:23.543860"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.42,
+    "horario": "2026-04-08 20:13:23.549876"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.35,
+    "horario": "2026-04-08 20:13:23.651220"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.29,
+    "horario": "2026-04-08 20:13:23.751813"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:23.839472"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 35.51,
+    "horario": "2026-04-08 20:13:23.843879"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.22,
+    "horario": "2026-04-08 20:13:23.851346"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.17,
+    "horario": "2026-04-08 20:13:23.952619"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.13,
+    "horario": "2026-04-08 20:13:24.053389"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:24.139975"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 35.45,
+    "horario": "2026-04-08 20:13:24.144631"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.08,
+    "horario": "2026-04-08 20:13:24.152970"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 66.02,
+    "horario": "2026-04-08 20:13:24.253630"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.96,
+    "horario": "2026-04-08 20:13:24.354348"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 35.36,
+    "horario": "2026-04-08 20:13:24.440458"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:24.444931"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.9,
+    "horario": "2026-04-08 20:13:24.454406"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.83,
+    "horario": "2026-04-08 20:13:24.555367"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.77,
+    "horario": "2026-04-08 20:13:24.656093"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 35.29,
+    "horario": "2026-04-08 20:13:24.741794"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:24.747017"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.7,
+    "horario": "2026-04-08 20:13:24.756065"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.63,
+    "horario": "2026-04-08 20:13:24.857475"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.58,
+    "horario": "2026-04-08 20:13:24.957831"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:25.041494"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 35.24,
+    "horario": "2026-04-08 20:13:25.045998"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.52,
+    "horario": "2026-04-08 20:13:25.057669"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.48,
+    "horario": "2026-04-08 20:13:25.158622"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.41,
+    "horario": "2026-04-08 20:13:25.260307"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:25.342399"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 35.22,
+    "horario": "2026-04-08 20:13:25.347024"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.35,
+    "horario": "2026-04-08 20:13:25.359278"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.27,
+    "horario": "2026-04-08 20:13:25.460388"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.22,
+    "horario": "2026-04-08 20:13:25.560763"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 35.21,
+    "horario": "2026-04-08 20:13:25.643101"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:25.647701"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.17,
+    "horario": "2026-04-08 20:13:25.660980"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.12,
+    "horario": "2026-04-08 20:13:25.762867"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.07,
+    "horario": "2026-04-08 20:13:25.863226"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 35.11,
+    "horario": "2026-04-08 20:13:25.943200"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:25.947630"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 65.02,
+    "horario": "2026-04-08 20:13:25.962758"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.97,
+    "horario": "2026-04-08 20:13:26.063651"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.89,
+    "horario": "2026-04-08 20:13:26.164245"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:26.244991"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 34.99,
+    "horario": "2026-04-08 20:13:26.249684"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.83,
+    "horario": "2026-04-08 20:13:26.264497"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.76,
+    "horario": "2026-04-08 20:13:26.366390"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.7,
+    "horario": "2026-04-08 20:13:26.466025"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:26.544818"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 34.93,
+    "horario": "2026-04-08 20:13:26.545133"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.66,
+    "horario": "2026-04-08 20:13:26.566125"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.61,
+    "horario": "2026-04-08 20:13:26.667711"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.56,
+    "horario": "2026-04-08 20:13:26.768550"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:26.845475"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 34.86,
+    "horario": "2026-04-08 20:13:26.850170"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.49,
+    "horario": "2026-04-08 20:13:26.867547"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.43,
+    "horario": "2026-04-08 20:13:26.968577"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.37,
+    "horario": "2026-04-08 20:13:27.069118"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:27.145790"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 34.81,
+    "horario": "2026-04-08 20:13:27.149901"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.3,
+    "horario": "2026-04-08 20:13:27.169206"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.24,
+    "horario": "2026-04-08 20:13:27.270141"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.19,
+    "horario": "2026-04-08 20:13:27.370543"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:27.446363"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 34.77,
+    "horario": "2026-04-08 20:13:27.446674"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.13,
+    "horario": "2026-04-08 20:13:27.470882"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.08,
+    "horario": "2026-04-08 20:13:27.571712"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 64.02,
+    "horario": "2026-04-08 20:13:27.673154"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:27.746836"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 34.7,
+    "horario": "2026-04-08 20:13:27.751446"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 63.95,
+    "horario": "2026-04-08 20:13:27.772624"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 63.89,
+    "horario": "2026-04-08 20:13:27.874014"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 63.83,
+    "horario": "2026-04-08 20:13:27.974175"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 34.65,
+    "horario": "2026-04-08 20:13:28.048113"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:28.048424"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 63.76,
+    "horario": "2026-04-08 20:13:28.074303"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 63.7,
+    "horario": "2026-04-08 20:13:28.176276"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 63.63,
+    "horario": "2026-04-08 20:13:28.276436"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 34.63,
+    "horario": "2026-04-08 20:13:28.348451"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:28.353359"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 63.55,
+    "horario": "2026-04-08 20:13:28.375987"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 63.48,
+    "horario": "2026-04-08 20:13:28.476923"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 63.42,
+    "horario": "2026-04-08 20:13:28.577658"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:28.648935"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 34.58,
+    "horario": "2026-04-08 20:13:28.653150"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 63.34,
+    "horario": "2026-04-08 20:13:28.677814"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 63.27,
+    "horario": "2026-04-08 20:13:28.779722"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 63.19,
+    "horario": "2026-04-08 20:13:28.879452"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 34.58,
+    "horario": "2026-04-08 20:13:28.949833"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:28.954861"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 63.13,
+    "horario": "2026-04-08 20:13:28.979464"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 63.05,
+    "horario": "2026-04-08 20:13:29.080705"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.98,
+    "horario": "2026-04-08 20:13:29.181418"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:29.250737"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 34.51,
+    "horario": "2026-04-08 20:13:29.255627"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.92,
+    "horario": "2026-04-08 20:13:29.280687"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.85,
+    "horario": "2026-04-08 20:13:29.382822"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.78,
+    "horario": "2026-04-08 20:13:29.482354"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:29.550497"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 34.39,
+    "horario": "2026-04-08 20:13:29.554821"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.71,
+    "horario": "2026-04-08 20:13:29.582981"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.65,
+    "horario": "2026-04-08 20:13:29.683829"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.58,
+    "horario": "2026-04-08 20:13:29.784363"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:29.851452"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 34.32,
+    "horario": "2026-04-08 20:13:29.856803"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.52,
+    "horario": "2026-04-08 20:13:29.884448"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.47,
+    "horario": "2026-04-08 20:13:29.985368"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.4,
+    "horario": "2026-04-08 20:13:30.085836"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:30.151882"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 34.25,
+    "horario": "2026-04-08 20:13:30.152266"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.34,
+    "horario": "2026-04-08 20:13:30.185858"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.27,
+    "horario": "2026-04-08 20:13:30.287300"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.2,
+    "horario": "2026-04-08 20:13:30.387901"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 34.23,
+    "horario": "2026-04-08 20:13:30.452303"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:30.457359"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.13,
+    "horario": "2026-04-08 20:13:30.487720"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.07,
+    "horario": "2026-04-08 20:13:30.589029"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 62.0,
+    "horario": "2026-04-08 20:13:30.689538"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 34.2,
+    "horario": "2026-04-08 20:13:30.753044"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:30.753368"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 61.91,
+    "horario": "2026-04-08 20:13:30.789278"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 61.82,
+    "horario": "2026-04-08 20:13:30.890967"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 61.75,
+    "horario": "2026-04-08 20:13:30.990723"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:31.053554"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 34.17,
+    "horario": "2026-04-08 20:13:31.057938"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 61.69,
+    "horario": "2026-04-08 20:13:31.091158"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 61.64,
+    "horario": "2026-04-08 20:13:31.191886"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 61.55,
+    "horario": "2026-04-08 20:13:31.292759"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 34.11,
+    "horario": "2026-04-08 20:13:31.354882"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:31.360183"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 61.47,
+    "horario": "2026-04-08 20:13:31.393156"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 61.41,
+    "horario": "2026-04-08 20:13:31.494258"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 61.35,
+    "horario": "2026-04-08 20:13:31.594149"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 34.08,
+    "horario": "2026-04-08 20:13:31.655412"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:31.660571"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 61.3,
+    "horario": "2026-04-08 20:13:31.694692"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 61.24,
+    "horario": "2026-04-08 20:13:31.795341"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 61.2,
+    "horario": "2026-04-08 20:13:31.896297"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:31.955622"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 34.02,
+    "horario": "2026-04-08 20:13:31.961206"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 61.14,
+    "horario": "2026-04-08 20:13:31.996187"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 61.07,
+    "horario": "2026-04-08 20:13:32.096970"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 61.0,
+    "horario": "2026-04-08 20:13:32.198147"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 33.92,
+    "horario": "2026-04-08 20:13:32.256092"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:32.261272"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.94,
+    "horario": "2026-04-08 20:13:32.297614"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.88,
+    "horario": "2026-04-08 20:13:32.398792"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.82,
+    "horario": "2026-04-08 20:13:32.499102"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 33.9,
+    "horario": "2026-04-08 20:13:32.557018"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:32.561629"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.76,
+    "horario": "2026-04-08 20:13:32.599560"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.71,
+    "horario": "2026-04-08 20:13:32.700543"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.65,
+    "horario": "2026-04-08 20:13:32.800962"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 33.79,
+    "horario": "2026-04-08 20:13:32.857855"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:32.863056"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.59,
+    "horario": "2026-04-08 20:13:32.901446"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.53,
+    "horario": "2026-04-08 20:13:33.001926"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.48,
+    "horario": "2026-04-08 20:13:33.102720"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 33.77,
+    "horario": "2026-04-08 20:13:33.158420"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 38.0,
+    "horario": "2026-04-08 20:13:33.163604"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.42,
+    "horario": "2026-04-08 20:13:33.202633"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.37,
+    "horario": "2026-04-08 20:13:33.303533"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.34,
+    "horario": "2026-04-08 20:13:33.404353"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 33.68,
+    "horario": "2026-04-08 20:13:33.458800"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 37.95,
+    "horario": "2026-04-08 20:13:33.466908"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.29,
+    "horario": "2026-04-08 20:13:33.504170"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.23,
+    "horario": "2026-04-08 20:13:33.605307"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.17,
+    "horario": "2026-04-08 20:13:33.706002"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 33.58,
+    "horario": "2026-04-08 20:13:33.759728"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 37.85,
+    "horario": "2026-04-08 20:13:33.765006"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.1,
+    "horario": "2026-04-08 20:13:33.806941"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 60.01,
+    "horario": "2026-04-08 20:13:33.907144"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.92,
+    "horario": "2026-04-08 20:13:34.007615"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 37.82,
+    "horario": "2026-04-08 20:13:34.060048"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 33.53,
+    "horario": "2026-04-08 20:13:34.060414"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.86,
+    "horario": "2026-04-08 20:13:34.108221"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.8,
+    "horario": "2026-04-08 20:13:34.208933"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.73,
+    "horario": "2026-04-08 20:13:34.309758"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 33.45,
+    "horario": "2026-04-08 20:13:34.360811"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 37.72,
+    "horario": "2026-04-08 20:13:34.366144"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.67,
+    "horario": "2026-04-08 20:13:34.409739"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.61,
+    "horario": "2026-04-08 20:13:34.510155"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.54,
+    "horario": "2026-04-08 20:13:34.610641"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 37.67,
+    "horario": "2026-04-08 20:13:34.661222"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 33.39,
+    "horario": "2026-04-08 20:13:34.661531"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.49,
+    "horario": "2026-04-08 20:13:34.711315"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.42,
+    "horario": "2026-04-08 20:13:34.811582"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.36,
+    "horario": "2026-04-08 20:13:34.912138"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 33.34,
+    "horario": "2026-04-08 20:13:34.961659"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 37.62,
+    "horario": "2026-04-08 20:13:34.966491"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.31,
+    "horario": "2026-04-08 20:13:35.012503"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.27,
+    "horario": "2026-04-08 20:13:35.113018"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.22,
+    "horario": "2026-04-08 20:13:35.213838"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 33.23,
+    "horario": "2026-04-08 20:13:35.262773"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 37.54,
+    "horario": "2026-04-08 20:13:35.268398"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.17,
+    "horario": "2026-04-08 20:13:35.314024"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.11,
+    "horario": "2026-04-08 20:13:35.414757"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.06,
+    "horario": "2026-04-08 20:13:35.515279"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 33.18,
+    "horario": "2026-04-08 20:13:35.563011"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 37.45,
+    "horario": "2026-04-08 20:13:35.568931"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 59.0,
+    "horario": "2026-04-08 20:13:35.615833"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.95,
+    "horario": "2026-04-08 20:13:35.716850"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.88,
+    "horario": "2026-04-08 20:13:35.817390"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 33.17,
+    "horario": "2026-04-08 20:13:35.864275"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 37.4,
+    "horario": "2026-04-08 20:13:35.869705"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.82,
+    "horario": "2026-04-08 20:13:35.917981"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.76,
+    "horario": "2026-04-08 20:13:36.018158"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.69,
+    "horario": "2026-04-08 20:13:36.119041"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 33.11,
+    "horario": "2026-04-08 20:13:36.164207"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 37.33,
+    "horario": "2026-04-08 20:13:36.168887"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.65,
+    "horario": "2026-04-08 20:13:36.219369"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.59,
+    "horario": "2026-04-08 20:13:36.320299"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.53,
+    "horario": "2026-04-08 20:13:36.422736"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 37.24,
+    "horario": "2026-04-08 20:13:36.464456"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 33.08,
+    "horario": "2026-04-08 20:13:36.469534"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.47,
+    "horario": "2026-04-08 20:13:36.521725"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.4,
+    "horario": "2026-04-08 20:13:36.622137"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.32,
+    "horario": "2026-04-08 20:13:36.722695"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 37.13,
+    "horario": "2026-04-08 20:13:36.765026"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 33.02,
+    "horario": "2026-04-08 20:13:36.770453"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.26,
+    "horario": "2026-04-08 20:13:36.823147"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.19,
+    "horario": "2026-04-08 20:13:36.923237"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.12,
+    "horario": "2026-04-08 20:13:37.024384"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 32.97,
+    "horario": "2026-04-08 20:13:37.065463"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 37.03,
+    "horario": "2026-04-08 20:13:37.070652"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.07,
+    "horario": "2026-04-08 20:13:37.124737"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 58.02,
+    "horario": "2026-04-08 20:13:37.225541"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.96,
+    "horario": "2026-04-08 20:13:37.326120"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 36.97,
+    "horario": "2026-04-08 20:13:37.366817"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 32.87,
+    "horario": "2026-04-08 20:13:37.372347"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.88,
+    "horario": "2026-04-08 20:13:37.426220"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.81,
+    "horario": "2026-04-08 20:13:37.526935"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.74,
+    "horario": "2026-04-08 20:13:37.627607"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 32.85,
+    "horario": "2026-04-08 20:13:37.667651"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 36.91,
+    "horario": "2026-04-08 20:13:37.668001"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.67,
+    "horario": "2026-04-08 20:13:37.728079"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.61,
+    "horario": "2026-04-08 20:13:37.829544"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.54,
+    "horario": "2026-04-08 20:13:37.929042"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 32.82,
+    "horario": "2026-04-08 20:13:37.967830"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 36.84,
+    "horario": "2026-04-08 20:13:37.973165"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.47,
+    "horario": "2026-04-08 20:13:38.029666"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.39,
+    "horario": "2026-04-08 20:13:38.130290"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.33,
+    "horario": "2026-04-08 20:13:38.230894"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 32.76,
+    "horario": "2026-04-08 20:13:38.268311"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 36.77,
+    "horario": "2026-04-08 20:13:38.273997"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.27,
+    "horario": "2026-04-08 20:13:38.332362"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.22,
+    "horario": "2026-04-08 20:13:38.432000"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.16,
+    "horario": "2026-04-08 20:13:38.532949"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 36.66,
+    "horario": "2026-04-08 20:13:38.568844"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 32.73,
+    "horario": "2026-04-08 20:13:38.574227"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.09,
+    "horario": "2026-04-08 20:13:38.633506"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 57.04,
+    "horario": "2026-04-08 20:13:38.733944"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.97,
+    "horario": "2026-04-08 20:13:38.835248"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 36.63,
+    "horario": "2026-04-08 20:13:38.869103"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 32.65,
+    "horario": "2026-04-08 20:13:38.874377"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.9,
+    "horario": "2026-04-08 20:13:38.934816"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.84,
+    "horario": "2026-04-08 20:13:39.035509"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.79,
+    "horario": "2026-04-08 20:13:39.135927"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 36.61,
+    "horario": "2026-04-08 20:13:39.170209"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 32.63,
+    "horario": "2026-04-08 20:13:39.175133"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.73,
+    "horario": "2026-04-08 20:13:39.236572"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.67,
+    "horario": "2026-04-08 20:13:39.337988"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.6,
+    "horario": "2026-04-08 20:13:39.437291"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 32.53,
+    "horario": "2026-04-08 20:13:39.470568"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 36.58,
+    "horario": "2026-04-08 20:13:39.476048"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.54,
+    "horario": "2026-04-08 20:13:39.537911"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.48,
+    "horario": "2026-04-08 20:13:39.638602"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.41,
+    "horario": "2026-04-08 20:13:39.738947"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 36.51,
+    "horario": "2026-04-08 20:13:39.771366"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 32.44,
+    "horario": "2026-04-08 20:13:39.771477"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.37,
+    "horario": "2026-04-08 20:13:39.840237"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.33,
+    "horario": "2026-04-08 20:13:39.940105"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.27,
+    "horario": "2026-04-08 20:13:40.040723"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 36.41,
+    "horario": "2026-04-08 20:13:40.071631"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 32.4,
+    "horario": "2026-04-08 20:13:40.077212"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.2,
+    "horario": "2026-04-08 20:13:40.142084"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.14,
+    "horario": "2026-04-08 20:13:40.242399"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.08,
+    "horario": "2026-04-08 20:13:40.343463"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 36.42,
+    "horario": "2026-04-08 20:13:40.372375"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 32.4,
+    "horario": "2026-04-08 20:13:40.377821"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.01,
+    "horario": "2026-04-08 20:13:40.443843"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.97,
+    "horario": "2026-04-08 20:13:40.543813"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.93,
+    "horario": "2026-04-08 20:13:40.644564"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 32.35,
+    "horario": "2026-04-08 20:13:40.672896"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 36.36,
+    "horario": "2026-04-08 20:13:40.678582"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.89,
+    "horario": "2026-04-08 20:13:40.745835"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.83,
+    "horario": "2026-04-08 20:13:40.846650"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.77,
+    "horario": "2026-04-08 20:13:40.946297"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 36.26,
+    "horario": "2026-04-08 20:13:40.973399"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 32.29,
+    "horario": "2026-04-08 20:13:40.978864"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.7,
+    "horario": "2026-04-08 20:13:41.047001"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.62,
+    "horario": "2026-04-08 20:13:41.148091"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.56,
+    "horario": "2026-04-08 20:13:41.248054"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 32.22,
+    "horario": "2026-04-08 20:13:41.273817"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 36.16,
+    "horario": "2026-04-08 20:13:41.279174"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.49,
+    "horario": "2026-04-08 20:13:41.349166"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.43,
+    "horario": "2026-04-08 20:13:41.448624"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.37,
+    "horario": "2026-04-08 20:13:41.549547"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 32.19,
+    "horario": "2026-04-08 20:13:41.574436"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 36.11,
+    "horario": "2026-04-08 20:13:41.579326"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.32,
+    "horario": "2026-04-08 20:13:41.649853"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.27,
+    "horario": "2026-04-08 20:13:41.750787"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.21,
+    "horario": "2026-04-08 20:13:41.851603"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 36.08,
+    "horario": "2026-04-08 20:13:41.875116"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 32.11,
+    "horario": "2026-04-08 20:13:41.880480"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.16,
+    "horario": "2026-04-08 20:13:41.951394"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.1,
+    "horario": "2026-04-08 20:13:42.052947"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.02,
+    "horario": "2026-04-08 20:13:42.153911"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 32.03,
+    "horario": "2026-04-08 20:13:42.175601"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 36.02,
+    "horario": "2026-04-08 20:13:42.181533"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.95,
+    "horario": "2026-04-08 20:13:42.253994"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.86,
+    "horario": "2026-04-08 20:13:42.354982"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.77,
+    "horario": "2026-04-08 20:13:42.454254"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 36.02,
+    "horario": "2026-04-08 20:13:42.476621"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 31.91,
+    "horario": "2026-04-08 20:13:42.482207"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.71,
+    "horario": "2026-04-08 20:13:42.555231"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.65,
+    "horario": "2026-04-08 20:13:42.655571"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.57,
+    "horario": "2026-04-08 20:13:42.756455"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 31.86,
+    "horario": "2026-04-08 20:13:42.776904"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 35.95,
+    "horario": "2026-04-08 20:13:42.782664"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.5,
+    "horario": "2026-04-08 20:13:42.857220"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.45,
+    "horario": "2026-04-08 20:13:42.957015"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.37,
+    "horario": "2026-04-08 20:13:43.058425"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 35.91,
+    "horario": "2026-04-08 20:13:43.077374"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 31.81,
+    "horario": "2026-04-08 20:13:43.083186"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.3,
+    "horario": "2026-04-08 20:13:43.159013"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.22,
+    "horario": "2026-04-08 20:13:43.259684"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.14,
+    "horario": "2026-04-08 20:13:43.359898"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 31.74,
+    "horario": "2026-04-08 20:13:43.378129"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 35.86,
+    "horario": "2026-04-08 20:13:43.383871"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.05,
+    "horario": "2026-04-08 20:13:43.460212"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.99,
+    "horario": "2026-04-08 20:13:43.560281"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.92,
+    "horario": "2026-04-08 20:13:43.660909"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 35.77,
+    "horario": "2026-04-08 20:13:43.678914"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 31.71,
+    "horario": "2026-04-08 20:13:43.684476"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.86,
+    "horario": "2026-04-08 20:13:43.761407"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.78,
+    "horario": "2026-04-08 20:13:43.861893"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.69,
+    "horario": "2026-04-08 20:13:43.962265"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 31.68,
+    "horario": "2026-04-08 20:13:43.979725"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 35.73,
+    "horario": "2026-04-08 20:13:43.985342"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.61,
+    "horario": "2026-04-08 20:13:44.063092"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.52,
+    "horario": "2026-04-08 20:13:44.163323"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.45,
+    "horario": "2026-04-08 20:13:44.264540"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 31.61,
+    "horario": "2026-04-08 20:13:44.280495"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 35.68,
+    "horario": "2026-04-08 20:13:44.286759"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.37,
+    "horario": "2026-04-08 20:13:44.364590"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.32,
+    "horario": "2026-04-08 20:13:44.465167"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.27,
+    "horario": "2026-04-08 20:13:44.565556"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 31.53,
+    "horario": "2026-04-08 20:13:44.581118"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 35.63,
+    "horario": "2026-04-08 20:13:44.586530"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.19,
+    "horario": "2026-04-08 20:13:44.666246"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.13,
+    "horario": "2026-04-08 20:13:44.766652"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.04,
+    "horario": "2026-04-08 20:13:44.867332"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 31.43,
+    "horario": "2026-04-08 20:13:44.881736"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 35.58,
+    "horario": "2026-04-08 20:13:44.887931"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.96,
+    "horario": "2026-04-08 20:13:44.967675"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.89,
+    "horario": "2026-04-08 20:13:45.068380"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.82,
+    "horario": "2026-04-08 20:13:45.168687"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 31.36,
+    "horario": "2026-04-08 20:13:45.182163"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 35.47,
+    "horario": "2026-04-08 20:13:45.188513"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.75,
+    "horario": "2026-04-08 20:13:45.269155"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.7,
+    "horario": "2026-04-08 20:13:45.370010"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.63,
+    "horario": "2026-04-08 20:13:45.470093"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 35.36,
+    "horario": "2026-04-08 20:13:45.482795"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 31.31,
+    "horario": "2026-04-08 20:13:45.488399"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.56,
+    "horario": "2026-04-08 20:13:45.570958"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.51,
+    "horario": "2026-04-08 20:13:45.672263"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.45,
+    "horario": "2026-04-08 20:13:45.772308"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 31.26,
+    "horario": "2026-04-08 20:13:45.783393"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 35.36,
+    "horario": "2026-04-08 20:13:45.789365"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.38,
+    "horario": "2026-04-08 20:13:45.872890"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.31,
+    "horario": "2026-04-08 20:13:45.973161"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.24,
+    "horario": "2026-04-08 20:13:46.073884"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 35.27,
+    "horario": "2026-04-08 20:13:46.083644"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 31.19,
+    "horario": "2026-04-08 20:13:46.089358"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.18,
+    "horario": "2026-04-08 20:13:46.174419"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.11,
+    "horario": "2026-04-08 20:13:46.274988"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.04,
+    "horario": "2026-04-08 20:13:46.375412"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 35.2,
+    "horario": "2026-04-08 20:13:46.383708"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 31.14,
+    "horario": "2026-04-08 20:13:46.384016"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 51.97,
+    "horario": "2026-04-08 20:13:46.476024"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 51.92,
+    "horario": "2026-04-08 20:13:46.577122"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 51.9,
+    "horario": "2026-04-08 20:13:46.677743"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 35.15,
+    "horario": "2026-04-08 20:13:46.685115"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 31.11,
+    "horario": "2026-04-08 20:13:46.685172"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 51.89,
+    "horario": "2026-04-08 20:13:46.777633"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 51.91,
+    "horario": "2026-04-08 20:13:46.878413"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 51.93,
+    "horario": "2026-04-08 20:13:46.978821"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 35.11,
+    "horario": "2026-04-08 20:13:46.985230"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 31.04,
+    "horario": "2026-04-08 20:13:46.985298"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 51.97,
+    "horario": "2026-04-08 20:13:47.079399"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.01,
+    "horario": "2026-04-08 20:13:47.179930"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.07,
+    "horario": "2026-04-08 20:13:47.280626"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 35.06,
+    "horario": "2026-04-08 20:13:47.287536"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 30.99,
+    "horario": "2026-04-08 20:13:47.287616"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.14,
+    "horario": "2026-04-08 20:13:47.381403"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.2,
+    "horario": "2026-04-08 20:13:47.481687"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.24,
+    "horario": "2026-04-08 20:13:47.582258"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 35.02,
+    "horario": "2026-04-08 20:13:47.588182"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 30.93,
+    "horario": "2026-04-08 20:13:47.588253"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.3,
+    "horario": "2026-04-08 20:13:47.683001"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.35,
+    "horario": "2026-04-08 20:13:47.783798"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.39,
+    "horario": "2026-04-08 20:13:47.883826"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 34.95,
+    "horario": "2026-04-08 20:13:47.890997"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 30.85,
+    "horario": "2026-04-08 20:13:47.891092"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.43,
+    "horario": "2026-04-08 20:13:47.984480"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.48,
+    "horario": "2026-04-08 20:13:48.085733"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 34.92,
+    "horario": "2026-04-08 20:13:48.186595"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.52,
+    "horario": "2026-04-08 20:13:48.193386"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 30.75,
+    "horario": "2026-04-08 20:13:48.193480"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.59,
+    "horario": "2026-04-08 20:13:48.286349"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.63,
+    "horario": "2026-04-08 20:13:48.387014"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 34.91,
+    "horario": "2026-04-08 20:13:48.486628"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 30.72,
+    "horario": "2026-04-08 20:13:48.493412"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.68,
+    "horario": "2026-04-08 20:13:48.493520"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.72,
+    "horario": "2026-04-08 20:13:48.587578"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.76,
+    "horario": "2026-04-08 20:13:48.688270"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 34.85,
+    "horario": "2026-04-08 20:13:48.786664"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 30.66,
+    "horario": "2026-04-08 20:13:48.793531"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.82,
+    "horario": "2026-04-08 20:13:48.793617"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.86,
+    "horario": "2026-04-08 20:13:48.889484"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.92,
+    "horario": "2026-04-08 20:13:48.989666"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 30.63,
+    "horario": "2026-04-08 20:13:49.087398"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 34.82,
+    "horario": "2026-04-08 20:13:49.087688"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 52.97,
+    "horario": "2026-04-08 20:13:49.095133"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.03,
+    "horario": "2026-04-08 20:13:49.190484"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.11,
+    "horario": "2026-04-08 20:13:49.291151"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 30.51,
+    "horario": "2026-04-08 20:13:49.387994"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 34.72,
+    "horario": "2026-04-08 20:13:49.395140"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.19,
+    "horario": "2026-04-08 20:13:49.395227"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.26,
+    "horario": "2026-04-08 20:13:49.491789"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.34,
+    "horario": "2026-04-08 20:13:49.592552"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 34.61,
+    "horario": "2026-04-08 20:13:49.689274"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 30.44,
+    "horario": "2026-04-08 20:13:49.696106"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.4,
+    "horario": "2026-04-08 20:13:49.696178"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.45,
+    "horario": "2026-04-08 20:13:49.793469"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.51,
+    "horario": "2026-04-08 20:13:49.894232"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 30.35,
+    "horario": "2026-04-08 20:13:49.989337"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 34.52,
+    "horario": "2026-04-08 20:13:49.996598"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.58,
+    "horario": "2026-04-08 20:13:49.996697"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.66,
+    "horario": "2026-04-08 20:13:50.094895"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.72,
+    "horario": "2026-04-08 20:13:50.195614"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 34.44,
+    "horario": "2026-04-08 20:13:50.290134"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 30.31,
+    "horario": "2026-04-08 20:13:50.297132"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.79,
+    "horario": "2026-04-08 20:13:50.297215"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.85,
+    "horario": "2026-04-08 20:13:50.396505"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.92,
+    "horario": "2026-04-08 20:13:50.496857"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 30.21,
+    "horario": "2026-04-08 20:13:50.591179"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 34.42,
+    "horario": "2026-04-08 20:13:50.591552"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 53.99,
+    "horario": "2026-04-08 20:13:50.599089"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.04,
+    "horario": "2026-04-08 20:13:50.698253"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.09,
+    "horario": "2026-04-08 20:13:50.798476"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 30.2,
+    "horario": "2026-04-08 20:13:50.891268"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 34.38,
+    "horario": "2026-04-08 20:13:50.891590"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.17,
+    "horario": "2026-04-08 20:13:50.898368"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.22,
+    "horario": "2026-04-08 20:13:50.999157"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.26,
+    "horario": "2026-04-08 20:13:51.099373"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 34.39,
+    "horario": "2026-04-08 20:13:51.191760"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 30.18,
+    "horario": "2026-04-08 20:13:51.197474"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.32,
+    "horario": "2026-04-08 20:13:51.202771"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.39,
+    "horario": "2026-04-08 20:13:51.300338"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.47,
+    "horario": "2026-04-08 20:13:51.400548"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 30.06,
+    "horario": "2026-04-08 20:13:51.492463"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 34.31,
+    "horario": "2026-04-08 20:13:51.492758"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.55,
+    "horario": "2026-04-08 20:13:51.500436"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.62,
+    "horario": "2026-04-08 20:13:51.601329"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.7,
+    "horario": "2026-04-08 20:13:51.703078"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 29.96,
+    "horario": "2026-04-08 20:13:51.793088"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 34.31,
+    "horario": "2026-04-08 20:13:51.799951"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.77,
+    "horario": "2026-04-08 20:13:51.806148"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.83,
+    "horario": "2026-04-08 20:13:51.903093"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.9,
+    "horario": "2026-04-08 20:13:52.003194"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 34.3,
+    "horario": "2026-04-08 20:13:52.093379"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 29.92,
+    "horario": "2026-04-08 20:13:52.099231"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 54.96,
+    "horario": "2026-04-08 20:13:52.104990"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.05,
+    "horario": "2026-04-08 20:13:52.203988"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.11,
+    "horario": "2026-04-08 20:13:52.304521"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 34.24,
+    "horario": "2026-04-08 20:13:52.394481"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 29.86,
+    "horario": "2026-04-08 20:13:52.401400"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.17,
+    "horario": "2026-04-08 20:13:52.408150"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.23,
+    "horario": "2026-04-08 20:13:52.505115"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.3,
+    "horario": "2026-04-08 20:13:52.606308"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 34.19,
+    "horario": "2026-04-08 20:13:52.695702"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 29.82,
+    "horario": "2026-04-08 20:13:52.702640"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.38,
+    "horario": "2026-04-08 20:13:52.708920"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.44,
+    "horario": "2026-04-08 20:13:52.807094"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.51,
+    "horario": "2026-04-08 20:13:52.907609"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 29.71,
+    "horario": "2026-04-08 20:13:52.995032"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 34.14,
+    "horario": "2026-04-08 20:13:53.001225"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.58,
+    "horario": "2026-04-08 20:13:53.007458"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.65,
+    "horario": "2026-04-08 20:13:53.108200"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.7,
+    "horario": "2026-04-08 20:13:53.208875"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 34.02,
+    "horario": "2026-04-08 20:13:53.295413"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 29.65,
+    "horario": "2026-04-08 20:13:53.295805"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.75,
+    "horario": "2026-04-08 20:13:53.308732"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.82,
+    "horario": "2026-04-08 20:13:53.409344"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.87,
+    "horario": "2026-04-08 20:13:53.509793"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 29.54,
+    "horario": "2026-04-08 20:13:53.596038"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 33.98,
+    "horario": "2026-04-08 20:13:53.602459"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.92,
+    "horario": "2026-04-08 20:13:53.610094"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 55.97,
+    "horario": "2026-04-08 20:13:53.711197"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.04,
+    "horario": "2026-04-08 20:13:53.811772"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 33.89,
+    "horario": "2026-04-08 20:13:53.897015"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 29.5,
+    "horario": "2026-04-08 20:13:53.903973"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.11,
+    "horario": "2026-04-08 20:13:53.912064"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.17,
+    "horario": "2026-04-08 20:13:54.012544"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.24,
+    "horario": "2026-04-08 20:13:54.113131"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 33.82,
+    "horario": "2026-04-08 20:13:54.197190"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 29.4,
+    "horario": "2026-04-08 20:13:54.203972"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.3,
+    "horario": "2026-04-08 20:13:54.213110"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.38,
+    "horario": "2026-04-08 20:13:54.314059"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.43,
+    "horario": "2026-04-08 20:13:54.414745"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 33.76,
+    "horario": "2026-04-08 20:13:54.498015"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 29.33,
+    "horario": "2026-04-08 20:13:54.504664"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.51,
+    "horario": "2026-04-08 20:13:54.514903"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.58,
+    "horario": "2026-04-08 20:13:54.615615"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.64,
+    "horario": "2026-04-08 20:13:54.716455"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 29.26,
+    "horario": "2026-04-08 20:13:54.798641"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 33.71,
+    "horario": "2026-04-08 20:13:54.805731"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.71,
+    "horario": "2026-04-08 20:13:54.816873"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.75,
+    "horario": "2026-04-08 20:13:54.917893"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.79,
+    "horario": "2026-04-08 20:13:55.018014"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 33.64,
+    "horario": "2026-04-08 20:13:55.099275"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 29.19,
+    "horario": "2026-04-08 20:13:55.106815"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.84,
+    "horario": "2026-04-08 20:13:55.118065"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.91,
+    "horario": "2026-04-08 20:13:55.219291"
+  },
+  {
+    "id": "sensor_umidade_1",
+    "tipo": "umidade",
+    "valor": 56.98,
+    "horario": "2026-04-08 20:13:55.320166"
+  },
+  {
+    "id": "sensor_temp_2",
+    "tipo": "temperatura",
+    "valor": 29.07,
+    "horario": "2026-04-08 20:13:55.399909"
+  },
+  {
+    "id": "sensor_temp_1",
+    "tipo": "temperatura",
+    "valor": 33.57,
+    "horario": "2026-04-08 20:13:55.407300"
