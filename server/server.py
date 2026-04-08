@@ -30,7 +30,8 @@ FUSO_BRASIL = timezone(timedelta(hours=-3))
 # ── Endereços dos serviços externos (resolvidos via DNS no Docker) ────────────
 ALARME_IP = os.environ.get("ALARME_IP", "localhost")
 RESFRIAMENTO_IP = os.environ.get("RESFRIAMENTO_IP", "localhost")
-
+ALARME_PORT       = 6000 
+RESFRIAMENTO_PORT = 6001
 # ── Limites aceitáveis para cada grandeza monitorada ─────────────────────────
 # Valores fora dessa faixa acionam o alarme.
 # Valores acima de max+2 acionam também o resfriamento.
