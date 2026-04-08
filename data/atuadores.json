@@ -1,905 +1,1955 @@
 [
   {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 33.06,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:33:55.679182"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 35.07,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:34:00.209903"
-  },
-  {
-    "nome_sensor": "sensor_umidade_1",
-    "sensor": "umidade",
-    "valor": 85.04,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:34:03.004631"
-  },
-  {
-    "nome_sensor": "sensor_umidade_1",
-    "sensor": "umidade",
-    "valor": 87.03,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:34:09.371565"
-  },
-  {
-    "nome_sensor": "sensor_umidade_2",
-    "sensor": "umidade",
-    "valor": 85.04,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:34:15.984622"
-  },
-  {
-    "nome_sensor": "sensor_umidade_2",
-    "sensor": "umidade",
-    "valor": 87.03,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:34:22.561139"
-  },
-  {
-    "nome_sensor": "sensor_temp_2",
-    "sensor": "temperatura",
-    "valor": 33.09,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:34:36.249179"
-  },
-  {
-    "nome_sensor": "sensor_temp_3",
-    "sensor": "temperatura",
-    "valor": 33.14,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:34:39.662163"
-  },
-  {
-    "nome_sensor": "sensor_temp_2",
-    "sensor": "temperatura",
-    "valor": 35.11,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:34:41.377124"
-  },
-  {
-    "nome_sensor": "sensor_temp_3",
-    "sensor": "temperatura",
-    "valor": 33.11,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:35:12.740535"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 33.04,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:35:34.123846"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 35.14,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:35:40.192948"
-  },
-  {
-    "nome_sensor": "sensor_temp_2",
-    "sensor": "temperatura",
-    "valor": 33.06,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:36:20.007539"
-  },
-  {
-    "nome_sensor": "sensor_temp_2",
-    "sensor": "temperatura",
-    "valor": 35.05,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:36:24.886543"
-  },
-  {
-    "nome_sensor": "sensor_temp_3",
-    "sensor": "temperatura",
-    "valor": 33.03,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:36:57.124563"
-  },
-  {
-    "nome_sensor": "sensor_temp_3",
-    "sensor": "temperatura",
-    "valor": 35.06,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:37:02.005409"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 33.17,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:37:37.158295"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 35.02,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:37:40.838307"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 33.11,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:38:11.523564"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 35.04,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:38:16.442523"
-  },
-  {
-    "nome_sensor": "sensor_temp_2",
-    "sensor": "temperatura",
-    "valor": 33.05,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:38:46.991922"
-  },
-  {
-    "nome_sensor": "sensor_temp_2",
-    "sensor": "temperatura",
-    "valor": 35.01,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:38:51.673810"
-  },
-  {
-    "nome_sensor": "sensor_temp_2",
-    "sensor": "temperatura",
-    "valor": 33.12,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:39:19.864130"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 33.04,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:39:40.297688"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 35.09,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:39:45.290891"
-  },
-  {
-    "nome_sensor": "sensor_umidade_1",
-    "sensor": "umidade",
-    "valor": 85.01,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:40:02.223352"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 33.08,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:40:14.628419"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 35.13,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:40:19.582540"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 33.1,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:40:51.735686"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 35.1,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:40:56.110633"
-  },
-  {
-    "nome_sensor": "sensor_temp_3",
-    "sensor": "temperatura",
-    "valor": 33.11,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:40:57.366746"
-  },
-  {
-    "nome_sensor": "sensor_temp_2",
-    "sensor": "temperatura",
-    "valor": 33.03,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:40:57.490698"
-  },
-  {
-    "nome_sensor": "sensor_umidade_1",
-    "sensor": "umidade",
-    "valor": 85.02,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:41:02.519890"
-  },
-  {
-    "nome_sensor": "sensor_umidade_1",
-    "sensor": "umidade",
-    "valor": 87.01,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:41:10.347243"
-  },
-  {
-    "nome_sensor": "sensor_umidade_1",
-    "sensor": "umidade",
-    "valor": 87.03,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:41:10.353563"
-  },
-  {
-    "nome_sensor": "sensor_temp_3",
-    "sensor": "temperatura",
-    "valor": 33.09,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:41:28.809331"
-  },
-  {
-    "nome_sensor": "sensor_temp_3",
-    "sensor": "temperatura",
-    "valor": 35.11,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:41:32.970034"
-  },
-  {
-    "nome_sensor": "sensor_temp_3",
-    "sensor": "temperatura",
-    "valor": 33.05,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:42:07.995370"
-  },
-  {
-    "nome_sensor": "sensor_temp_3",
-    "sensor": "temperatura",
-    "valor": 35.09,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:42:19.727972"
-  },
-  {
-    "nome_sensor": "sensor_temp_2",
-    "sensor": "temperatura",
-    "valor": 33.8,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:42:43.875052"
-  },
-  {
-    "nome_sensor": "sensor_umidade_1",
-    "sensor": "umidade",
-    "valor": 85.03,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:42:49.921010"
-  },
-  {
-    "nome_sensor": "sensor_umidade_1",
-    "sensor": "umidade",
-    "valor": 85.44,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:42:49.924376"
-  },
-  {
-    "nome_sensor": "sensor_umidade_1",
-    "sensor": "umidade",
-    "valor": 85.06,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:42:56.343373"
-  },
-  {
-    "nome_sensor": "sensor_temp_2",
-    "sensor": "temperatura",
-    "valor": 33.61,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:43:02.708500"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 33.26,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:43:02.858681"
-  },
-  {
-    "nome_sensor": "sensor_temp_2",
-    "sensor": "temperatura",
-    "valor": 35.31,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:43:06.258496"
-  },
-  {
-    "nome_sensor": "sensor_temp_3",
-    "sensor": "temperatura",
-    "valor": 33.04,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:43:47.448766"
-  },
-  {
-    "nome_sensor": "sensor_temp_3",
-    "sensor": "temperatura",
-    "valor": 35.01,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:43:52.263757"
-  },
-  {
-    "nome_sensor": "sensor_temp_3",
-    "sensor": "temperatura",
-    "valor": 33.04,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:44:27.621770"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 33.11,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:44:31.485593"
-  },
-  {
-    "nome_sensor": "sensor_temp_3",
-    "sensor": "temperatura",
-    "valor": 35.16,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:44:33.228793"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 35.09,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:44:37.009357"
-  },
-  {
-    "nome_sensor": "sensor_temp_2",
-    "sensor": "temperatura",
-    "valor": 33.13,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:45:09.564179"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 33.06,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:46:05.143284"
-  },
-  {
-    "nome_sensor": "sensor_temp_3",
-    "sensor": "temperatura",
-    "valor": 33.22,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:46:07.058890"
-  },
-  {
-    "nome_sensor": "sensor_temp_2",
-    "sensor": "temperatura",
-    "valor": 33.04,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:46:09.858481"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 35.1,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:46:11.024401"
-  },
-  {
-    "nome_sensor": "sensor_temp_3",
-    "sensor": "temperatura",
-    "valor": 35.03,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:46:11.672721"
-  },
-  {
-    "nome_sensor": "sensor_temp_3",
-    "sensor": "temperatura",
-    "valor": 33.07,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:46:40.628213"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 33.09,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:46:42.560864"
-  },
-  {
-    "nome_sensor": "sensor_temp_2",
-    "sensor": "temperatura",
-    "valor": 33.06,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:46:43.321798"
-  },
-  {
-    "nome_sensor": "sensor_temp_3",
-    "sensor": "temperatura",
-    "valor": 35.13,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:46:45.791067"
-  },
-  {
-    "nome_sensor": "sensor_temp_3",
-    "sensor": "temperatura",
-    "valor": 33.04,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:47:15.310124"
-  },
-  {
-    "nome_sensor": "sensor_temp_2",
-    "sensor": "temperatura",
-    "valor": 33.06,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:47:44.430299"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 33.1,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:47:44.796099"
-  },
-  {
-    "nome_sensor": "sensor_temp_2",
-    "sensor": "temperatura",
-    "valor": 35.1,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:47:48.823684"
-  },
-  {
-    "nome_sensor": "sensor_temp_2",
-    "sensor": "temperatura",
-    "valor": 33.02,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:48:17.770307"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 33.06,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:48:18.407283"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 35.03,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:48:23.042801"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 33.06,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:48:50.242200"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 35.04,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:48:55.506773"
-  },
-  {
-    "nome_sensor": "sensor_temp_3",
-    "sensor": "temperatura",
-    "valor": 33.11,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:49:26.394255"
-  },
-  {
-    "nome_sensor": "sensor_temp_3",
-    "sensor": "temperatura",
-    "valor": 35.17,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:49:30.655652"
-  },
-  {
-    "nome_sensor": "sensor_umidade_1",
-    "sensor": "umidade",
-    "valor": 85.03,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:49:39.572940"
-  },
-  {
-    "nome_sensor": "sensor_umidade_1",
-    "sensor": "umidade",
-    "valor": 87.03,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:49:46.827166"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 33.04,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:50:30.376773"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 35.07,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:50:35.194796"
-  },
-  {
-    "nome_sensor": "sensor_umidade_2",
-    "sensor": "umidade",
-    "valor": 85.03,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:51:18.742385"
-  },
-  {
-    "nome_sensor": "sensor_temp_2",
-    "sensor": "temperatura",
-    "valor": 33.01,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:51:19.727521"
-  },
-  {
     "nome_sensor": "sensor_temp_3",
     "sensor": "temperatura",
     "valor": 33.18,
     "acao": "ALARME",
-    "timestamp": "2026-04-08 14:51:24.015174"
-  },
-  {
-    "nome_sensor": "sensor_temp_2",
-    "sensor": "temperatura",
-    "valor": 35.07,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:51:24.156498"
-  },
-  {
-    "nome_sensor": "sensor_temp_2",
-    "sensor": "temperatura",
-    "valor": 33.16,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:51:52.526265"
-  },
-  {
-    "nome_sensor": "sensor_temp_3",
-    "sensor": "temperatura",
-    "valor": 33.1,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:51:54.584037"
-  },
-  {
-    "nome_sensor": "sensor_temp_2",
-    "sensor": "temperatura",
-    "valor": 35.09,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:51:57.202099"
-  },
-  {
-    "nome_sensor": "sensor_temp_3",
-    "sensor": "temperatura",
-    "valor": 33.01,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:52:26.632160"
+    "timestamp": "2026-04-08 15:56:53.354849"
   },
   {
     "nome_sensor": "sensor_temp_2",
     "sensor": "temperatura",
     "valor": 33.13,
     "acao": "ALARME",
-    "timestamp": "2026-04-08 14:52:29.027242"
-  },
-  {
-    "nome_sensor": "sensor_temp_3",
-    "sensor": "temperatura",
-    "valor": 35.09,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:52:31.763100"
+    "timestamp": "2026-04-08 15:56:54.552818"
   },
   {
     "nome_sensor": "sensor_temp_1",
     "sensor": "temperatura",
     "valor": 33.01,
     "acao": "ALARME",
-    "timestamp": "2026-04-08 14:53:04.214584"
+    "timestamp": "2026-04-08 15:56:56.363295"
   },
   {
-    "nome_sensor": "sensor_temp_1",
+    "nome_sensor": "sensor_temp_3",
     "sensor": "temperatura",
-    "valor": 35.01,
+    "valor": 35.14,
     "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:53:09.362592"
-  },
-  {
-    "nome_sensor": "sensor_temp_2",
-    "sensor": "temperatura",
-    "valor": 33.05,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:53:48.854558"
-  },
-  {
-    "nome_sensor": "sensor_temp_2",
-    "sensor": "temperatura",
-    "valor": 35.15,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:53:54.361910"
+    "timestamp": "2026-04-08 15:56:58.466890"
   },
   {
     "nome_sensor": "sensor_umidade_1",
-    "sensor": "umidade",
-    "valor": 85.02,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:54:20.108693"
-  },
-  {
-    "nome_sensor": "sensor_umidade_1",
-    "sensor": "umidade",
-    "valor": 85.06,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:54:20.109017"
-  },
-  {
-    "nome_sensor": "sensor_temp_2",
-    "sensor": "temperatura",
-    "valor": 33.02,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:54:23.614136"
-  },
-  {
-    "nome_sensor": "sensor_umidade_1",
-    "sensor": "umidade",
-    "valor": 87.01,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:54:27.204232"
-  },
-  {
-    "nome_sensor": "sensor_umidade_1",
-    "sensor": "umidade",
-    "valor": 87.05,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:54:34.214198"
-  },
-  {
-    "nome_sensor": "sensor_umidade_2",
-    "sensor": "umidade",
-    "valor": 85.03,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:54:48.093633"
-  },
-  {
-    "nome_sensor": "sensor_umidade_2",
-    "sensor": "umidade",
-    "valor": 87.04,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:54:53.881159"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 33.14,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:55:32.963507"
-  },
-  {
-    "nome_sensor": "sensor_umidade_2",
     "sensor": "umidade",
     "valor": 85.01,
     "acao": "ALARME",
-    "timestamp": "2026-04-08 14:55:51.879390"
+    "timestamp": "2026-04-08 15:57:04.338573"
   },
   {
-    "nome_sensor": "sensor_umidade_2",
+    "nome_sensor": "sensor_umidade_1",
     "sensor": "umidade",
-    "valor": 87.02,
+    "valor": 87.03,
     "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:55:57.702093"
+    "timestamp": "2026-04-08 15:57:10.278719"
+  },
+  {
+    "nome_sensor": "A.M",
+    "sensor": "manual",
+    "valor": 0,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 15:57:16.789295"
+  },
+  {
+    "nome_sensor": "A.M",
+    "sensor": "manual",
+    "valor": 0,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 15:57:20.142857"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.03,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 15:57:34.838505"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.02,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 15:57:36.953040"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.15,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 15:57:38.146551"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 35.15,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 15:57:39.661962"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.09,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 15:58:08.525984"
   },
   {
     "nome_sensor": "sensor_umidade_1",
     "sensor": "umidade",
     "valor": 85.02,
     "acao": "ALARME",
-    "timestamp": "2026-04-08 14:56:15.451809"
+    "timestamp": "2026-04-08 15:58:26.191753"
   },
   {
     "nome_sensor": "sensor_umidade_1",
     "sensor": "umidade",
-    "valor": 85.06,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:56:15.452579"
-  },
-  {
-    "nome_sensor": "sensor_temp_3",
-    "sensor": "temperatura",
-    "valor": 33.14,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:56:44.011900"
-  },
-  {
-    "nome_sensor": "sensor_temp_2",
-    "sensor": "temperatura",
-    "valor": 33.06,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:56:44.412599"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 33.21,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:56:45.336299"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 35.04,
+    "valor": 87.03,
     "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:56:50.544900"
-  },
-  {
-    "nome_sensor": "sensor_temp_3",
-    "sensor": "temperatura",
-    "valor": 35.02,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:56:50.655563"
-  },
-  {
-    "nome_sensor": "sensor_temp_2",
-    "sensor": "temperatura",
-    "valor": 35.07,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:56:50.982387"
-  },
-  {
-    "nome_sensor": "sensor_temp_2",
-    "sensor": "temperatura",
-    "valor": 33.07,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:57:20.292628"
-  },
-  {
-    "nome_sensor": "sensor_umidade_1",
-    "sensor": "umidade",
-    "valor": 85.03,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:57:20.432430"
-  },
-  {
-    "nome_sensor": "sensor_temp_3",
-    "sensor": "temperatura",
-    "valor": 33.02,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:57:22.712279"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 33.02,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:57:23.332889"
-  },
-  {
-    "nome_sensor": "sensor_temp_3",
-    "sensor": "temperatura",
-    "valor": 35.07,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:57:30.290736"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 35.09,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:57:31.319234"
+    "timestamp": "2026-04-08 15:58:33.032325"
   },
   {
     "nome_sensor": "sensor_temp_2",
     "sensor": "temperatura",
     "valor": 33.04,
     "acao": "ALARME",
-    "timestamp": "2026-04-08 14:58:30.253880"
-  },
-  {
-    "nome_sensor": "sensor_temp_2",
-    "sensor": "temperatura",
-    "valor": 35.03,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:58:34.673409"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 33.02,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:58:35.401725"
-  },
-  {
-    "nome_sensor": "sensor_temp_1",
-    "sensor": "temperatura",
-    "valor": 35.02,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:58:40.834624"
-  },
-  {
-    "nome_sensor": "sensor_temp_2",
-    "sensor": "temperatura",
-    "valor": 33.09,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:59:08.030325"
+    "timestamp": "2026-04-08 15:59:06.219909"
   },
   {
     "nome_sensor": "sensor_temp_1",
     "sensor": "temperatura",
     "valor": 33.05,
     "acao": "ALARME",
-    "timestamp": "2026-04-08 14:59:10.635186"
+    "timestamp": "2026-04-08 15:59:07.124851"
   },
   {
-    "nome_sensor": "sensor_temp_1",
+    "nome_sensor": "sensor_temp_2",
     "sensor": "temperatura",
-    "valor": 35.06,
+    "valor": 35.04,
     "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:59:18.358491"
-  },
-  {
-    "nome_sensor": "sensor_temp_3",
-    "sensor": "temperatura",
-    "valor": 33.23,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:59:22.383260"
-  },
-  {
-    "nome_sensor": "sensor_temp_3",
-    "sensor": "temperatura",
-    "valor": 33.14,
-    "acao": "ALARME",
-    "timestamp": "2026-04-08 14:59:53.187926"
-  },
-  {
-    "nome_sensor": "sensor_temp_3",
-    "sensor": "temperatura",
-    "valor": 35.1,
-    "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 14:59:58.491375"
+    "timestamp": "2026-04-08 15:59:10.748842"
   },
   {
     "nome_sensor": "sensor_temp_2",
     "sensor": "temperatura",
     "valor": 33.15,
     "acao": "ALARME",
-    "timestamp": "2026-04-08 15:00:39.011843"
+    "timestamp": "2026-04-08 15:59:38.106142"
   },
   {
     "nome_sensor": "sensor_temp_1",
     "sensor": "temperatura",
+    "valor": 33.05,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 15:59:39.583239"
+  },
+  {
+    "nome_sensor": "sensor_umidade_1",
+    "sensor": "umidade",
+    "valor": 85.01,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 15:59:39.912003"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.05,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 15:59:42.916017"
+  },
+  {
+    "nome_sensor": "sensor_umidade_1",
+    "sensor": "umidade",
+    "valor": 87.03,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 15:59:45.828733"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
     "valor": 33.06,
     "acao": "ALARME",
-    "timestamp": "2026-04-08 15:00:41.951160"
+    "timestamp": "2026-04-08 16:00:13.240417"
+  },
+  {
+    "nome_sensor": "sensor_umidade_1",
+    "sensor": "umidade",
+    "valor": 85.01,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:00:47.430356"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.14,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:00:53.255364"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.02,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:00:53.512796"
+  },
+  {
+    "nome_sensor": "sensor_umidade_1",
+    "sensor": "umidade",
+    "valor": 87.01,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:00:53.558355"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.14,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:01:23.277255"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.04,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:01:27.799053"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.02,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:01:58.151383"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.1,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:02:03.284024"
+  },
+  {
+    "nome_sensor": "sensor_umidade_2",
+    "sensor": "umidade",
+    "valor": 85.02,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:02:05.485621"
+  },
+  {
+    "nome_sensor": "sensor_umidade_2",
+    "sensor": "umidade",
+    "valor": 87.01,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:02:11.808701"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.13,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:02:41.742116"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 35.13,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:02:46.836745"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.09,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:03:13.880798"
+  },
+  {
+    "nome_sensor": "sensor_umidade_2",
+    "sensor": "umidade",
+    "valor": 85.04,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:03:14.991780"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 35.09,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:03:18.719824"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.07,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:03:47.884188"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.05,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:03:52.390244"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.13,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:03:52.947607"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 35.07,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:03:57.163524"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.02,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:04:26.635711"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 35.07,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:04:32.033621"
+  },
+  {
+    "nome_sensor": "sensor_umidade_1",
+    "sensor": "umidade",
+    "valor": 85.01,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:04:33.740186"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.01,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:05:09.327503"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 35.04,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:05:13.822295"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.13,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:05:41.768763"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.01,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:05:48.657648"
+  },
+  {
+    "nome_sensor": "sensor_umidade_1",
+    "sensor": "umidade",
+    "valor": 85.03,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:05:51.464204"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.06,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:05:53.497652"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.04,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:06:22.051763"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.05,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:06:26.535591"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.12,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:06:55.383458"
+  },
+  {
+    "nome_sensor": "sensor_umidade_1",
+    "sensor": "umidade",
+    "valor": 85.03,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:06:56.415580"
+  },
+  {
+    "nome_sensor": "sensor_umidade_1",
+    "sensor": "umidade",
+    "valor": 87.03,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:07:02.151802"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.22,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:07:50.977362"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 35.05,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:07:55.230979"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.08,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:08:24.037211"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.13,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:08:29.765032"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.08,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:08:34.004435"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.09,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:09:02.851807"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.17,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:09:07.626621"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.06,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:09:31.659969"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 35.01,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:09:35.606048"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.01,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:10:06.227682"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 35.12,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:10:11.669677"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.11,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:10:46.795051"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.07,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:10:48.300463"
   },
   {
     "nome_sensor": "sensor_temp_2",
     "sensor": "temperatura",
     "valor": 35.02,
     "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 15:00:42.679695"
+    "timestamp": "2026-04-08 16:10:51.024537"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.14,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:11:20.176112"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.09,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:11:25.877633"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.12,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:11:54.131939"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.01,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:12:01.976682"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 35.03,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:12:07.069563"
   },
   {
     "nome_sensor": "sensor_temp_1",
     "sensor": "temperatura",
+    "valor": 33.12,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:12:40.428425"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 35.03,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:12:44.620651"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.13,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:13:21.918495"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.1,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:13:26.091433"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.09,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:13:54.662801"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.13,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:14:00.363579"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.06,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:14:00.364268"
+  },
+  {
+    "nome_sensor": "sensor_umidade_2",
+    "sensor": "umidade",
+    "valor": 85.01,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:14:21.237080"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.08,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:14:27.110904"
+  },
+  {
+    "nome_sensor": "sensor_umidade_2",
+    "sensor": "umidade",
+    "valor": 87.04,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:14:27.405361"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.16,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:15:00.183465"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 35.08,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:15:04.972020"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.05,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:15:38.656991"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 35.17,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:15:44.051028"
+  },
+  {
+    "nome_sensor": "sensor_umidade_2",
+    "sensor": "umidade",
+    "valor": 85.02,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:15:58.300543"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.02,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:16:12.306204"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.07,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:16:15.927676"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 35.06,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:16:17.445202"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.13,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:16:47.445018"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.18,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:16:49.271791"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.1,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:16:51.709465"
+  },
+  {
+    "nome_sensor": "sensor_umidade_2",
+    "sensor": "umidade",
+    "valor": 85.01,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:17:15.384097"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.09,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:17:20.216149"
+  },
+  {
+    "nome_sensor": "sensor_umidade_2",
+    "sensor": "umidade",
+    "valor": 87.04,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:17:21.631956"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.11,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:17:59.302963"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 35.12,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:18:03.194920"
+  },
+  {
+    "nome_sensor": "sensor_umidade_2",
+    "sensor": "umidade",
+    "valor": 85.02,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:18:19.773474"
+  },
+  {
+    "nome_sensor": "sensor_umidade_2",
+    "sensor": "umidade",
+    "valor": 87.01,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:18:25.383536"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.1,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:18:58.227583"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.13,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:18:59.431247"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
     "valor": 35.02,
     "acao": "RESFRIAMENTO",
-    "timestamp": "2026-04-08 15:00:47.308316"
+    "timestamp": "2026-04-08 16:19:02.702471"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.11,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:19:34.891036"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.03,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:20:25.652236"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.07,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:20:31.095428"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.07,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:20:59.008635"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.08,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:21:04.436821"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.09,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:21:04.743103"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.06,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:21:33.305846"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.15,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:21:33.306044"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.04,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:21:37.185082"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 35.08,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:21:37.499514"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.16,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:22:04.563634"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 35.01,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:22:08.748687"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.04,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:22:50.847031"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.14,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:22:52.357293"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 35.08,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:22:55.341580"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.13,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:23:30.797106"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 35.01,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:23:35.334412"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.1,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:24:04.797521"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 35.1,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:24:09.578974"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.18,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:24:38.438008"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.08,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:24:46.236654"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.02,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:24:48.048622"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 35.1,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:24:51.078139"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.11,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:25:19.606232"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 35.21,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:25:23.558433"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.11,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:25:52.080141"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 35.06,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:25:56.873777"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.01,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:26:32.329593"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.03,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:26:32.375797"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.1,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:26:36.558892"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.07,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:27:06.330330"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.01,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:27:19.260942"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 35.05,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:27:23.179395"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.07,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:27:53.507148"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 35.14,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:27:57.697003"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.01,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:28:33.194403"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.04,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:28:35.556767"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.06,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:28:37.975923"
+  },
+  {
+    "nome_sensor": "sensor_umidade_1",
+    "sensor": "umidade",
+    "valor": 85.01,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:29:06.575433"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.04,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:29:06.837225"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.05,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:29:07.434158"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.1,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:29:11.076237"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.02,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:29:46.217122"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 35.07,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:29:51.046842"
+  },
+  {
+    "nome_sensor": "sensor_umidade_1",
+    "sensor": "umidade",
+    "valor": 85.03,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:30:05.592930"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.17,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:30:21.360499"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 35.04,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:30:24.687009"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.06,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:30:52.953111"
+  },
+  {
+    "nome_sensor": "sensor_umidade_2",
+    "sensor": "umidade",
+    "valor": 85.01,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:30:56.678998"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 35.16,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:30:58.373181"
+  },
+  {
+    "nome_sensor": "sensor_umidade_1",
+    "sensor": "umidade",
+    "valor": 85.03,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:31:29.095980"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.08,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:31:29.616111"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.08,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:31:30.819448"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.1,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:31:34.140225"
+  },
+  {
+    "nome_sensor": "sensor_umidade_2",
+    "sensor": "umidade",
+    "valor": 85.03,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:32:09.034233"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.1,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:32:15.883597"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 35.2,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:32:20.719575"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.16,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:32:48.023028"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 35.17,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:32:53.187798"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.06,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:33:25.292723"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.02,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:33:26.804231"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.07,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:33:30.434446"
+  },
+  {
+    "nome_sensor": "sensor_umidade_2",
+    "sensor": "umidade",
+    "valor": 85.01,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:33:34.137332"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.01,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:34:00.201029"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 35.02,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:34:04.677226"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.06,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:34:36.558422"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 35.07,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:34:41.646021"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.06,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:35:11.406908"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 35.03,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:35:15.639993"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.04,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:35:46.849301"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.05,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:35:48.062641"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.02,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:35:51.384364"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.17,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:36:19.335006"
+  },
+  {
+    "nome_sensor": "sensor_umidade_1",
+    "sensor": "umidade",
+    "valor": 85.02,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:36:31.367401"
+  },
+  {
+    "nome_sensor": "sensor_umidade_1",
+    "sensor": "umidade",
+    "valor": 87.01,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:36:37.274713"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.15,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:37:10.144856"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 35.1,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:37:14.636737"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.13,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:37:43.203460"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.15,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:37:48.422169"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 35.12,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:37:48.432251"
+  },
+  {
+    "nome_sensor": "sensor_umidade_1",
+    "sensor": "umidade",
+    "valor": 85.03,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:37:50.210677"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.07,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:38:18.948409"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.18,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:38:19.844565"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 35.1,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:38:24.385882"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.09,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:38:24.388801"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.12,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:38:53.496802"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.04,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:39:09.432993"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 35.15,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:39:15.486232"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.04,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:39:56.619633"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.23,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:40:02.374718"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.14,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:40:31.814882"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.08,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:40:35.998280"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.11,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:40:36.911425"
+  },
+  {
+    "nome_sensor": "sensor_umidade_2",
+    "sensor": "umidade",
+    "valor": 85.01,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:41:05.932971"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.03,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:41:12.657310"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 35.16,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:41:17.199274"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.16,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:41:46.611815"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.19,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:42:05.563631"
+  },
+  {
+    "nome_sensor": "sensor_umidade_1",
+    "sensor": "umidade",
+    "valor": 85.02,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:42:08.933460"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.06,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:42:09.492956"
+  },
+  {
+    "nome_sensor": "sensor_umidade_1",
+    "sensor": "umidade",
+    "valor": 87.02,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:42:14.968606"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.09,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:42:38.044449"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.21,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:42:38.634674"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 35.01,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:42:42.234330"
+  },
+  {
+    "nome_sensor": "sensor_umidade_1",
+    "sensor": "umidade",
+    "valor": 85.03,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:43:07.596176"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.11,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:43:10.761258"
+  },
+  {
+    "nome_sensor": "sensor_umidade_1",
+    "sensor": "umidade",
+    "valor": 87.01,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:43:14.181383"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.09,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:43:47.757249"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.15,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:44:04.589638"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 35.08,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:44:09.686594"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.19,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:44:38.832243"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 35.06,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:44:43.365959"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.1,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:45:12.173660"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.05,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:45:15.484920"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 35.1,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:45:17.002469"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.04,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:45:50.052737"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 35.05,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:45:55.377104"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.15,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:46:36.377868"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.17,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:46:36.378104"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.11,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:46:40.865225"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.04,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:47:10.936230"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.11,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:47:15.458544"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.15,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:47:47.595824"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 35.12,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:47:52.396736"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.1,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:48:27.544490"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 35.03,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:48:32.380792"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.02,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:49:01.507875"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 35.22,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:49:06.045482"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.15,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:49:35.207194"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.06,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:49:39.090077"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.02,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:50:12.145459"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 35.17,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:50:17.288678"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.03,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:50:53.350602"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.15,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:50:56.964178"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 35.09,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:50:57.242976"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.02,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:51:27.572484"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.01,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:51:32.399777"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.08,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:52:01.873892"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.17,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:52:07.273075"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.04,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:52:41.821041"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 35.14,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:52:46.058775"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.03,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:53:14.888142"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 35.12,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:53:19.425046"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.02,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:53:55.148971"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.04,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:53:56.687418"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.06,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:54:00.583956"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.02,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:54:28.244798"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.07,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:54:29.151190"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.04,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:54:33.331822"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.05,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:55:03.701358"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.05,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:55:07.018235"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 35.06,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:55:10.303440"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.09,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:55:37.063650"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 35.05,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:55:41.617335"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.19,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:56:11.918138"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.05,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:56:14.331367"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 35.11,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:56:16.761307"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.06,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:56:45.584734"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.09,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:56:49.208616"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 35.08,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:56:49.515899"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.09,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:57:31.268814"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 35.03,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:57:35.826610"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 33.16,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:58:03.715488"
+  },
+  {
+    "nome_sensor": "sensor_temp_3",
+    "sensor": "temperatura",
+    "valor": 35.12,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:58:08.251623"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.03,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:58:43.399233"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.08,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:58:47.325279"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 35.18,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:58:49.439968"
+  },
+  {
+    "nome_sensor": "sensor_temp_1",
+    "sensor": "temperatura",
+    "valor": 33.2,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:59:18.425635"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.02,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:59:18.854328"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.01,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:59:23.077530"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 33.02,
+    "acao": "ALARME",
+    "timestamp": "2026-04-08 16:59:51.964991"
+  },
+  {
+    "nome_sensor": "sensor_temp_2",
+    "sensor": "temperatura",
+    "valor": 35.09,
+    "acao": "RESFRIAMENTO",
+    "timestamp": "2026-04-08 16:59:56.777089"
   }
 ]

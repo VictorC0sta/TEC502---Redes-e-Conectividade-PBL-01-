@@ -30,7 +30,7 @@ import queue
 import time
 
 # Endereço base do servidor central — altere se rodar fora do Docker
-SERVER_URL = "http://localhost:5000"
+SERVER_URL = "http://localhost:5050"
 
 # Períodos disponíveis no seletor da aba Tempo Real (rótulo → segundos)
 PERIODOS = {
