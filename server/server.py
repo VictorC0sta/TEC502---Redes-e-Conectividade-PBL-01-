@@ -28,10 +28,8 @@ HISTORICO_FILE = "data/historico.json"   # Histórico de leituras dos sensores
 FUSO_BRASIL = timezone(timedelta(hours=-3))
 
 # ── Endereços dos serviços externos (resolvidos via DNS no Docker) ────────────
-ALARME_IP         = "alarme"        # Hostname do container do serviço de alarme
-ALARME_PORT       = 6000
-RESFRIAMENTO_IP   = "resfriamento"  # Hostname do container do serviço de resfriamento
-RESFRIAMENTO_PORT = 6001
+ALARME_IP = os.environ.get("ALARME_IP", "localhost")
+RESFRIAMENTO_IP = os.environ.get("RESFRIAMENTO_IP", "localhost")
 
 # ── Limites aceitáveis para cada grandeza monitorada ─────────────────────────
 # Valores fora dessa faixa acionam o alarme.
