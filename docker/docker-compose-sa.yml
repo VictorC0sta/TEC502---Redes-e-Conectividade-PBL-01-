@@ -1,6 +1,6 @@
 services:
   alarme:
-    build: ./services/atuadores
+    build: ../services/atuadores
     container_name: alarme
     command: python -u alarme.py
     ports:
@@ -9,7 +9,7 @@ services:
       - ./data:/app/data
 
   resfriamento:
-    build: ./services/atuadores
+    build: ../services/atuadores
     container_name: resfriamento
     command: python -u resfriamento.py
     ports:
@@ -21,7 +21,7 @@ services:
       - TCP_SENSOR_PORT=7000
 
   sensor_temp_1:
-    build: ./services/sensores
+    build: ../services/sensores
     container_name: sensor_temp_1
     command: python -u temperatura.py
     environment:
@@ -31,7 +31,7 @@ services:
       - TCP_PORT=7000
 
   sensor_temp_2:
-    build: ./services/sensores
+    build: ../services/sensores
     container_name: sensor_temp_2
     command: python -u temperatura.py
     environment:
@@ -41,7 +41,7 @@ services:
       - TCP_PORT=7000
 
   sensor_umidade_1:
-    build: ./services/sensores
+    build: ../services/sensores
     container_name: sensor_umidade_1
     command: python -u umidade.py
     environment:
