@@ -28,7 +28,7 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from collections import defaultdict, deque
 import queue
 import time
-
+import os
 # Endereço base do servidor central — altere se rodar fora do Docker
 SERVER_URL = os.environ.get("SERVER_URL", "http://172.16.103.5:5050")
 

@@ -17,7 +17,7 @@ services:
     volumes:
       - ./data:/app/data
     environment:
-      - SENSORES_TEMP=sensor_temp_1,sensor_temp_2
+      - SENSORES_TEMP=sensor_temp_1,sensor_temp_2,sensor_temp_3
       - TCP_SENSOR_PORT=7000
 
   sensor_temp_1:
@@ -40,11 +40,30 @@ services:
       - UDP_PORT=5001
       - TCP_PORT=7000
 
+  sensor_temp_3:
+    build: ../services/sensores
+    container_name: sensor_temp_3
+    command: python -u temperatura.py
+    environment:
+      - SENSOR_ID=sensor_temp_3
+      - SERVER_IP=${CORE_HOST_IP}
+      - UDP_PORT=5001
+      - TCP_PORT=7000
+
   sensor_umidade_1:
     build: ../services/sensores
     container_name: sensor_umidade_1
     command: python -u umidade.py
     environment:
       - SENSOR_ID=sensor_umidade_1
+      - SERVER_IP=${CORE_HOST_IP}
+      - UDP_PORT=5001
+
+  sensor_umidade_2:
+    build: ../services/sensores
+    container_name: sensor_umidade_2
+    command: python -u umidade.py
+    environment:
+      - SENSOR_ID=sensor_umidade_2
       - SERVER_IP=${CORE_HOST_IP}
       - UDP_PORT=5001
