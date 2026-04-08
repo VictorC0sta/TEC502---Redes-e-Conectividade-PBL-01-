@@ -1,9 +1,6 @@
-version: "3.9"
-
 services:
-
   server:
-    build: .
+    build: ./server
     container_name: server
     ports:
       - "5050:5000"
@@ -14,7 +11,7 @@ services:
       - ./data:/app/data
 
   gateway:
-    build: .
+    build: ./gateway
     container_name: gateway
     environment:
       - HTTP_URL=http://server:5000
