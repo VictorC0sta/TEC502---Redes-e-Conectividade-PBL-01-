@@ -1,121 +1,25 @@
-networks:
-  rede:
-    driver: bridge
+version: "3.9"
 
 services:
 
   server:
-    build: ../server
+    build: .
     container_name: server
     ports:
       - "5050:5000"
+    environment:
+      - ALARME_IP=${EDGE_HOST_IP}
+      - RESFRIAMENTO_IP=${EDGE_HOST_IP}
     volumes:
-      - ../data:/app/data
-    networks:
-      - rede
+      - ./data:/app/data
 
   gateway:
-    build: ../gateway
+    build: .
     container_name: gateway
     environment:
       - HTTP_URL=http://server:5000
       - UDP_PORT=5001
+    ports:
+      - "5001:5001/udp"
     depends_on:
       - server
-    networks:
-      - rede
-
-  alarme:
-    build: ../services/atuadores
-    container_name: alarme
-    command: python -u alarme.py
-    volumes:
-      - ../data:/app/data
-    environment:
-      - ALARME_COOLDOWN=30
-    networks:
-      - rede
-
-  resfriamento:
-    build: ../services/atuadores
-    container_name: resfriamento
-    command: python -u resfriamento.py
-    volumes:
-      - ../data:/app/data
-    environment:
-      - SENSORES_TEMP=sensor_temp_1,sensor_temp_2,sensor_temp_3
-      - TCP_SENSOR_PORT=7000
-    networks:
-      - rede
-
-  sensor_temp_1:
-    build: ../services/sensores
-    container_name: sensor_temp_1
-    command: python -u temperatura.py
-    environment:
-      - SENSOR_ID=sensor_temp_1
-      - SERVER_IP=gateway
-      - UDP_PORT=5001
-      - TCP_PORT=7000
-    depends_on:
-      - gateway
-    networks:
-      - rede
-
-  sensor_temp_2:
-    build: ../services/sensores
-    container_name: sensor_temp_2
-    command: python -u temperatura.py
-    environment:
-      - SENSOR_ID=sensor_temp_2
-      - SERVER_IP=gateway
-      - UDP_PORT=5001
-      - TCP_PORT=7000
-    depends_on:
-      - gateway
-    networks:
-      - rede
-
-  sensor_temp_3:
-    build: ../services/sensores
-    container_name: sensor_temp_3
-    command: python -u temperatura.py
-    environment:
-      - SENSOR_ID=sensor_temp_3
-      - SERVER_IP=gateway
-      - UDP_PORT=5001
-      - TCP_PORT=7000
-    depends_on:
-      - gateway
-    networks:
-      - rede
-
-  sensor_umidade_1:
-    build: ../services/sensores
-    container_name: sensor_umidade_1
-    command: python -u umidade.py
-    environment:
-      - SENSOR_ID=sensor_umidade_1
-      - SERVER_IP=gateway
-      - UDP_PORT=5001
-      - COOLDOWN_SEGUNDOS=30
-      - INTERVALO_ENVIO=0.1
-    depends_on:
-      - gateway
-    networks:
-      - rede
-
-  sensor_umidade_2:
-    build: ../services/sensores
-    container_name: sensor_umidade_2
-    command: python -u umidade.py
-    environment:
-      - SENSOR_ID=sensor_umidade_2
-      - SERVER_IP=gateway
-      - UDP_PORT=5001
-      - COOLDOWN_SEGUNDOS=30
-      - INTERVALO_ENVIO=0.1
-    depends_on:
-      - gateway
-    networks:
-      - rede
