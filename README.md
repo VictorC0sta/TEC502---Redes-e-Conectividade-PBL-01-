@@ -1,5 +1,5 @@
----
 
+---
 # 🏭 Sistema IoT-Industrial — Monitoramento Distribuído em Tempo Real
 
 > Projeto desenvolvido para a disciplina **TEC502 — Redes e Conectividade** | PBL 01  
