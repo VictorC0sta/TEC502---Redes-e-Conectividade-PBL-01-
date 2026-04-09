@@ -19,9 +19,9 @@
   * [TCP — Server → Atuadores](#tcp--server--atuadores)
 * [Encapsulamento e Tratamento de Dados](#encapsulamento-e-tratamento-de-dados)
 * [Concorrência](#concorrência)
-* [Qualidade de Serviço](#qualidade-de-serviço)
 * [Interface do Usuário](#interface-do-usuário)
 * [Confiabilidade](#confiabilidade)
+* [Escalabilidade](#escalabilidade)
 * [Testes](#testes)
 * [Execução com Docker — Passo a Passo](#execução-com-docker--passo-a-passo)
   * [Pré-requisitos](#pré-requisitos)
@@ -57,8 +57,7 @@ A arquitetura segue um modelo em camadas, onde cada componente possui responsabi
 ### Diagrama de Componentes
 
 ```text
-[SENSOR TEMP 1]  [SENSOR TEMP 2]  [SENSOR TEMP 3]
-[SENSOR UMID 1]  [SENSOR UMID 2]
+[SENSORES-UMIDADE/TEMPERATURA]
         |
         | UDP (porta 5001) — telemetria leve, sem conexão
         ↓
@@ -80,8 +79,8 @@ O sistema foi projetado para rodar em **duas máquinas físicas distintas**:
 
 | Máquina | Componentes | Compose |
 |---|---|---|
-| **larsid05** (Máquina A) | Server + Gateway | `docker-compose-server.yml` |
-| **larsid04** (Máquina B) | Sensores + Atuadores | `docker-compose-sa.yml` |
+| (Máquina A) | Server + Gateway | `docker-compose-server.yml` |
+| (Máquina B) | Sensores + Atuadores | `docker-compose-sa.yml` |
 
 A conectividade entre as máquinas é feita via variáveis de ambiente (`CORE_HOST_IP` e `EDGE_HOST_IP`), sem nenhum IP fixo no código.
 
@@ -93,30 +92,16 @@ A escolha de protocolo foi feita de acordo com a natureza de cada tipo de dado t
 
 ### UDP — Sensores → Gateway
 
-Telemetria é um fluxo contínuo de dados onde pequenas perdas são toleráveis. O UDP oferece baixo overhead e alta velocidade, sendo ideal para esse cenário. Implementado com `SOCK_DGRAM`:
-
-```python
-sock.sendto(json.dumps(dado).encode(), (SERVER_IP, UDP_PORT))
-```
+Telemetria é um fluxo contínuo de dados onde pequenas perdas são toleráveis. O UDP oferece baixo overhead e alta velocidade, sendo ideal para esse cenário.
 
 ### HTTP — Gateway → Server
 
 O gateway converte os pacotes UDP em requisições HTTP POST ao servidor. Essa escolha facilita a integração com qualquer cliente HTTP externo e permite monitoramento direto via `curl` ou navegador.
 
-```python
-urllib.request.urlopen(req, timeout=TIMEOUT_S)
-```
 
 ### TCP — Server → Atuadores
 
-Comandos para atuadores exigem confiabilidade — não podem ser perdidos. O TCP garante entrega, ordem e integridade. Implementado com `SOCK_STREAM` e timeout configurado:
-
-```python
-with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-    s.settimeout(3)
-    s.connect((ALARME_IP, ALARME_PORT))
-    s.sendall(comando)
-```
+Comandos para atuadores exigem confiabilidade — não podem ser perdidos. O TCP garante entrega, ordem e integridade. 
 
 ---
 
@@ -143,19 +128,6 @@ A concorrência está presente em todas as camadas do sistema.
 
 ---
 
-## Qualidade de Serviço
-
-| Estratégia | Onde | Detalhe |
-|---|---|---|
-| Fila com limite | Gateway | `maxsize=200` — descarta se servidor estiver inativo |
-| Retry com backoff | Gateway | Até 2 tentativas com espera exponencial (0.2s, 0.4s) |
-| Escrita em lote | Server | Lotes de 20 entradas por flush em disco |
-| Janela deslizante | Server | Máximo 10.000 registros por arquivo JSON |
-| Timeout em sockets | Server | `settimeout(3)` em conexões TCP com atuadores |
-| Detecção de borda | Server | Alarme só dispara na transição normal→crítico (evita spam) |
-| Cooldown | Alarme | Silencia re-acionamentos por `N` segundos (configurável) |
-
----
 
 ## Interface do Usuário
 
@@ -174,9 +146,19 @@ Botões de acionamento manual permitem disparar alarme e resfriamento diretament
 O sistema foi projetado para degradar de forma controlada diante de falhas:
 
 - **Sensor offline:** servidor para de receber dados daquele sensor, mas os demais continuam normalmente
-- **Atuador offline:** server captura a exceção (`ConnectionRefusedError`, `OSError`, `TimeoutError`), registra o erro e salva o acionamento em `atuadores.json` via `finally` — garantindo persistência mesmo sem resposta TCP
+- **Atuador offline:** server captura a exceção, registra o erro e salva o acionamento em atuadores.json via finally — garantindo persistência mesmo sem resposta TCP
 - **Gateway sobrecarregado:** pacotes além do limite da fila são descartados — o listener UDP nunca bloqueia
 - **Interface sem conexão:** exibe "sem conexão" e continua tentando reconectar automaticamente a cada ciclo de polling
+
+## Escalabilidade
+
+A arquitetura permite escalar horizontalmente:
+
+- Múltiplos sensores podem ser adicionados sem alteração no servidor
+- Atuadores adicionais podem ser integrados via novas portas TCP
+- O gateway pode ser replicado para balanceamento de carga
+
+O desacoplamento entre componentes facilita a expansão do sistema.
 
 ---
 
@@ -215,10 +197,11 @@ python testes.py
 
 ```bash
 # 1. Entre na pasta docker do projeto
-cd ~/victor/TEC502---Redes-e-Conectividade-PBL-01-/docker
+# Exemplo:
+cd ~/Sua_Pasta/TEC502---Redes-e-Conectividade-PBL-01-/docker
 
 # 2. Exporte o IP da Máquina B (onde estão os atuadores)
-# exemplo:
+# Exemplo:
 export EDGE_HOST_IP=172.16.103.5
 
 # 3. Suba os containers
@@ -229,7 +212,7 @@ docker compose -f docker-compose-server.yml up --build
 
 ```bash
 # 1. Entre na pasta docker do projeto
-cd ~/Downloads/ultimoteste/TEC502---Redes-e-Conectividade-PBL-01-/docker
+cd ~/Sua_Pasta/TEC502---Redes-e-Conectividade-PBL-01-/docker
 
 # 2. Exporte o IP da Máquina A (onde está o server/gateway)
 # exemplo:
