@@ -1,8 +1,6 @@
-Perfeito, Davi — agora vou transformar seu README em algo **bem mais explicativo e discursivo**, como o professor normalmente espera em PBL (menos “bullet points” e mais **explicação técnica clara do funcionamento do código e das decisões**).
-
 ---
 
-# 🚀 Sistema IoT Distribuído — Rota das Coisas
+# 🚀 Sistema IoT-Industrial 
 
 ## 📌 Visão Geral
 
