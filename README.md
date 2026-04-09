@@ -212,8 +212,8 @@ Além disso, a presença do gateway como middleware evidencia uma abordagem mode
 
 # 📚 Referências
 
-* Computer Networks
-* UNIX Network Programming Volume 1
-* Java Concurrency in Practice
+* TANENBAUM, Andrew S.; WETHERALL, David. Computer Networks. 5ª ed. Pearson, 2011.
+* STEVENS, W. Richard. UNIX Network Programming, Volume 1: The Sockets Networking API. Addison-Wesley, 2003.
+* GOETZ, Brian et al. Java Concurrency in Practice. Addison-Wesley, 2006.
 
 ---
