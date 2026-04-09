@@ -179,6 +179,7 @@ def enviar_alarme(sensor, valor, nome_sensor):
         }).encode("utf-8")
 
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            s.settimeout(5) 
             s.connect((ALARME_IP, ALARME_PORT))
             s.sendall(comando)
             resposta = s.recv(1024)
@@ -204,6 +205,7 @@ def enviar_resfriamento(sensor, valor, nome_sensor):
         }).encode("utf-8")
 
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            s.settimeout(5) 
             s.connect((RESFRIAMENTO_IP, RESFRIAMENTO_PORT))
             s.sendall(comando)
             resposta = s.recv(1024)
