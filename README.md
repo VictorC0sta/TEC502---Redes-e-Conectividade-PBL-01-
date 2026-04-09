@@ -17,9 +17,6 @@
   * [UDP — Sensores → Gateway](#udp--sensores--gateway)
   * [HTTP — Gateway → Server](#http--gateway--server)
   * [TCP — Server → Atuadores](#tcp--server--atuadores)
-* [Protocolo de Comunicação (API REST)](#protocolo-de-comunicação-api-rest)
-  * [Endpoints disponíveis](#endpoints-disponíveis)
-  * [Formato das mensagens](#formato-das-mensagens)
 * [Encapsulamento e Tratamento de Dados](#encapsulamento-e-tratamento-de-dados)
 * [Concorrência](#concorrência)
 * [Qualidade de Serviço](#qualidade-de-serviço)
@@ -123,61 +120,12 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 
 ---
 
-## Protocolo de Comunicação (API REST)
-
-### Endpoints disponíveis
-
-| Método | Rota | Descrição |
-|---|---|---|
-| `GET` | `/estado` | Último valor conhecido de cada sensor (memória) |
-| `GET` | `/historico` | Todas as leituras persistidas em `historico.json` |
-| `GET` | `/atuadores` | Log de todos os acionamentos em `atuadores.json` |
-| `POST` | `/sensor` | Ingestão manual de leitura de sensor |
-| `POST` | `/ativar/alarme` | Aciona alarme manualmente |
-| `POST` | `/ativar/resfriamento` | Aciona resfriamento manualmente |
-
-### Formato das mensagens
-
-**Leitura de sensor (enviada pelo gateway):**
-```json
-{
-  "id": "sensor_temp_1",
-  "tipo": "temperatura",
-  "valor": 36.5,
-  "horario": "2026-04-08 17:28:49.394173"
-}
-```
-
-**Comando para atuador (enviado pelo server via TCP):**
-```json
-{
-  "sensor": "temperatura",
-  "nome_sensor": "sensor_temp_1",
-  "valor": 36.5,
-  "acao": "ALARME"
-}
-```
-
-**Resposta do atuador:**
-```json
-{ "status": "ok" }
-```
-
----
-
 ## Encapsulamento e Tratamento de Dados
 
 JSON é o formato padrão em todas as camadas do sistema. A conversão é feita com as bibliotecas padrão `json.loads()` e `json.dumps()`.
 
 Para robustez, todos os pontos de entrada tratam dados inválidos de forma isolada:
 
-```python
-try:
-    dados = json.loads(data.decode("utf-8"))
-except (json.JSONDecodeError, UnicodeDecodeError) as e:
-    print(f"[ERRO] Dados inválidos: {e}")
-    conn.sendall(b'{"status": "erro"}')
-```
 
 Dados corrompidos são descartados sem interromper o fluxo — o sistema continua processando os demais pacotes normalmente.
 
@@ -192,16 +140,6 @@ A concorrência está presente em todas as camadas do sistema.
 **Server:** usa `ThreadingHTTPServer` para atender múltiplas requisições simultaneamente. Threads daemon separadas gerenciam escrita em disco (`worker_historico`, `worker_atuadores`) usando filas assíncronas com escrita em lote de até 20 entradas. Um `threading.Lock` protege o estado compartilhado em memória.
 
 **Interface:** thread de I/O separada busca dados do servidor; a thread principal da UI apenas consome uma fila de resultados, garantindo que a interface permaneça responsiva.
-
-```
-GATEWAY                   SERVER                   INTERFACE
-  │                          │                          │
-  ├─ UDP Listener (main)     ├─ ThreadingHTTPServer     ├─ UI Thread (tkinter)
-  ├─ Worker 1 (HTTP)         ├─ Thread UDP 5001         └─ IO Thread (requests)
-  ├─ Worker 2 (HTTP)         ├─ Worker Histórico
-  ├─ Worker 3 (HTTP)         └─ Worker Atuadores
-  └─ Worker 4 (HTTP)
-```
 
 ---
 
@@ -239,18 +177,6 @@ O sistema foi projetado para degradar de forma controlada diante de falhas:
 - **Atuador offline:** server captura a exceção (`ConnectionRefusedError`, `OSError`, `TimeoutError`), registra o erro e salva o acionamento em `atuadores.json` via `finally` — garantindo persistência mesmo sem resposta TCP
 - **Gateway sobrecarregado:** pacotes além do limite da fila são descartados — o listener UDP nunca bloqueia
 - **Interface sem conexão:** exibe "sem conexão" e continua tentando reconectar automaticamente a cada ciclo de polling
-
-```python
-try:
-    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-        s.settimeout(3)
-        s.connect((ALARME_IP, ALARME_PORT))
-        s.sendall(comando)
-except (ConnectionRefusedError, OSError, TimeoutError) as e:
-    print(f"[ERRO] Alarme inacessível: {e}")
-finally:
-    salvar_atuador(sensor, valor, "ALARME", nome_sensor)
-```
 
 ---
 
@@ -332,21 +258,6 @@ python cliente.py
 ```
 
 > **Ordem obrigatória:** primeiro Máquina A (server), depois Máquina B (sensores), depois a interface.
-
-### Verificação rápida
-
-```bash
-# Confirmar que o server está respondendo
-curl http://172.16.103.5:5050/estado
-
-# Confirmar histórico
-curl http://172.16.103.5:5050/historico
-
-# Confirmar atuadores
-curl http://172.16.103.5:5050/atuadores
-```
-
----
 
 ## Estrutura de Arquivos
 
