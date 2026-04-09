@@ -1,12 +1,6 @@
 # =============================================================================
 # SERVER.PY — Servidor Central de Monitoramento de Sensores IoT
 # =============================================================================
-# Responsabilidades:
-#   - Recebe dados de sensores via UDP (porta 5001) e HTTP POST (/sensor)
-#   - Verifica limites de temperatura e umidade; aciona alarme e resfriamento
-#   - Persiste histórico e ações dos atuadores em arquivos JSON (pasta data/)
-#   - Expõe API REST para consulta de estado, histórico e atuadores
-# =============================================================================
 
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import json
@@ -185,16 +179,16 @@ def enviar_alarme(sensor, valor, nome_sensor):
         }).encode("utf-8")
 
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            s.settimeout(20)  # Timeout para evitar bloqueio indefinido
             s.connect((ALARME_IP, ALARME_PORT))
             s.sendall(comando)
             resposta = s.recv(1024)
             print(f"[SERVER] Alarme respondeu: {resposta.decode()}")
 
-    except ConnectionRefusedError:
-        print("[ERRO] Servico de alarme nao esta rodando!")
-
-    # Registra independentemente de sucesso ou falha na conexão TCP
-    salvar_atuador(sensor, valor, "ALARME", nome_sensor)
+    except (ConnectionRefusedError, OSError, TimeoutError) as e:
+        print(f"[ERRO] Alarme inacessível: {e}")
+    finally:
+        salvar_atuador(sensor, valor, "ALARME", nome_sensor)
 
 
 def enviar_resfriamento(sensor, valor, nome_sensor):
@@ -211,15 +205,16 @@ def enviar_resfriamento(sensor, valor, nome_sensor):
         }).encode("utf-8")
 
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            s.settimeout(20)
             s.connect((RESFRIAMENTO_IP, RESFRIAMENTO_PORT))
             s.sendall(comando)
             resposta = s.recv(1024)
             print(f"[SERVER] Resfriamento respondeu: {resposta.decode()}")
 
-    except ConnectionRefusedError:
-        print("[ERRO] Servico de resfriamento nao esta rodando!")
-
-    salvar_atuador(sensor, valor, "RESFRIAMENTO", nome_sensor)
+    except (ConnectionRefusedError, OSError, TimeoutError) as e:
+        print(f"[ERRO] Resfriamento inacessível: {e}")
+    finally:
+        salvar_atuador(sensor, valor, "RESFRIAMENTO", nome_sensor)
 
 
 # =============================================================================
@@ -230,15 +225,6 @@ def verificar_risco(sensor, valor, nome_sensor):
     
     # Avalia se o valor recebido de um sensor configura risco, usando
     # detecção de borda para evitar acionamentos repetidos.
-
-    # Dois thresholds independentes:
-    # 1. ALARME      → acionado quando valor cruza max ou min (transição False→True)
-    # 2. RESFRIAMENTO → acionado quando valor cruza max+2 (transição False→True)
-
-    # Args:
-    #    sensor     : grandeza medida, ex: "temperatura" ou "umidade"
-    #    valor      : valor numérico lido pelo sensor ou seja seu ID
-    #    nome_sensor: identificador do sensor (ex: "sensor_01")
 
     limites = LIMITES.get(sensor)
     if not limites:
@@ -257,7 +243,7 @@ def verificar_risco(sensor, valor, nome_sensor):
     # poderia logar aqui se necessário.
     estado_limite[chave] = fora_agora
 
-    # ── Resfriamento: acima de max+2 ──────────────────────────────────────────
+    # Resfriamento: acima de max+2 
     precisa_resf    = valor > limites["max"] + 2
     estava_resfr    = estado_resfriamento.get(chave, False)
 
@@ -349,15 +335,6 @@ def processar_sensor(dados, responder_fn):
 class Handler(BaseHTTPRequestHandler):
     
     # Handler HTTP com suporte a múltiplas threads simultâneas.
-    # Rotas disponíveis:
-    #  GET  /estado              → último valor de cada sensor (em memória)
-    #  GET  /historico           → todas as leituras persistidas
-    #  GET  /atuadores           → todas as ações de atuadores persistidas
-    #  POST /sensor              → ingesta manual de leitura de sensor
-    #  POST /ativar/alarme       → aciona o alarme manualmente
-    #  POST /ativar/resfriamento → aciona o resfriamento manualmente
-    
-
     def log_message(self, format, *args):
         pass
 

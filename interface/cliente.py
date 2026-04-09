@@ -1,19 +1,5 @@
 # =============================================================================
-# DASHBOARD.PY — Interface Gráfica de Monitoramento Industrial
-# =============================================================================
-# Função:
-#   Exibe em tempo real os dados coletados pelos sensores de temperatura e
-#   umidade, permitindo visualizar histórico, acionamentos e disparar ações
-#   manuais (alarme e resfriamento) diretamente pela interface.
-#
-# Abas da interface:
-#   1. Tempo Real    → gráficos ao vivo de temperatura e umidade
-#   2. Histórico     → consulta por período com resumo estatístico por sensor
-#   3. Acionamentos  → linha do tempo e lista de alarmes e resfriamentos
-#
-# Fluxo de comunicação:
-#   cliente.py  →  HTTP GET /estado, /historico, /atuadores  →  server.py
-#   cliente.py  →  HTTP POST /ativar/alarme ou /resfriamento →  server.py
+# CLIENTE.PY — Interface Gráfica de Monitoramento Industrial
 # =============================================================================
 
 import tkinter as tk
@@ -70,7 +56,6 @@ LIMITES = {
 }
 
 # Kwargs compartilhados para todos os Radiobuttons — estilo discreto sem borda
-# indicatoron=0 transforma o radio em botão toggle; relief+bd removem a borda azul do SO
 _RB_KWARGS = dict(
     bg=BG_PANEL, fg=TX_SECONDARY,
     selectcolor=BG_CARD,

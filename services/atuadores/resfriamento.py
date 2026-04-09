@@ -1,28 +1,6 @@
 # =============================================================================
 # RESFRIAMENTO.PY — Serviço de Resfriamento (TCP, porta 6001)
 # =============================================================================
-# Função:
-#   Recebe comandos de resfriamento enviados pelo servidor central e os
-#   executa: exibe alerta no terminal e notifica todos os sensores de
-#   temperatura para que entrem no modo de resfriamento individualmente.
-#
-# Como funciona:
-#   - Fica escutando conexões TCP na porta 6001 (aguarda o server.py)
-#   - Ao receber um comando "RESFRIAMENTO", chama executar_resfriamento()
-#   - Essa função exibe o alerta e conecta em cada sensor_temp via TCP
-#     para enviar o comando {"acao": "RESFRIAMENTO"} diretamente a eles
-#   - Cada sensor_temp recebe o comando e entra no modo de resfriamento
-#     por TEMPO_RESFRIAMENTO segundos (controlado no próprio sensor)
-#
-# Fluxo de comunicação:
-#   server.py       →  TCP (porta 6001)  →  resfriamento.py  (recebe comando)
-#   resfriamento.py →  TCP (porta 7000)  →  sensor_temp.py   (notifica sensores)
-#
-# Diferença em relação ao alarme.py:
-#   - alarme.py apenas exibe um alerta — não age sobre os sensores
-#   - resfriamento.py age ativamente: conecta em cada sensor e muda seu
-#     comportamento de simulação por um período determinado
-# =============================================================================
 
 import socket
 import json
@@ -33,7 +11,7 @@ from datetime import datetime, timezone, timedelta
 TCP_IP   = "0.0.0.0"  # Aceita conexões de qualquer interface de rede
 TCP_PORT = 6001       # Porta onde este serviço aguarda comandos do server.py
 
-# ── Persistência ──────────────────────────────────────────────────────────────
+# Persistência 
 ATUADORES_FILE = "data/atuadores.json"
 
 # Fuso horário UTC-3 (Brasília) — usado em todos os timestamps

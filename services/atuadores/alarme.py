@@ -1,17 +1,6 @@
 # =============================================================================
 # ALARME.PY — Serviço de Alarme (TCP, porta 6000)
 # =============================================================================
-# Responsabilidades:
-#   - Aguarda comandos TCP enviados pelo servidor central (server.py)
-#   - Verifica se o sensor está em período de cooldown antes de disparar
-#   - Exibe alerta visual/sonoro no terminal quando um limite é ultrapassado
-#   - Persiste cada acionamento em data/atuadores.json
-#
-# Fluxo resumido:
-#   server.py detecta valor fora do limite
-#       └→ envia JSON via TCP para este serviço na porta 6000
-#           └→ alarme.py valida cooldown → exibe alerta → salva → responde
-# =============================================================================
 
 import socket
 import json

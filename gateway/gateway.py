@@ -1,23 +1,6 @@
 # =============================================================================
 # GATEWAY.PY — Gateway UDP → HTTP
 # =============================================================================
-# Função:
-#   Faz a ponte entre os sensores (que falam UDP) e o servidor central . Recebe datagramas UDP 
-#   sensores e os encaminha como requisições HTTP POST para o server.py.
-#
-# Por que existe este arquivo:
-#   Os sensores usam UDP por ser leve e sem overhead de conexão, mas o
-#   server.py expõe um serviço HTTP para facilitar integração e monitoramento.
-#   O gateway resolve essa incompatibilidade de protocolo.
-#
-# Como funciona:
-#   - Thread principal: escuta UDP e enfileira pacotes (nunca bloqueia)
-#   - Pool de WORKERS threads: consome a fila e faz os POSTs HTTP
-#
-# Fluxo de comunicação:
-#   sensor_temp/umidade  →  UDP (porta 5001)  →  gateway.py
-#   gateway.py           →  HTTP POST /sensor  →  server.py
-# =============================================================================
 
 import json
 import socket
@@ -98,7 +81,7 @@ def _enviar_http(dados):
 
 
 # =============================================================================
-# LISTENER UDP — thread principal
+# Thread principal
 # =============================================================================
 
 # Escuta datagramas UDP dos sensores e os enfileira para os workers HTTP
@@ -136,7 +119,7 @@ if __name__ == "__main__":
         # daemon=True: as threads morrem automaticamente quando o processo principal sair
         threading.Thread(target=_worker, daemon=True).start()
 
-    # Listener UDP roda na thread principal — mantém o processo vivo
+    # Thread principal — mantém o processo vivo
     try:
         escutar()
     except KeyboardInterrupt:

@@ -1,16 +1,6 @@
 # =============================================================================
 # SENSOR_UMIDADE.PY — Simulador de Sensor de Umidade (UDP)
 # =============================================================================
-# Responsabilidades:
-#   - Simula a leitura de um sensor de umidade relativa do ar
-#   - Gera valores com comportamento realista: sobe/desce em ondas suaves,
-#     com inércia e ruído para imitar variação física real
-#   - Envia cada leitura ao servidor central via UDP
-#
-# Fluxo:
-#   sensor_umidade.py → UDP → server.py (porta 5001)
-#       └→ server.py avalia limites → dispara alarme.py se necessário
-# =============================================================================
 
 import json
 import socket

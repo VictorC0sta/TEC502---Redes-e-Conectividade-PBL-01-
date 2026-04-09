@@ -1,22 +1,6 @@
 # =============================================================================
 # SENSOR_TEMP.PY — Simulador de Sensor de Temperatura (UDP + TCP)
 # =============================================================================
-# Função:
-#   Simula um sensor físico de temperatura que envia leituras periódicas ao
-#   servidor central e responde a comandos de resfriamento enviados pelo
-#   serviço de resfriamento.
-#
-# Como funciona:
-#   - Uma thread UDP gera valores de temperatura com comportamento realista
-#     (oscilação em ondas suaves com momentum e ruído) e os envia ao server.py
-#   - Uma thread TCP fica escutando comandos; ao receber "RESFRIAMENTO",
-#     ativa um modo especial que puxa o valor em direção a 26°C por
-#     alguns segundos, simulando um sistema de ar-condicionado
-#
-# Fluxo de comunicação:
-#   sensor_temp.py  →  UDP (porta 5001)  →  server.py   (envia leitura)
-#   resfriamento.py →  TCP (porta 7000)  →  sensor_temp.py  (recebe comando)
-# =============================================================================
 
 import json
 import socket
