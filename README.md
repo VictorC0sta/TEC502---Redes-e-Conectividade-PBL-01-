@@ -292,7 +292,8 @@ python testes.py
 cd ~/victor/TEC502---Redes-e-Conectividade-PBL-01-/docker
 
 # 2. Exporte o IP da Máquina B (onde estão os atuadores)
-export EDGE_HOST_IP=172.16.103.4
+exemplo:
+export EDGE_HOST_IP=172.16.103.5
 
 # 3. Suba os containers
 docker compose -f docker-compose-server.yml up --build
@@ -305,8 +306,9 @@ docker compose -f docker-compose-server.yml up --build
 cd ~/Downloads/ultimoteste/TEC502---Redes-e-Conectividade-PBL-01-/docker
 
 # 2. Exporte o IP da Máquina A (onde está o server/gateway)
-export CORE_HOST_IP=172.16.103.5
-export EDGE_HOST_IP=172.16.103.4
+exemplo:
+export CORE_HOST_IP=172.16.103.4
+export EDGE_HOST_IP=172.16.103.5
 
 # 3. Suba os containers
 docker compose -f docker-compose-sa.yml up --build
